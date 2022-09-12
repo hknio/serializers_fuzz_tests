@@ -1,0 +1,12 @@
+[submodule "libs/boost_serialization"]
+	path = libs/boost_serialization
+	url = https://github.com/boostorg/serialization
+	branch = master
+[submodule "libs/cereal"]
+	path = libs/cereal
+	url = https://github.com/USCiLab/cereal
+	branch = master
+[submodule "libs/yas"]
+	path = libs/yas
+	url = https://github.com/niXman/yas
+	branch = master
