@@ -905,17 +905,17 @@ struct InputsGenerator {
     return 11;
   }
   uint16_t input_12() {
-    std::array<float, 1> v = {std::numeric_limits<float>::min()};
+    std::array<int32_t, 1> v = {-2147483648};
     ar & v;
     return 12;
   }
   uint16_t input_13() {
-    std::array<float, 32> v = {std::numeric_limits<float>::min()};
+    std::array<int32_t, 32> v = {-2147483648};
     ar & v;
     return 13;
   }
   uint16_t input_14() {
-    std::array<float, 1023> v = {std::numeric_limits<float>::min()};
+    std::array<int32_t, 1023> v = {-2147483648};
     ar & v;
     return 14;
   }
@@ -935,62 +935,62 @@ struct InputsGenerator {
     return 17;
   }
   uint16_t input_18() {
-    std::array<bool, 1> v = {true};
+    std::array<float, 1> v = {std::numeric_limits<float>::min()};
     ar & v;
     return 18;
   }
   uint16_t input_19() {
-    std::array<bool, 32> v = {true};
+    std::array<float, 32> v = {std::numeric_limits<float>::min()};
     ar & v;
     return 19;
   }
   uint16_t input_20() {
-    std::array<bool, 1023> v = {true};
+    std::array<float, 1023> v = {std::numeric_limits<float>::min()};
     ar & v;
     return 20;
   }
   uint16_t input_21() {
-    std::array<int32_t, 1> v = {-2147483648};
+    std::array<std::string, 1> v = {""};
     ar & v;
     return 21;
   }
   uint16_t input_22() {
-    std::array<int32_t, 32> v = {-2147483648};
+    std::array<std::string, 32> v = {""};
     ar & v;
     return 22;
   }
   uint16_t input_23() {
-    std::array<int32_t, 1023> v = {-2147483648};
+    std::array<std::string, 1023> v = {""};
     ar & v;
     return 23;
   }
   uint16_t input_24() {
-    std::array<std::string, 1> v = {"\1\2\3\4\5\0\1\2\3\4"};
+    std::array<bool, 1> v = {false};
     ar & v;
     return 24;
   }
   uint16_t input_25() {
-    std::array<std::string, 32> v = {"\1\2\3\4\5\0\1\2\3\4"};
+    std::array<bool, 32> v = {false};
     ar & v;
     return 25;
   }
   uint16_t input_26() {
-    std::array<std::string, 1023> v = {"\1\2\3\4\5\0\1\2\3\4"};
+    std::array<bool, 1023> v = {false};
     ar & v;
     return 26;
   }
   uint16_t input_27() {
-    std::array<uint64_t, 1> v = {std::numeric_limits<uint64_t>::max()};
+    std::array<uint64_t, 1> v = {1};
     ar & v;
     return 27;
   }
   uint16_t input_28() {
-    std::array<uint64_t, 32> v = {std::numeric_limits<uint64_t>::max()};
+    std::array<uint64_t, 32> v = {1};
     ar & v;
     return 28;
   }
   uint16_t input_29() {
-    std::array<uint64_t, 1023> v = {std::numeric_limits<uint64_t>::max()};
+    std::array<uint64_t, 1023> v = {1};
     ar & v;
     return 29;
   }
@@ -1010,247 +1010,247 @@ struct InputsGenerator {
     return 32;
   }
   uint16_t input_33() {
-    std::deque<float> v = {std::numeric_limits<float>::infinity()};
+    std::deque<int32_t> v = {0};
     ar & v;
     return 33;
   }
   uint16_t input_34() {
-    std::deque<int8_t> v = {-1};
+    std::deque<int8_t> v = {-128};
     ar & v;
     return 34;
   }
   uint16_t input_35() {
-    std::deque<bool> v = {false};
+    std::deque<float> v = {-5.2e26};
     ar & v;
     return 35;
   }
   uint16_t input_36() {
-    std::deque<int32_t> v = {-2147483648};
+    std::deque<std::string> v = {"\1\2\3\4\5\0\1\2\3\4"};
     ar & v;
     return 36;
   }
   uint16_t input_37() {
-    std::deque<std::string> v = {"\1\2\3\4\5\0\1\2\3\4"};
+    std::deque<bool> v = {false};
     ar & v;
     return 37;
   }
   uint16_t input_38() {
-    std::deque<uint64_t> v = {1};
+    std::deque<uint64_t> v = {std::numeric_limits<uint64_t>::max()};
     ar & v;
     return 38;
   }
   uint16_t input_39() {
-    std::forward_list<float> v = {std::numeric_limits<float>::max()};
+    std::forward_list<int32_t> v = {2147483647};
     ar & v;
     return 39;
   }
   uint16_t input_40() {
-    std::forward_list<int8_t> v = {127};
+    std::forward_list<int8_t> v = {-128};
     ar & v;
     return 40;
   }
   uint16_t input_41() {
-    std::forward_list<bool> v = {true};
+    std::forward_list<float> v = {std::numeric_limits<float>::max()};
     ar & v;
     return 41;
   }
   uint16_t input_42() {
-    std::forward_list<int32_t> v = {0};
+    std::forward_list<std::string> v = {"!@#$%^&*( !@$$%&*("};
     ar & v;
     return 42;
   }
   uint16_t input_43() {
-    std::forward_list<std::string> v = {"!@#$%^&*( !@$$%&*("};
+    std::forward_list<bool> v = {false};
     ar & v;
     return 43;
   }
   uint16_t input_44() {
-    std::forward_list<uint64_t> v = {std::numeric_limits<uint64_t>::max()};
+    std::forward_list<uint64_t> v = {1};
     ar & v;
     return 44;
   }
   uint16_t input_45() {
-    std::list<float> v = {std::numeric_limits<float>::infinity()};
+    std::list<int32_t> v = {2147483647};
     ar & v;
     return 45;
   }
   uint16_t input_46() {
-    std::list<int8_t> v = {-1};
+    std::list<int8_t> v = {127};
     ar & v;
     return 46;
   }
   uint16_t input_47() {
-    std::list<bool> v = {false};
+    std::list<float> v = {std::numeric_limits<float>::quiet_NaN()};
     ar & v;
     return 47;
   }
   uint16_t input_48() {
-    std::list<int32_t> v = {0};
+    std::list<std::string> v = {"\1\2\3\4\5\0\1\2\3\4"};
     ar & v;
     return 48;
   }
   uint16_t input_49() {
-    std::list<std::string> v = {"\1\2\3\4\5\0\1\2\3\4"};
+    std::list<bool> v = {false};
     ar & v;
     return 49;
   }
   uint16_t input_50() {
-    std::list<uint64_t> v = {std::numeric_limits<uint64_t>::max()};
+    std::list<uint64_t> v = {1};
     ar & v;
     return 50;
   }
   uint16_t input_51() {
-    std::map<float, float> v = {{-5.2e26,std::numeric_limits<float>::infinity()}};
+    std::map<int32_t, int32_t> v = {{2147483647,-2147483648}};
     ar & v;
     return 51;
   }
   uint16_t input_52() {
-    std::map<float, int8_t> v = {{-5.2e26,-128}};
+    std::map<int32_t, int8_t> v = {{2147483647,-128}};
     ar & v;
     return 52;
   }
   uint16_t input_53() {
-    std::map<float, bool> v = {{-5.2e26,true}};
+    std::map<int32_t, float> v = {{2147483647,std::numeric_limits<float>::quiet_NaN()}};
     ar & v;
     return 53;
   }
   uint16_t input_54() {
-    std::map<float, int32_t> v = {{-5.2e26,2147483647}};
+    std::map<int32_t, std::string> v = {{2147483647,"\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 54;
   }
   uint16_t input_55() {
-    std::map<float, std::string> v = {{-5.2e26,"!@#$%^&*( !@$$%&*("}};
+    std::map<int32_t, bool> v = {{2147483647,true}};
     ar & v;
     return 55;
   }
   uint16_t input_56() {
-    std::map<float, uint64_t> v = {{-5.2e26,1}};
+    std::map<int32_t, uint64_t> v = {{2147483647,std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 56;
   }
   uint16_t input_57() {
-    std::map<int8_t, float> v = {{127,std::numeric_limits<float>::max()}};
+    std::map<int8_t, int32_t> v = {{0,-2147483648}};
     ar & v;
     return 57;
   }
   uint16_t input_58() {
-    std::map<int8_t, int8_t> v = {{127,-1}};
+    std::map<int8_t, int8_t> v = {{0,0}};
     ar & v;
     return 58;
   }
   uint16_t input_59() {
-    std::map<int8_t, bool> v = {{127,false}};
+    std::map<int8_t, float> v = {{0,-5.2e26}};
     ar & v;
     return 59;
   }
   uint16_t input_60() {
-    std::map<int8_t, int32_t> v = {{127,2147483647}};
+    std::map<int8_t, std::string> v = {{0,""}};
     ar & v;
     return 60;
   }
   uint16_t input_61() {
-    std::map<int8_t, std::string> v = {{127,""}};
+    std::map<int8_t, bool> v = {{0,true}};
     ar & v;
     return 61;
   }
   uint16_t input_62() {
-    std::map<int8_t, uint64_t> v = {{127,1}};
+    std::map<int8_t, uint64_t> v = {{0,1}};
     ar & v;
     return 62;
   }
   uint16_t input_63() {
-    std::map<bool, float> v = {{true,std::numeric_limits<float>::min()}};
+    std::map<float, int32_t> v = {{std::numeric_limits<float>::min(),2147483647}};
     ar & v;
     return 63;
   }
   uint16_t input_64() {
-    std::map<bool, int8_t> v = {{true,-1}};
+    std::map<float, int8_t> v = {{std::numeric_limits<float>::min(),127}};
     ar & v;
     return 64;
   }
   uint16_t input_65() {
-    std::map<bool, bool> v = {{true,false}};
+    std::map<float, float> v = {{std::numeric_limits<float>::min(),-5.2e26}};
     ar & v;
     return 65;
   }
   uint16_t input_66() {
-    std::map<bool, int32_t> v = {{true,-2147483648}};
+    std::map<float, std::string> v = {{std::numeric_limits<float>::min(),""}};
     ar & v;
     return 66;
   }
   uint16_t input_67() {
-    std::map<bool, std::string> v = {{true,""}};
+    std::map<float, bool> v = {{std::numeric_limits<float>::min(),false}};
     ar & v;
     return 67;
   }
   uint16_t input_68() {
-    std::map<bool, uint64_t> v = {{true,std::numeric_limits<uint64_t>::max()}};
+    std::map<float, uint64_t> v = {{std::numeric_limits<float>::min(),std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 68;
   }
   uint16_t input_69() {
-    std::map<int32_t, float> v = {{2147483647,std::numeric_limits<float>::quiet_NaN()}};
+    std::map<std::string, int32_t> v = {{"",0}};
     ar & v;
     return 69;
   }
   uint16_t input_70() {
-    std::map<int32_t, int8_t> v = {{2147483647,-128}};
+    std::map<std::string, int8_t> v = {{"",0}};
     ar & v;
     return 70;
   }
   uint16_t input_71() {
-    std::map<int32_t, bool> v = {{2147483647,false}};
+    std::map<std::string, float> v = {{"",-5.2e26}};
     ar & v;
     return 71;
   }
   uint16_t input_72() {
-    std::map<int32_t, int32_t> v = {{2147483647,2147483647}};
+    std::map<std::string, std::string> v = {{"","\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 72;
   }
   uint16_t input_73() {
-    std::map<int32_t, std::string> v = {{2147483647,"!@#$%^&*( !@$$%&*("}};
+    std::map<std::string, bool> v = {{"",false}};
     ar & v;
     return 73;
   }
   uint16_t input_74() {
-    std::map<int32_t, uint64_t> v = {{2147483647,1}};
+    std::map<std::string, uint64_t> v = {{"",1}};
     ar & v;
     return 74;
   }
   uint16_t input_75() {
-    std::map<std::string, float> v = {{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::max()}};
+    std::map<bool, int32_t> v = {{false,0}};
     ar & v;
     return 75;
   }
   uint16_t input_76() {
-    std::map<std::string, int8_t> v = {{"\1\2\3\4\5\0\1\2\3\4",-1}};
+    std::map<bool, int8_t> v = {{false,-128}};
     ar & v;
     return 76;
   }
   uint16_t input_77() {
-    std::map<std::string, bool> v = {{"\1\2\3\4\5\0\1\2\3\4",false}};
+    std::map<bool, float> v = {{false,std::numeric_limits<float>::infinity()}};
     ar & v;
     return 77;
   }
   uint16_t input_78() {
-    std::map<std::string, int32_t> v = {{"\1\2\3\4\5\0\1\2\3\4",0}};
+    std::map<bool, std::string> v = {{false,"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 78;
   }
   uint16_t input_79() {
-    std::map<std::string, std::string> v = {{"\1\2\3\4\5\0\1\2\3\4",""}};
+    std::map<bool, bool> v = {{false,false}};
     ar & v;
     return 79;
   }
   uint16_t input_80() {
-    std::map<std::string, uint64_t> v = {{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<uint64_t>::max()}};
+    std::map<bool, uint64_t> v = {{false,1}};
     ar & v;
     return 80;
   }
   uint16_t input_81() {
-    std::map<uint64_t, float> v = {{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::infinity()}};
+    std::map<uint64_t, int32_t> v = {{std::numeric_limits<uint64_t>::max(),-2147483648}};
     ar & v;
     return 81;
   }
@@ -1260,407 +1260,407 @@ struct InputsGenerator {
     return 82;
   }
   uint16_t input_83() {
-    std::map<uint64_t, bool> v = {{std::numeric_limits<uint64_t>::max(),false}};
+    std::map<uint64_t, float> v = {{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::min()}};
     ar & v;
     return 83;
   }
   uint16_t input_84() {
-    std::map<uint64_t, int32_t> v = {{std::numeric_limits<uint64_t>::max(),-2147483648}};
+    std::map<uint64_t, std::string> v = {{std::numeric_limits<uint64_t>::max(),""}};
     ar & v;
     return 84;
   }
   uint16_t input_85() {
-    std::map<uint64_t, std::string> v = {{std::numeric_limits<uint64_t>::max(),""}};
+    std::map<uint64_t, bool> v = {{std::numeric_limits<uint64_t>::max(),false}};
     ar & v;
     return 85;
   }
   uint16_t input_86() {
-    std::map<uint64_t, uint64_t> v = {{std::numeric_limits<uint64_t>::max(),1}};
+    std::map<uint64_t, uint64_t> v = {{std::numeric_limits<uint64_t>::max(),std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 86;
   }
   uint16_t input_87() {
-    std::multimap<float, float> v = {{-5.2e26,std::numeric_limits<float>::infinity()}};
+    std::multimap<int32_t, int32_t> v = {{-2147483648,-2147483648}};
     ar & v;
     return 87;
   }
   uint16_t input_88() {
-    std::multimap<float, int8_t> v = {{-5.2e26,0}};
+    std::multimap<int32_t, int8_t> v = {{-2147483648,-1}};
     ar & v;
     return 88;
   }
   uint16_t input_89() {
-    std::multimap<float, bool> v = {{-5.2e26,false}};
+    std::multimap<int32_t, float> v = {{-2147483648,std::numeric_limits<float>::min()}};
     ar & v;
     return 89;
   }
   uint16_t input_90() {
-    std::multimap<float, int32_t> v = {{-5.2e26,-2147483648}};
+    std::multimap<int32_t, std::string> v = {{-2147483648,""}};
     ar & v;
     return 90;
   }
   uint16_t input_91() {
-    std::multimap<float, std::string> v = {{-5.2e26,""}};
+    std::multimap<int32_t, bool> v = {{-2147483648,true}};
     ar & v;
     return 91;
   }
   uint16_t input_92() {
-    std::multimap<float, uint64_t> v = {{-5.2e26,1}};
+    std::multimap<int32_t, uint64_t> v = {{-2147483648,std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 92;
   }
   uint16_t input_93() {
-    std::multimap<int8_t, float> v = {{-1,-5.2e26}};
+    std::multimap<int8_t, int32_t> v = {{0,2147483647}};
     ar & v;
     return 93;
   }
   uint16_t input_94() {
-    std::multimap<int8_t, int8_t> v = {{-1,-128}};
+    std::multimap<int8_t, int8_t> v = {{0,-1}};
     ar & v;
     return 94;
   }
   uint16_t input_95() {
-    std::multimap<int8_t, bool> v = {{-1,false}};
+    std::multimap<int8_t, float> v = {{0,std::numeric_limits<float>::min()}};
     ar & v;
     return 95;
   }
   uint16_t input_96() {
-    std::multimap<int8_t, int32_t> v = {{-1,2147483647}};
+    std::multimap<int8_t, std::string> v = {{0,"\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 96;
   }
   uint16_t input_97() {
-    std::multimap<int8_t, std::string> v = {{-1,"\1\2\3\4\5\0\1\2\3\4"}};
+    std::multimap<int8_t, bool> v = {{0,false}};
     ar & v;
     return 97;
   }
   uint16_t input_98() {
-    std::multimap<int8_t, uint64_t> v = {{-1,std::numeric_limits<uint64_t>::max()}};
+    std::multimap<int8_t, uint64_t> v = {{0,std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 98;
   }
   uint16_t input_99() {
-    std::multimap<bool, float> v = {{true,std::numeric_limits<float>::min()}};
+    std::multimap<float, int32_t> v = {{std::numeric_limits<float>::quiet_NaN(),0}};
     ar & v;
     return 99;
   }
   uint16_t input_100() {
-    std::multimap<bool, int8_t> v = {{true,127}};
+    std::multimap<float, int8_t> v = {{std::numeric_limits<float>::quiet_NaN(),0}};
     ar & v;
     return 100;
   }
   uint16_t input_101() {
-    std::multimap<bool, bool> v = {{true,false}};
+    std::multimap<float, float> v = {{std::numeric_limits<float>::quiet_NaN(),-5.2e26}};
     ar & v;
     return 101;
   }
   uint16_t input_102() {
-    std::multimap<bool, int32_t> v = {{true,0}};
+    std::multimap<float, std::string> v = {{std::numeric_limits<float>::quiet_NaN(),"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 102;
   }
   uint16_t input_103() {
-    std::multimap<bool, std::string> v = {{true,"!@#$%^&*( !@$$%&*("}};
+    std::multimap<float, bool> v = {{std::numeric_limits<float>::quiet_NaN(),true}};
     ar & v;
     return 103;
   }
   uint16_t input_104() {
-    std::multimap<bool, uint64_t> v = {{true,std::numeric_limits<uint64_t>::max()}};
+    std::multimap<float, uint64_t> v = {{std::numeric_limits<float>::quiet_NaN(),std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 104;
   }
   uint16_t input_105() {
-    std::multimap<int32_t, float> v = {{-2147483648,std::numeric_limits<float>::max()}};
+    std::multimap<std::string, int32_t> v = {{"\1\2\3\4\5\0\1\2\3\4",2147483647}};
     ar & v;
     return 105;
   }
   uint16_t input_106() {
-    std::multimap<int32_t, int8_t> v = {{-2147483648,-128}};
+    std::multimap<std::string, int8_t> v = {{"\1\2\3\4\5\0\1\2\3\4",0}};
     ar & v;
     return 106;
   }
   uint16_t input_107() {
-    std::multimap<int32_t, bool> v = {{-2147483648,false}};
+    std::multimap<std::string, float> v = {{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::min()}};
     ar & v;
     return 107;
   }
   uint16_t input_108() {
-    std::multimap<int32_t, int32_t> v = {{-2147483648,2147483647}};
+    std::multimap<std::string, std::string> v = {{"\1\2\3\4\5\0\1\2\3\4",""}};
     ar & v;
     return 108;
   }
   uint16_t input_109() {
-    std::multimap<int32_t, std::string> v = {{-2147483648,"\1\2\3\4\5\0\1\2\3\4"}};
+    std::multimap<std::string, bool> v = {{"\1\2\3\4\5\0\1\2\3\4",true}};
     ar & v;
     return 109;
   }
   uint16_t input_110() {
-    std::multimap<int32_t, uint64_t> v = {{-2147483648,std::numeric_limits<uint64_t>::max()}};
+    std::multimap<std::string, uint64_t> v = {{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 110;
   }
   uint16_t input_111() {
-    std::multimap<std::string, float> v = {{"",std::numeric_limits<float>::min()}};
+    std::multimap<bool, int32_t> v = {{true,2147483647}};
     ar & v;
     return 111;
   }
   uint16_t input_112() {
-    std::multimap<std::string, int8_t> v = {{"",-128}};
+    std::multimap<bool, int8_t> v = {{true,-1}};
     ar & v;
     return 112;
   }
   uint16_t input_113() {
-    std::multimap<std::string, bool> v = {{"",false}};
+    std::multimap<bool, float> v = {{true,std::numeric_limits<float>::max()}};
     ar & v;
     return 113;
   }
   uint16_t input_114() {
-    std::multimap<std::string, int32_t> v = {{"",-2147483648}};
+    std::multimap<bool, std::string> v = {{true,""}};
     ar & v;
     return 114;
   }
   uint16_t input_115() {
-    std::multimap<std::string, std::string> v = {{"","\1\2\3\4\5\0\1\2\3\4"}};
+    std::multimap<bool, bool> v = {{true,false}};
     ar & v;
     return 115;
   }
   uint16_t input_116() {
-    std::multimap<std::string, uint64_t> v = {{"",1}};
+    std::multimap<bool, uint64_t> v = {{true,std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 116;
   }
   uint16_t input_117() {
-    std::multimap<uint64_t, float> v = {{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::min()}};
+    std::multimap<uint64_t, int32_t> v = {{1,-2147483648}};
     ar & v;
     return 117;
   }
   uint16_t input_118() {
-    std::multimap<uint64_t, int8_t> v = {{std::numeric_limits<uint64_t>::max(),0}};
+    std::multimap<uint64_t, int8_t> v = {{1,-1}};
     ar & v;
     return 118;
   }
   uint16_t input_119() {
-    std::multimap<uint64_t, bool> v = {{std::numeric_limits<uint64_t>::max(),false}};
+    std::multimap<uint64_t, float> v = {{1,std::numeric_limits<float>::min()}};
     ar & v;
     return 119;
   }
   uint16_t input_120() {
-    std::multimap<uint64_t, int32_t> v = {{std::numeric_limits<uint64_t>::max(),-2147483648}};
+    std::multimap<uint64_t, std::string> v = {{1,""}};
     ar & v;
     return 120;
   }
   uint16_t input_121() {
-    std::multimap<uint64_t, std::string> v = {{std::numeric_limits<uint64_t>::max(),""}};
+    std::multimap<uint64_t, bool> v = {{1,true}};
     ar & v;
     return 121;
   }
   uint16_t input_122() {
-    std::multimap<uint64_t, uint64_t> v = {{std::numeric_limits<uint64_t>::max(),1}};
+    std::multimap<uint64_t, uint64_t> v = {{1,1}};
     ar & v;
     return 122;
   }
   uint16_t input_123() {
-    std::multiset<float> v = {std::numeric_limits<float>::min()};
+    std::multiset<int32_t> v = {-2147483648};
     ar & v;
     return 123;
   }
   uint16_t input_124() {
-    std::multiset<int8_t> v = {-128};
+    std::multiset<int8_t> v = {-1};
     ar & v;
     return 124;
   }
   uint16_t input_125() {
-    std::multiset<bool> v = {true};
+    std::multiset<float> v = {std::numeric_limits<float>::infinity()};
     ar & v;
     return 125;
   }
   uint16_t input_126() {
-    std::multiset<int32_t> v = {-2147483648};
+    std::multiset<std::string> v = {"\1\2\3\4\5\0\1\2\3\4"};
     ar & v;
     return 126;
   }
   uint16_t input_127() {
-    std::multiset<std::string> v = {""};
+    std::multiset<bool> v = {true};
     ar & v;
     return 127;
   }
   uint16_t input_128() {
-    std::multiset<uint64_t> v = {1};
+    std::multiset<uint64_t> v = {std::numeric_limits<uint64_t>::max()};
     ar & v;
     return 128;
   }
   uint16_t input_129() {
-    std::pair<float, float> v = {std::numeric_limits<float>::infinity(),std::numeric_limits<float>::infinity()};
+    std::pair<int32_t, int32_t> v = {-2147483648,0};
     ar & v;
     return 129;
   }
   uint16_t input_130() {
-    std::pair<float, int8_t> v = {std::numeric_limits<float>::infinity(),-128};
+    std::pair<int32_t, int8_t> v = {-2147483648,-128};
     ar & v;
     return 130;
   }
   uint16_t input_131() {
-    std::pair<float, bool> v = {std::numeric_limits<float>::infinity(),false};
+    std::pair<int32_t, float> v = {-2147483648,-5.2e26};
     ar & v;
     return 131;
   }
   uint16_t input_132() {
-    std::pair<float, int32_t> v = {std::numeric_limits<float>::infinity(),-2147483648};
+    std::pair<int32_t, std::string> v = {-2147483648,"\1\2\3\4\5\0\1\2\3\4"};
     ar & v;
     return 132;
   }
   uint16_t input_133() {
-    std::pair<float, std::string> v = {std::numeric_limits<float>::infinity(),"!@#$%^&*( !@$$%&*("};
+    std::pair<int32_t, bool> v = {-2147483648,true};
     ar & v;
     return 133;
   }
   uint16_t input_134() {
-    std::pair<float, uint64_t> v = {std::numeric_limits<float>::infinity(),1};
+    std::pair<int32_t, uint64_t> v = {-2147483648,1};
     ar & v;
     return 134;
   }
   uint16_t input_135() {
-    std::pair<int8_t, float> v = {-128,std::numeric_limits<float>::infinity()};
+    std::pair<int8_t, int32_t> v = {-1,2147483647};
     ar & v;
     return 135;
   }
   uint16_t input_136() {
-    std::pair<int8_t, int8_t> v = {-128,-128};
+    std::pair<int8_t, int8_t> v = {-1,-128};
     ar & v;
     return 136;
   }
   uint16_t input_137() {
-    std::pair<int8_t, bool> v = {-128,true};
+    std::pair<int8_t, float> v = {-1,std::numeric_limits<float>::quiet_NaN()};
     ar & v;
     return 137;
   }
   uint16_t input_138() {
-    std::pair<int8_t, int32_t> v = {-128,-2147483648};
+    std::pair<int8_t, std::string> v = {-1,""};
     ar & v;
     return 138;
   }
   uint16_t input_139() {
-    std::pair<int8_t, std::string> v = {-128,"\1\2\3\4\5\0\1\2\3\4"};
+    std::pair<int8_t, bool> v = {-1,true};
     ar & v;
     return 139;
   }
   uint16_t input_140() {
-    std::pair<int8_t, uint64_t> v = {-128,1};
+    std::pair<int8_t, uint64_t> v = {-1,1};
     ar & v;
     return 140;
   }
   uint16_t input_141() {
-    std::pair<bool, float> v = {false,std::numeric_limits<float>::min()};
+    std::pair<float, int32_t> v = {std::numeric_limits<float>::infinity(),0};
     ar & v;
     return 141;
   }
   uint16_t input_142() {
-    std::pair<bool, int8_t> v = {false,-128};
+    std::pair<float, int8_t> v = {std::numeric_limits<float>::infinity(),-128};
     ar & v;
     return 142;
   }
   uint16_t input_143() {
-    std::pair<bool, bool> v = {false,true};
+    std::pair<float, float> v = {std::numeric_limits<float>::infinity(),std::numeric_limits<float>::max()};
     ar & v;
     return 143;
   }
   uint16_t input_144() {
-    std::pair<bool, int32_t> v = {false,2147483647};
+    std::pair<float, std::string> v = {std::numeric_limits<float>::infinity(),""};
     ar & v;
     return 144;
   }
   uint16_t input_145() {
-    std::pair<bool, std::string> v = {false,"!@#$%^&*( !@$$%&*("};
+    std::pair<float, bool> v = {std::numeric_limits<float>::infinity(),true};
     ar & v;
     return 145;
   }
   uint16_t input_146() {
-    std::pair<bool, uint64_t> v = {false,1};
+    std::pair<float, uint64_t> v = {std::numeric_limits<float>::infinity(),1};
     ar & v;
     return 146;
   }
   uint16_t input_147() {
-    std::pair<int32_t, float> v = {0,-5.2e26};
+    std::pair<std::string, int32_t> v = {"\1\2\3\4\5\0\1\2\3\4",0};
     ar & v;
     return 147;
   }
   uint16_t input_148() {
-    std::pair<int32_t, int8_t> v = {0,-1};
+    std::pair<std::string, int8_t> v = {"\1\2\3\4\5\0\1\2\3\4",0};
     ar & v;
     return 148;
   }
   uint16_t input_149() {
-    std::pair<int32_t, bool> v = {0,true};
+    std::pair<std::string, float> v = {"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::quiet_NaN()};
     ar & v;
     return 149;
   }
   uint16_t input_150() {
-    std::pair<int32_t, int32_t> v = {0,2147483647};
+    std::pair<std::string, std::string> v = {"\1\2\3\4\5\0\1\2\3\4",""};
     ar & v;
     return 150;
   }
   uint16_t input_151() {
-    std::pair<int32_t, std::string> v = {0,"!@#$%^&*( !@$$%&*("};
+    std::pair<std::string, bool> v = {"\1\2\3\4\5\0\1\2\3\4",true};
     ar & v;
     return 151;
   }
   uint16_t input_152() {
-    std::pair<int32_t, uint64_t> v = {0,std::numeric_limits<uint64_t>::max()};
+    std::pair<std::string, uint64_t> v = {"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<uint64_t>::max()};
     ar & v;
     return 152;
   }
   uint16_t input_153() {
-    std::pair<std::string, float> v = {"!@#$%^&*( !@$$%&*(",std::numeric_limits<float>::min()};
+    std::pair<bool, int32_t> v = {true,2147483647};
     ar & v;
     return 153;
   }
   uint16_t input_154() {
-    std::pair<std::string, int8_t> v = {"!@#$%^&*( !@$$%&*(",-128};
+    std::pair<bool, int8_t> v = {true,-128};
     ar & v;
     return 154;
   }
   uint16_t input_155() {
-    std::pair<std::string, bool> v = {"!@#$%^&*( !@$$%&*(",false};
+    std::pair<bool, float> v = {true,std::numeric_limits<float>::quiet_NaN()};
     ar & v;
     return 155;
   }
   uint16_t input_156() {
-    std::pair<std::string, int32_t> v = {"!@#$%^&*( !@$$%&*(",-2147483648};
+    std::pair<bool, std::string> v = {true,""};
     ar & v;
     return 156;
   }
   uint16_t input_157() {
-    std::pair<std::string, std::string> v = {"!@#$%^&*( !@$$%&*(","\1\2\3\4\5\0\1\2\3\4"};
+    std::pair<bool, bool> v = {true,false};
     ar & v;
     return 157;
   }
   uint16_t input_158() {
-    std::pair<std::string, uint64_t> v = {"!@#$%^&*( !@$$%&*(",1};
+    std::pair<bool, uint64_t> v = {true,std::numeric_limits<uint64_t>::max()};
     ar & v;
     return 158;
   }
   uint16_t input_159() {
-    std::pair<uint64_t, float> v = {std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::min()};
+    std::pair<uint64_t, int32_t> v = {std::numeric_limits<uint64_t>::max(),2147483647};
     ar & v;
     return 159;
   }
   uint16_t input_160() {
-    std::pair<uint64_t, int8_t> v = {std::numeric_limits<uint64_t>::max(),0};
+    std::pair<uint64_t, int8_t> v = {std::numeric_limits<uint64_t>::max(),-1};
     ar & v;
     return 160;
   }
   uint16_t input_161() {
-    std::pair<uint64_t, bool> v = {std::numeric_limits<uint64_t>::max(),false};
+    std::pair<uint64_t, float> v = {std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::min()};
     ar & v;
     return 161;
   }
   uint16_t input_162() {
-    std::pair<uint64_t, int32_t> v = {std::numeric_limits<uint64_t>::max(),2147483647};
+    std::pair<uint64_t, std::string> v = {std::numeric_limits<uint64_t>::max(),""};
     ar & v;
     return 162;
   }
   uint16_t input_163() {
-    std::pair<uint64_t, std::string> v = {std::numeric_limits<uint64_t>::max(),"!@#$%^&*( !@$$%&*("};
+    std::pair<uint64_t, bool> v = {std::numeric_limits<uint64_t>::max(),true};
     ar & v;
     return 163;
   }
@@ -1670,187 +1670,187 @@ struct InputsGenerator {
     return 164;
   }
   uint16_t input_165() {
-    std::set<float> v = {std::numeric_limits<float>::min()};
+    std::set<int32_t> v = {0};
     ar & v;
     return 165;
   }
   uint16_t input_166() {
-    std::set<int8_t> v = {-128};
+    std::set<int8_t> v = {0};
     ar & v;
     return 166;
   }
   uint16_t input_167() {
-    std::set<bool> v = {true};
+    std::set<float> v = {-5.2e26};
     ar & v;
     return 167;
   }
   uint16_t input_168() {
-    std::set<int32_t> v = {-2147483648};
+    std::set<std::string> v = {"\1\2\3\4\5\0\1\2\3\4"};
     ar & v;
     return 168;
   }
   uint16_t input_169() {
-    std::set<std::string> v = {"!@#$%^&*( !@$$%&*("};
+    std::set<bool> v = {false};
     ar & v;
     return 169;
   }
   uint16_t input_170() {
-    std::set<uint64_t> v = {std::numeric_limits<uint64_t>::max()};
+    std::set<uint64_t> v = {1};
     ar & v;
     return 170;
   }
   uint16_t input_171() {
-    std::unordered_map<float, float> v = {{-5.2e26,std::numeric_limits<float>::infinity()}};
+    std::unordered_map<int32_t, int32_t> v = {{-2147483648,0}};
     ar & v;
     return 171;
   }
   uint16_t input_172() {
-    std::unordered_map<float, int8_t> v = {{-5.2e26,127}};
+    std::unordered_map<int32_t, int8_t> v = {{-2147483648,127}};
     ar & v;
     return 172;
   }
   uint16_t input_173() {
-    std::unordered_map<float, bool> v = {{-5.2e26,true}};
+    std::unordered_map<int32_t, float> v = {{-2147483648,std::numeric_limits<float>::infinity()}};
     ar & v;
     return 173;
   }
   uint16_t input_174() {
-    std::unordered_map<float, int32_t> v = {{-5.2e26,-2147483648}};
+    std::unordered_map<int32_t, std::string> v = {{-2147483648,"\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 174;
   }
   uint16_t input_175() {
-    std::unordered_map<float, std::string> v = {{-5.2e26,"!@#$%^&*( !@$$%&*("}};
+    std::unordered_map<int32_t, bool> v = {{-2147483648,false}};
     ar & v;
     return 175;
   }
   uint16_t input_176() {
-    std::unordered_map<float, uint64_t> v = {{-5.2e26,std::numeric_limits<uint64_t>::max()}};
+    std::unordered_map<int32_t, uint64_t> v = {{-2147483648,std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 176;
   }
   uint16_t input_177() {
-    std::unordered_map<int8_t, float> v = {{0,std::numeric_limits<float>::max()}};
+    std::unordered_map<int8_t, int32_t> v = {{127,2147483647}};
     ar & v;
     return 177;
   }
   uint16_t input_178() {
-    std::unordered_map<int8_t, int8_t> v = {{0,127}};
+    std::unordered_map<int8_t, int8_t> v = {{127,0}};
     ar & v;
     return 178;
   }
   uint16_t input_179() {
-    std::unordered_map<int8_t, bool> v = {{0,false}};
+    std::unordered_map<int8_t, float> v = {{127,std::numeric_limits<float>::min()}};
     ar & v;
     return 179;
   }
   uint16_t input_180() {
-    std::unordered_map<int8_t, int32_t> v = {{0,-2147483648}};
+    std::unordered_map<int8_t, std::string> v = {{127,"\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 180;
   }
   uint16_t input_181() {
-    std::unordered_map<int8_t, std::string> v = {{0,"\1\2\3\4\5\0\1\2\3\4"}};
+    std::unordered_map<int8_t, bool> v = {{127,true}};
     ar & v;
     return 181;
   }
   uint16_t input_182() {
-    std::unordered_map<int8_t, uint64_t> v = {{0,1}};
+    std::unordered_map<int8_t, uint64_t> v = {{127,std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 182;
   }
   uint16_t input_183() {
-    std::unordered_map<bool, float> v = {{false,-5.2e26}};
+    std::unordered_map<float, int32_t> v = {{-5.2e26,0}};
     ar & v;
     return 183;
   }
   uint16_t input_184() {
-    std::unordered_map<bool, int8_t> v = {{false,0}};
+    std::unordered_map<float, int8_t> v = {{-5.2e26,-128}};
     ar & v;
     return 184;
   }
   uint16_t input_185() {
-    std::unordered_map<bool, bool> v = {{false,true}};
+    std::unordered_map<float, float> v = {{-5.2e26,std::numeric_limits<float>::infinity()}};
     ar & v;
     return 185;
   }
   uint16_t input_186() {
-    std::unordered_map<bool, int32_t> v = {{false,2147483647}};
+    std::unordered_map<float, std::string> v = {{-5.2e26,"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 186;
   }
   uint16_t input_187() {
-    std::unordered_map<bool, std::string> v = {{false,"!@#$%^&*( !@$$%&*("}};
+    std::unordered_map<float, bool> v = {{-5.2e26,true}};
     ar & v;
     return 187;
   }
   uint16_t input_188() {
-    std::unordered_map<bool, uint64_t> v = {{false,1}};
+    std::unordered_map<float, uint64_t> v = {{-5.2e26,1}};
     ar & v;
     return 188;
   }
   uint16_t input_189() {
-    std::unordered_map<int32_t, float> v = {{-2147483648,std::numeric_limits<float>::quiet_NaN()}};
+    std::unordered_map<std::string, int32_t> v = {{"!@#$%^&*( !@$$%&*(",0}};
     ar & v;
     return 189;
   }
   uint16_t input_190() {
-    std::unordered_map<int32_t, int8_t> v = {{-2147483648,0}};
+    std::unordered_map<std::string, int8_t> v = {{"!@#$%^&*( !@$$%&*(",0}};
     ar & v;
     return 190;
   }
   uint16_t input_191() {
-    std::unordered_map<int32_t, bool> v = {{-2147483648,false}};
+    std::unordered_map<std::string, float> v = {{"!@#$%^&*( !@$$%&*(",std::numeric_limits<float>::max()}};
     ar & v;
     return 191;
   }
   uint16_t input_192() {
-    std::unordered_map<int32_t, int32_t> v = {{-2147483648,2147483647}};
+    std::unordered_map<std::string, std::string> v = {{"!@#$%^&*( !@$$%&*(","\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 192;
   }
   uint16_t input_193() {
-    std::unordered_map<int32_t, std::string> v = {{-2147483648,"!@#$%^&*( !@$$%&*("}};
+    std::unordered_map<std::string, bool> v = {{"!@#$%^&*( !@$$%&*(",true}};
     ar & v;
     return 193;
   }
   uint16_t input_194() {
-    std::unordered_map<int32_t, uint64_t> v = {{-2147483648,1}};
+    std::unordered_map<std::string, uint64_t> v = {{"!@#$%^&*( !@$$%&*(",std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 194;
   }
   uint16_t input_195() {
-    std::unordered_map<std::string, float> v = {{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::max()}};
+    std::unordered_map<bool, int32_t> v = {{false,2147483647}};
     ar & v;
     return 195;
   }
   uint16_t input_196() {
-    std::unordered_map<std::string, int8_t> v = {{"\1\2\3\4\5\0\1\2\3\4",127}};
+    std::unordered_map<bool, int8_t> v = {{false,127}};
     ar & v;
     return 196;
   }
   uint16_t input_197() {
-    std::unordered_map<std::string, bool> v = {{"\1\2\3\4\5\0\1\2\3\4",false}};
+    std::unordered_map<bool, float> v = {{false,-5.2e26}};
     ar & v;
     return 197;
   }
   uint16_t input_198() {
-    std::unordered_map<std::string, int32_t> v = {{"\1\2\3\4\5\0\1\2\3\4",2147483647}};
+    std::unordered_map<bool, std::string> v = {{false,""}};
     ar & v;
     return 198;
   }
   uint16_t input_199() {
-    std::unordered_map<std::string, std::string> v = {{"\1\2\3\4\5\0\1\2\3\4",""}};
+    std::unordered_map<bool, bool> v = {{false,true}};
     ar & v;
     return 199;
   }
   uint16_t input_200() {
-    std::unordered_map<std::string, uint64_t> v = {{"\1\2\3\4\5\0\1\2\3\4",1}};
+    std::unordered_map<bool, uint64_t> v = {{false,std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 200;
   }
   uint16_t input_201() {
-    std::unordered_map<uint64_t, float> v = {{1,std::numeric_limits<float>::max()}};
+    std::unordered_map<uint64_t, int32_t> v = {{1,-2147483648}};
     ar & v;
     return 201;
   }
@@ -1860,197 +1860,197 @@ struct InputsGenerator {
     return 202;
   }
   uint16_t input_203() {
-    std::unordered_map<uint64_t, bool> v = {{1,true}};
+    std::unordered_map<uint64_t, float> v = {{1,std::numeric_limits<float>::quiet_NaN()}};
     ar & v;
     return 203;
   }
   uint16_t input_204() {
-    std::unordered_map<uint64_t, int32_t> v = {{1,-2147483648}};
+    std::unordered_map<uint64_t, std::string> v = {{1,"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 204;
   }
   uint16_t input_205() {
-    std::unordered_map<uint64_t, std::string> v = {{1,"\1\2\3\4\5\0\1\2\3\4"}};
+    std::unordered_map<uint64_t, bool> v = {{1,false}};
     ar & v;
     return 205;
   }
   uint16_t input_206() {
-    std::unordered_map<uint64_t, uint64_t> v = {{1,std::numeric_limits<uint64_t>::max()}};
+    std::unordered_map<uint64_t, uint64_t> v = {{1,1}};
     ar & v;
     return 206;
   }
   uint16_t input_207() {
-    std::unordered_multimap<float, float> v = {{std::numeric_limits<float>::quiet_NaN(),std::numeric_limits<float>::infinity()}};
+    std::unordered_multimap<int32_t, int32_t> v = {{0,2147483647}};
     ar & v;
     return 207;
   }
   uint16_t input_208() {
-    std::unordered_multimap<float, int8_t> v = {{std::numeric_limits<float>::quiet_NaN(),127}};
+    std::unordered_multimap<int32_t, int8_t> v = {{0,127}};
     ar & v;
     return 208;
   }
   uint16_t input_209() {
-    std::unordered_multimap<float, bool> v = {{std::numeric_limits<float>::quiet_NaN(),true}};
+    std::unordered_multimap<int32_t, float> v = {{0,-5.2e26}};
     ar & v;
     return 209;
   }
   uint16_t input_210() {
-    std::unordered_multimap<float, int32_t> v = {{std::numeric_limits<float>::quiet_NaN(),0}};
+    std::unordered_multimap<int32_t, std::string> v = {{0,""}};
     ar & v;
     return 210;
   }
   uint16_t input_211() {
-    std::unordered_multimap<float, std::string> v = {{std::numeric_limits<float>::quiet_NaN(),"\1\2\3\4\5\0\1\2\3\4"}};
+    std::unordered_multimap<int32_t, bool> v = {{0,false}};
     ar & v;
     return 211;
   }
   uint16_t input_212() {
-    std::unordered_multimap<float, uint64_t> v = {{std::numeric_limits<float>::quiet_NaN(),std::numeric_limits<uint64_t>::max()}};
+    std::unordered_multimap<int32_t, uint64_t> v = {{0,1}};
     ar & v;
     return 212;
   }
   uint16_t input_213() {
-    std::unordered_multimap<int8_t, float> v = {{-128,std::numeric_limits<float>::min()}};
+    std::unordered_multimap<int8_t, int32_t> v = {{0,2147483647}};
     ar & v;
     return 213;
   }
   uint16_t input_214() {
-    std::unordered_multimap<int8_t, int8_t> v = {{-128,127}};
+    std::unordered_multimap<int8_t, int8_t> v = {{0,-1}};
     ar & v;
     return 214;
   }
   uint16_t input_215() {
-    std::unordered_multimap<int8_t, bool> v = {{-128,true}};
+    std::unordered_multimap<int8_t, float> v = {{0,std::numeric_limits<float>::quiet_NaN()}};
     ar & v;
     return 215;
   }
   uint16_t input_216() {
-    std::unordered_multimap<int8_t, int32_t> v = {{-128,0}};
+    std::unordered_multimap<int8_t, std::string> v = {{0,"\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 216;
   }
   uint16_t input_217() {
-    std::unordered_multimap<int8_t, std::string> v = {{-128,"\1\2\3\4\5\0\1\2\3\4"}};
+    std::unordered_multimap<int8_t, bool> v = {{0,false}};
     ar & v;
     return 217;
   }
   uint16_t input_218() {
-    std::unordered_multimap<int8_t, uint64_t> v = {{-128,1}};
+    std::unordered_multimap<int8_t, uint64_t> v = {{0,1}};
     ar & v;
     return 218;
   }
   uint16_t input_219() {
-    std::unordered_multimap<bool, float> v = {{false,std::numeric_limits<float>::infinity()}};
+    std::unordered_multimap<float, int32_t> v = {{-5.2e26,0}};
     ar & v;
     return 219;
   }
   uint16_t input_220() {
-    std::unordered_multimap<bool, int8_t> v = {{false,127}};
+    std::unordered_multimap<float, int8_t> v = {{-5.2e26,0}};
     ar & v;
     return 220;
   }
   uint16_t input_221() {
-    std::unordered_multimap<bool, bool> v = {{false,true}};
+    std::unordered_multimap<float, float> v = {{-5.2e26,std::numeric_limits<float>::max()}};
     ar & v;
     return 221;
   }
   uint16_t input_222() {
-    std::unordered_multimap<bool, int32_t> v = {{false,-2147483648}};
+    std::unordered_multimap<float, std::string> v = {{-5.2e26,"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 222;
   }
   uint16_t input_223() {
-    std::unordered_multimap<bool, std::string> v = {{false,"!@#$%^&*( !@$$%&*("}};
+    std::unordered_multimap<float, bool> v = {{-5.2e26,true}};
     ar & v;
     return 223;
   }
   uint16_t input_224() {
-    std::unordered_multimap<bool, uint64_t> v = {{false,std::numeric_limits<uint64_t>::max()}};
+    std::unordered_multimap<float, uint64_t> v = {{-5.2e26,std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 224;
   }
   uint16_t input_225() {
-    std::unordered_multimap<int32_t, float> v = {{0,std::numeric_limits<float>::quiet_NaN()}};
+    std::unordered_multimap<std::string, int32_t> v = {{"",2147483647}};
     ar & v;
     return 225;
   }
   uint16_t input_226() {
-    std::unordered_multimap<int32_t, int8_t> v = {{0,-128}};
+    std::unordered_multimap<std::string, int8_t> v = {{"",-128}};
     ar & v;
     return 226;
   }
   uint16_t input_227() {
-    std::unordered_multimap<int32_t, bool> v = {{0,false}};
+    std::unordered_multimap<std::string, float> v = {{"",std::numeric_limits<float>::min()}};
     ar & v;
     return 227;
   }
   uint16_t input_228() {
-    std::unordered_multimap<int32_t, int32_t> v = {{0,-2147483648}};
+    std::unordered_multimap<std::string, std::string> v = {{"",""}};
     ar & v;
     return 228;
   }
   uint16_t input_229() {
-    std::unordered_multimap<int32_t, std::string> v = {{0,"\1\2\3\4\5\0\1\2\3\4"}};
+    std::unordered_multimap<std::string, bool> v = {{"",false}};
     ar & v;
     return 229;
   }
   uint16_t input_230() {
-    std::unordered_multimap<int32_t, uint64_t> v = {{0,1}};
+    std::unordered_multimap<std::string, uint64_t> v = {{"",std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 230;
   }
   uint16_t input_231() {
-    std::unordered_multimap<std::string, float> v = {{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::min()}};
+    std::unordered_multimap<bool, int32_t> v = {{false,-2147483648}};
     ar & v;
     return 231;
   }
   uint16_t input_232() {
-    std::unordered_multimap<std::string, int8_t> v = {{"\1\2\3\4\5\0\1\2\3\4",-128}};
+    std::unordered_multimap<bool, int8_t> v = {{false,-1}};
     ar & v;
     return 232;
   }
   uint16_t input_233() {
-    std::unordered_multimap<std::string, bool> v = {{"\1\2\3\4\5\0\1\2\3\4",false}};
+    std::unordered_multimap<bool, float> v = {{false,-5.2e26}};
     ar & v;
     return 233;
   }
   uint16_t input_234() {
-    std::unordered_multimap<std::string, int32_t> v = {{"\1\2\3\4\5\0\1\2\3\4",2147483647}};
+    std::unordered_multimap<bool, std::string> v = {{false,"\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 234;
   }
   uint16_t input_235() {
-    std::unordered_multimap<std::string, std::string> v = {{"\1\2\3\4\5\0\1\2\3\4","!@#$%^&*( !@$$%&*("}};
+    std::unordered_multimap<bool, bool> v = {{false,true}};
     ar & v;
     return 235;
   }
   uint16_t input_236() {
-    std::unordered_multimap<std::string, uint64_t> v = {{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<uint64_t>::max()}};
+    std::unordered_multimap<bool, uint64_t> v = {{false,1}};
     ar & v;
     return 236;
   }
   uint16_t input_237() {
-    std::unordered_multimap<uint64_t, float> v = {{1,std::numeric_limits<float>::min()}};
+    std::unordered_multimap<uint64_t, int32_t> v = {{1,-2147483648}};
     ar & v;
     return 237;
   }
   uint16_t input_238() {
-    std::unordered_multimap<uint64_t, int8_t> v = {{1,-128}};
+    std::unordered_multimap<uint64_t, int8_t> v = {{1,-1}};
     ar & v;
     return 238;
   }
   uint16_t input_239() {
-    std::unordered_multimap<uint64_t, bool> v = {{1,true}};
+    std::unordered_multimap<uint64_t, float> v = {{1,std::numeric_limits<float>::max()}};
     ar & v;
     return 239;
   }
   uint16_t input_240() {
-    std::unordered_multimap<uint64_t, int32_t> v = {{1,2147483647}};
+    std::unordered_multimap<uint64_t, std::string> v = {{1,"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 240;
   }
   uint16_t input_241() {
-    std::unordered_multimap<uint64_t, std::string> v = {{1,"\1\2\3\4\5\0\1\2\3\4"}};
+    std::unordered_multimap<uint64_t, bool> v = {{1,true}};
     ar & v;
     return 241;
   }
@@ -2060,57 +2060,57 @@ struct InputsGenerator {
     return 242;
   }
   uint16_t input_243() {
-    std::unordered_multiset<float> v = {std::numeric_limits<float>::min()};
+    std::unordered_multiset<int32_t> v = {0};
     ar & v;
     return 243;
   }
   uint16_t input_244() {
-    std::unordered_multiset<int8_t> v = {-128};
+    std::unordered_multiset<int8_t> v = {127};
     ar & v;
     return 244;
   }
   uint16_t input_245() {
-    std::unordered_multiset<bool> v = {true};
+    std::unordered_multiset<float> v = {-5.2e26};
     ar & v;
     return 245;
   }
   uint16_t input_246() {
-    std::unordered_multiset<int32_t> v = {0};
+    std::unordered_multiset<std::string> v = {""};
     ar & v;
     return 246;
   }
   uint16_t input_247() {
-    std::unordered_multiset<std::string> v = {"!@#$%^&*( !@$$%&*("};
+    std::unordered_multiset<bool> v = {false};
     ar & v;
     return 247;
   }
   uint16_t input_248() {
-    std::unordered_multiset<uint64_t> v = {1};
+    std::unordered_multiset<uint64_t> v = {std::numeric_limits<uint64_t>::max()};
     ar & v;
     return 248;
   }
   uint16_t input_249() {
-    std::unordered_set<float> v = {-5.2e26};
+    std::unordered_set<int32_t> v = {-2147483648};
     ar & v;
     return 249;
   }
   uint16_t input_250() {
-    std::unordered_set<int8_t> v = {127};
+    std::unordered_set<int8_t> v = {0};
     ar & v;
     return 250;
   }
   uint16_t input_251() {
-    std::unordered_set<bool> v = {false};
+    std::unordered_set<float> v = {std::numeric_limits<float>::min()};
     ar & v;
     return 251;
   }
   uint16_t input_252() {
-    std::unordered_set<int32_t> v = {2147483647};
+    std::unordered_set<std::string> v = {"\1\2\3\4\5\0\1\2\3\4"};
     ar & v;
     return 252;
   }
   uint16_t input_253() {
-    std::unordered_set<std::string> v = {""};
+    std::unordered_set<bool> v = {false};
     ar & v;
     return 253;
   }
@@ -2120,57 +2120,57 @@ struct InputsGenerator {
     return 254;
   }
   uint16_t input_255() {
-    std::vector<float> v = {std::numeric_limits<float>::max()};
+    std::vector<int32_t> v = {-2147483648};
     ar & v;
     return 255;
   }
   uint16_t input_256() {
-    std::vector<int8_t> v = {127};
+    std::vector<int8_t> v = {0};
     ar & v;
     return 256;
   }
   uint16_t input_257() {
-    std::vector<bool> v = {true};
+    std::vector<float> v = {-5.2e26};
     ar & v;
     return 257;
   }
   uint16_t input_258() {
-    std::vector<int32_t> v = {0};
+    std::vector<std::string> v = {""};
     ar & v;
     return 258;
   }
   uint16_t input_259() {
-    std::vector<std::string> v = {""};
+    std::vector<bool> v = {true};
     ar & v;
     return 259;
   }
   uint16_t input_260() {
-    std::vector<uint64_t> v = {std::numeric_limits<uint64_t>::max()};
+    std::vector<uint64_t> v = {1};
     ar & v;
     return 260;
   }
   uint16_t input_261() {
-    std::vector<std::vector<float>> v = {{-5.2e26}};
+    std::vector<std::vector<int32_t>> v = {{2147483647}};
     ar & v;
     return 261;
   }
   uint16_t input_262() {
-    std::vector<std::vector<int8_t>> v = {{-1}};
+    std::vector<std::vector<int8_t>> v = {{0}};
     ar & v;
     return 262;
   }
   uint16_t input_263() {
-    std::vector<std::vector<bool>> v = {{false}};
+    std::vector<std::vector<float>> v = {{std::numeric_limits<float>::infinity()}};
     ar & v;
     return 263;
   }
   uint16_t input_264() {
-    std::vector<std::vector<int32_t>> v = {{-2147483648}};
+    std::vector<std::vector<std::string>> v = {{"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 264;
   }
   uint16_t input_265() {
-    std::vector<std::vector<std::string>> v = {{""}};
+    std::vector<std::vector<bool>> v = {{false}};
     ar & v;
     return 265;
   }
@@ -2180,2217 +2180,2217 @@ struct InputsGenerator {
     return 266;
   }
   uint16_t input_267() {
-    std::map<float, std::map<float, float>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::max(),std::numeric_limits<float>::infinity()}}}};
+    std::map<int32_t, std::map<int32_t, int32_t>> v = {{2147483647,{{2147483647,2147483647}}}};
     ar & v;
     return 267;
   }
   uint16_t input_268() {
-    std::map<float, std::map<float, int8_t>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::max(),0}}}};
+    std::map<int32_t, std::map<int32_t, int8_t>> v = {{2147483647,{{2147483647,127}}}};
     ar & v;
     return 268;
   }
   uint16_t input_269() {
-    std::map<float, std::map<float, bool>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::max(),false}}}};
+    std::map<int32_t, std::map<int32_t, float>> v = {{2147483647,{{2147483647,std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 269;
   }
   uint16_t input_270() {
-    std::map<float, std::map<float, int32_t>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::max(),2147483647}}}};
+    std::map<int32_t, std::map<int32_t, std::string>> v = {{2147483647,{{2147483647,"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 270;
   }
   uint16_t input_271() {
-    std::map<float, std::map<float, std::string>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::max(),""}}}};
+    std::map<int32_t, std::map<int32_t, bool>> v = {{2147483647,{{2147483647,false}}}};
     ar & v;
     return 271;
   }
   uint16_t input_272() {
-    std::map<float, std::map<float, uint64_t>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::max(),std::numeric_limits<uint64_t>::max()}}}};
+    std::map<int32_t, std::map<int32_t, uint64_t>> v = {{2147483647,{{2147483647,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 272;
   }
   uint16_t input_273() {
-    std::map<float, std::map<int8_t, float>> v = {{std::numeric_limits<float>::min(),{{127,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<int32_t, std::map<int8_t, int32_t>> v = {{2147483647,{{-1,-2147483648}}}};
     ar & v;
     return 273;
   }
   uint16_t input_274() {
-    std::map<float, std::map<int8_t, int8_t>> v = {{std::numeric_limits<float>::min(),{{127,0}}}};
+    std::map<int32_t, std::map<int8_t, int8_t>> v = {{2147483647,{{-1,127}}}};
     ar & v;
     return 274;
   }
   uint16_t input_275() {
-    std::map<float, std::map<int8_t, bool>> v = {{std::numeric_limits<float>::min(),{{127,true}}}};
+    std::map<int32_t, std::map<int8_t, float>> v = {{2147483647,{{-1,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 275;
   }
   uint16_t input_276() {
-    std::map<float, std::map<int8_t, int32_t>> v = {{std::numeric_limits<float>::min(),{{127,-2147483648}}}};
+    std::map<int32_t, std::map<int8_t, std::string>> v = {{2147483647,{{-1,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 276;
   }
   uint16_t input_277() {
-    std::map<float, std::map<int8_t, std::string>> v = {{std::numeric_limits<float>::min(),{{127,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<int32_t, std::map<int8_t, bool>> v = {{2147483647,{{-1,true}}}};
     ar & v;
     return 277;
   }
   uint16_t input_278() {
-    std::map<float, std::map<int8_t, uint64_t>> v = {{std::numeric_limits<float>::min(),{{127,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<int32_t, std::map<int8_t, uint64_t>> v = {{2147483647,{{-1,1}}}};
     ar & v;
     return 278;
   }
   uint16_t input_279() {
-    std::map<float, std::map<bool, float>> v = {{std::numeric_limits<float>::min(),{{true,std::numeric_limits<float>::min()}}}};
+    std::map<int32_t, std::map<float, int32_t>> v = {{2147483647,{{std::numeric_limits<float>::min(),0}}}};
     ar & v;
     return 279;
   }
   uint16_t input_280() {
-    std::map<float, std::map<bool, int8_t>> v = {{std::numeric_limits<float>::min(),{{true,-1}}}};
+    std::map<int32_t, std::map<float, int8_t>> v = {{2147483647,{{std::numeric_limits<float>::min(),0}}}};
     ar & v;
     return 280;
   }
   uint16_t input_281() {
-    std::map<float, std::map<bool, bool>> v = {{std::numeric_limits<float>::min(),{{true,false}}}};
+    std::map<int32_t, std::map<float, float>> v = {{2147483647,{{std::numeric_limits<float>::min(),std::numeric_limits<float>::max()}}}};
     ar & v;
     return 281;
   }
   uint16_t input_282() {
-    std::map<float, std::map<bool, int32_t>> v = {{std::numeric_limits<float>::min(),{{true,0}}}};
+    std::map<int32_t, std::map<float, std::string>> v = {{2147483647,{{std::numeric_limits<float>::min(),"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 282;
   }
   uint16_t input_283() {
-    std::map<float, std::map<bool, std::string>> v = {{std::numeric_limits<float>::min(),{{true,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<int32_t, std::map<float, bool>> v = {{2147483647,{{std::numeric_limits<float>::min(),true}}}};
     ar & v;
     return 283;
   }
   uint16_t input_284() {
-    std::map<float, std::map<bool, uint64_t>> v = {{std::numeric_limits<float>::min(),{{true,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<int32_t, std::map<float, uint64_t>> v = {{2147483647,{{std::numeric_limits<float>::min(),std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 284;
   }
   uint16_t input_285() {
-    std::map<float, std::map<int32_t, float>> v = {{std::numeric_limits<float>::min(),{{2147483647,-5.2e26}}}};
+    std::map<int32_t, std::map<std::string, int32_t>> v = {{2147483647,{{"\1\2\3\4\5\0\1\2\3\4",-2147483648}}}};
     ar & v;
     return 285;
   }
   uint16_t input_286() {
-    std::map<float, std::map<int32_t, int8_t>> v = {{std::numeric_limits<float>::min(),{{2147483647,0}}}};
+    std::map<int32_t, std::map<std::string, int8_t>> v = {{2147483647,{{"\1\2\3\4\5\0\1\2\3\4",-128}}}};
     ar & v;
     return 286;
   }
   uint16_t input_287() {
-    std::map<float, std::map<int32_t, bool>> v = {{std::numeric_limits<float>::min(),{{2147483647,true}}}};
+    std::map<int32_t, std::map<std::string, float>> v = {{2147483647,{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::max()}}}};
     ar & v;
     return 287;
   }
   uint16_t input_288() {
-    std::map<float, std::map<int32_t, int32_t>> v = {{std::numeric_limits<float>::min(),{{2147483647,-2147483648}}}};
+    std::map<int32_t, std::map<std::string, std::string>> v = {{2147483647,{{"\1\2\3\4\5\0\1\2\3\4",""}}}};
     ar & v;
     return 288;
   }
   uint16_t input_289() {
-    std::map<float, std::map<int32_t, std::string>> v = {{std::numeric_limits<float>::min(),{{2147483647,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<int32_t, std::map<std::string, bool>> v = {{2147483647,{{"\1\2\3\4\5\0\1\2\3\4",true}}}};
     ar & v;
     return 289;
   }
   uint16_t input_290() {
-    std::map<float, std::map<int32_t, uint64_t>> v = {{std::numeric_limits<float>::min(),{{2147483647,1}}}};
+    std::map<int32_t, std::map<std::string, uint64_t>> v = {{2147483647,{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 290;
   }
   uint16_t input_291() {
-    std::map<float, std::map<std::string, float>> v = {{std::numeric_limits<float>::min(),{{"",std::numeric_limits<float>::infinity()}}}};
+    std::map<int32_t, std::map<bool, int32_t>> v = {{2147483647,{{false,0}}}};
     ar & v;
     return 291;
   }
   uint16_t input_292() {
-    std::map<float, std::map<std::string, int8_t>> v = {{std::numeric_limits<float>::min(),{{"",0}}}};
+    std::map<int32_t, std::map<bool, int8_t>> v = {{2147483647,{{false,-1}}}};
     ar & v;
     return 292;
   }
   uint16_t input_293() {
-    std::map<float, std::map<std::string, bool>> v = {{std::numeric_limits<float>::min(),{{"",false}}}};
+    std::map<int32_t, std::map<bool, float>> v = {{2147483647,{{false,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 293;
   }
   uint16_t input_294() {
-    std::map<float, std::map<std::string, int32_t>> v = {{std::numeric_limits<float>::min(),{{"",0}}}};
+    std::map<int32_t, std::map<bool, std::string>> v = {{2147483647,{{false,""}}}};
     ar & v;
     return 294;
   }
   uint16_t input_295() {
-    std::map<float, std::map<std::string, std::string>> v = {{std::numeric_limits<float>::min(),{{"","\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::map<int32_t, std::map<bool, bool>> v = {{2147483647,{{false,false}}}};
     ar & v;
     return 295;
   }
   uint16_t input_296() {
-    std::map<float, std::map<std::string, uint64_t>> v = {{std::numeric_limits<float>::min(),{{"",1}}}};
+    std::map<int32_t, std::map<bool, uint64_t>> v = {{2147483647,{{false,1}}}};
     ar & v;
     return 296;
   }
   uint16_t input_297() {
-    std::map<float, std::map<uint64_t, float>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<uint64_t>::max(),-5.2e26}}}};
+    std::map<int32_t, std::map<uint64_t, int32_t>> v = {{2147483647,{{1,0}}}};
     ar & v;
     return 297;
   }
   uint16_t input_298() {
-    std::map<float, std::map<uint64_t, int8_t>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<uint64_t>::max(),127}}}};
+    std::map<int32_t, std::map<uint64_t, int8_t>> v = {{2147483647,{{1,-1}}}};
     ar & v;
     return 298;
   }
   uint16_t input_299() {
-    std::map<float, std::map<uint64_t, bool>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<uint64_t>::max(),true}}}};
+    std::map<int32_t, std::map<uint64_t, float>> v = {{2147483647,{{1,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 299;
   }
   uint16_t input_300() {
-    std::map<float, std::map<uint64_t, int32_t>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<uint64_t>::max(),-2147483648}}}};
+    std::map<int32_t, std::map<uint64_t, std::string>> v = {{2147483647,{{1,"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 300;
   }
   uint16_t input_301() {
-    std::map<float, std::map<uint64_t, std::string>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<uint64_t>::max(),"!@#$%^&*( !@$$%&*("}}}};
+    std::map<int32_t, std::map<uint64_t, bool>> v = {{2147483647,{{1,true}}}};
     ar & v;
     return 301;
   }
   uint16_t input_302() {
-    std::map<float, std::map<uint64_t, uint64_t>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<uint64_t>::max(),1}}}};
+    std::map<int32_t, std::map<uint64_t, uint64_t>> v = {{2147483647,{{1,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 302;
   }
   uint16_t input_303() {
-    std::map<int8_t, std::map<float, float>> v = {{-128,{{std::numeric_limits<float>::max(),std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<int8_t, std::map<int32_t, int32_t>> v = {{127,{{0,0}}}};
     ar & v;
     return 303;
   }
   uint16_t input_304() {
-    std::map<int8_t, std::map<float, int8_t>> v = {{-128,{{std::numeric_limits<float>::max(),0}}}};
+    std::map<int8_t, std::map<int32_t, int8_t>> v = {{127,{{0,127}}}};
     ar & v;
     return 304;
   }
   uint16_t input_305() {
-    std::map<int8_t, std::map<float, bool>> v = {{-128,{{std::numeric_limits<float>::max(),false}}}};
+    std::map<int8_t, std::map<int32_t, float>> v = {{127,{{0,-5.2e26}}}};
     ar & v;
     return 305;
   }
   uint16_t input_306() {
-    std::map<int8_t, std::map<float, int32_t>> v = {{-128,{{std::numeric_limits<float>::max(),0}}}};
+    std::map<int8_t, std::map<int32_t, std::string>> v = {{127,{{0,""}}}};
     ar & v;
     return 306;
   }
   uint16_t input_307() {
-    std::map<int8_t, std::map<float, std::string>> v = {{-128,{{std::numeric_limits<float>::max(),""}}}};
+    std::map<int8_t, std::map<int32_t, bool>> v = {{127,{{0,false}}}};
     ar & v;
     return 307;
   }
   uint16_t input_308() {
-    std::map<int8_t, std::map<float, uint64_t>> v = {{-128,{{std::numeric_limits<float>::max(),1}}}};
+    std::map<int8_t, std::map<int32_t, uint64_t>> v = {{127,{{0,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 308;
   }
   uint16_t input_309() {
-    std::map<int8_t, std::map<int8_t, float>> v = {{-128,{{127,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<int8_t, std::map<int8_t, int32_t>> v = {{127,{{0,0}}}};
     ar & v;
     return 309;
   }
   uint16_t input_310() {
-    std::map<int8_t, std::map<int8_t, int8_t>> v = {{-128,{{127,0}}}};
+    std::map<int8_t, std::map<int8_t, int8_t>> v = {{127,{{0,-128}}}};
     ar & v;
     return 310;
   }
   uint16_t input_311() {
-    std::map<int8_t, std::map<int8_t, bool>> v = {{-128,{{127,false}}}};
+    std::map<int8_t, std::map<int8_t, float>> v = {{127,{{0,std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 311;
   }
   uint16_t input_312() {
-    std::map<int8_t, std::map<int8_t, int32_t>> v = {{-128,{{127,-2147483648}}}};
+    std::map<int8_t, std::map<int8_t, std::string>> v = {{127,{{0,""}}}};
     ar & v;
     return 312;
   }
   uint16_t input_313() {
-    std::map<int8_t, std::map<int8_t, std::string>> v = {{-128,{{127,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<int8_t, std::map<int8_t, bool>> v = {{127,{{0,false}}}};
     ar & v;
     return 313;
   }
   uint16_t input_314() {
-    std::map<int8_t, std::map<int8_t, uint64_t>> v = {{-128,{{127,1}}}};
+    std::map<int8_t, std::map<int8_t, uint64_t>> v = {{127,{{0,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 314;
   }
   uint16_t input_315() {
-    std::map<int8_t, std::map<bool, float>> v = {{-128,{{false,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<int8_t, std::map<float, int32_t>> v = {{127,{{-5.2e26,0}}}};
     ar & v;
     return 315;
   }
   uint16_t input_316() {
-    std::map<int8_t, std::map<bool, int8_t>> v = {{-128,{{false,-128}}}};
+    std::map<int8_t, std::map<float, int8_t>> v = {{127,{{-5.2e26,0}}}};
     ar & v;
     return 316;
   }
   uint16_t input_317() {
-    std::map<int8_t, std::map<bool, bool>> v = {{-128,{{false,false}}}};
+    std::map<int8_t, std::map<float, float>> v = {{127,{{-5.2e26,std::numeric_limits<float>::min()}}}};
     ar & v;
     return 317;
   }
   uint16_t input_318() {
-    std::map<int8_t, std::map<bool, int32_t>> v = {{-128,{{false,0}}}};
+    std::map<int8_t, std::map<float, std::string>> v = {{127,{{-5.2e26,""}}}};
     ar & v;
     return 318;
   }
   uint16_t input_319() {
-    std::map<int8_t, std::map<bool, std::string>> v = {{-128,{{false,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::map<int8_t, std::map<float, bool>> v = {{127,{{-5.2e26,false}}}};
     ar & v;
     return 319;
   }
   uint16_t input_320() {
-    std::map<int8_t, std::map<bool, uint64_t>> v = {{-128,{{false,1}}}};
+    std::map<int8_t, std::map<float, uint64_t>> v = {{127,{{-5.2e26,1}}}};
     ar & v;
     return 320;
   }
   uint16_t input_321() {
-    std::map<int8_t, std::map<int32_t, float>> v = {{-128,{{-2147483648,std::numeric_limits<float>::infinity()}}}};
+    std::map<int8_t, std::map<std::string, int32_t>> v = {{127,{{"",-2147483648}}}};
     ar & v;
     return 321;
   }
   uint16_t input_322() {
-    std::map<int8_t, std::map<int32_t, int8_t>> v = {{-128,{{-2147483648,127}}}};
+    std::map<int8_t, std::map<std::string, int8_t>> v = {{127,{{"",-1}}}};
     ar & v;
     return 322;
   }
   uint16_t input_323() {
-    std::map<int8_t, std::map<int32_t, bool>> v = {{-128,{{-2147483648,true}}}};
+    std::map<int8_t, std::map<std::string, float>> v = {{127,{{"",std::numeric_limits<float>::min()}}}};
     ar & v;
     return 323;
   }
   uint16_t input_324() {
-    std::map<int8_t, std::map<int32_t, int32_t>> v = {{-128,{{-2147483648,-2147483648}}}};
+    std::map<int8_t, std::map<std::string, std::string>> v = {{127,{{"",""}}}};
     ar & v;
     return 324;
   }
   uint16_t input_325() {
-    std::map<int8_t, std::map<int32_t, std::string>> v = {{-128,{{-2147483648,""}}}};
+    std::map<int8_t, std::map<std::string, bool>> v = {{127,{{"",false}}}};
     ar & v;
     return 325;
   }
   uint16_t input_326() {
-    std::map<int8_t, std::map<int32_t, uint64_t>> v = {{-128,{{-2147483648,1}}}};
+    std::map<int8_t, std::map<std::string, uint64_t>> v = {{127,{{"",1}}}};
     ar & v;
     return 326;
   }
   uint16_t input_327() {
-    std::map<int8_t, std::map<std::string, float>> v = {{-128,{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::min()}}}};
+    std::map<int8_t, std::map<bool, int32_t>> v = {{127,{{true,0}}}};
     ar & v;
     return 327;
   }
   uint16_t input_328() {
-    std::map<int8_t, std::map<std::string, int8_t>> v = {{-128,{{"\1\2\3\4\5\0\1\2\3\4",-128}}}};
+    std::map<int8_t, std::map<bool, int8_t>> v = {{127,{{true,0}}}};
     ar & v;
     return 328;
   }
   uint16_t input_329() {
-    std::map<int8_t, std::map<std::string, bool>> v = {{-128,{{"\1\2\3\4\5\0\1\2\3\4",false}}}};
+    std::map<int8_t, std::map<bool, float>> v = {{127,{{true,std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 329;
   }
   uint16_t input_330() {
-    std::map<int8_t, std::map<std::string, int32_t>> v = {{-128,{{"\1\2\3\4\5\0\1\2\3\4",-2147483648}}}};
+    std::map<int8_t, std::map<bool, std::string>> v = {{127,{{true,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 330;
   }
   uint16_t input_331() {
-    std::map<int8_t, std::map<std::string, std::string>> v = {{-128,{{"\1\2\3\4\5\0\1\2\3\4",""}}}};
+    std::map<int8_t, std::map<bool, bool>> v = {{127,{{true,true}}}};
     ar & v;
     return 331;
   }
   uint16_t input_332() {
-    std::map<int8_t, std::map<std::string, uint64_t>> v = {{-128,{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<uint64_t>::max()}}}};
+    std::map<int8_t, std::map<bool, uint64_t>> v = {{127,{{true,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 332;
   }
   uint16_t input_333() {
-    std::map<int8_t, std::map<uint64_t, float>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<int8_t, std::map<uint64_t, int32_t>> v = {{127,{{1,0}}}};
     ar & v;
     return 333;
   }
   uint16_t input_334() {
-    std::map<int8_t, std::map<uint64_t, int8_t>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),127}}}};
+    std::map<int8_t, std::map<uint64_t, int8_t>> v = {{127,{{1,-1}}}};
     ar & v;
     return 334;
   }
   uint16_t input_335() {
-    std::map<int8_t, std::map<uint64_t, bool>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),true}}}};
+    std::map<int8_t, std::map<uint64_t, float>> v = {{127,{{1,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 335;
   }
   uint16_t input_336() {
-    std::map<int8_t, std::map<uint64_t, int32_t>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),0}}}};
+    std::map<int8_t, std::map<uint64_t, std::string>> v = {{127,{{1,"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 336;
   }
   uint16_t input_337() {
-    std::map<int8_t, std::map<uint64_t, std::string>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),""}}}};
+    std::map<int8_t, std::map<uint64_t, bool>> v = {{127,{{1,true}}}};
     ar & v;
     return 337;
   }
   uint16_t input_338() {
-    std::map<int8_t, std::map<uint64_t, uint64_t>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<uint64_t>::max()}}}};
+    std::map<int8_t, std::map<uint64_t, uint64_t>> v = {{127,{{1,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 338;
   }
   uint16_t input_339() {
-    std::map<bool, std::map<float, float>> v = {{true,{{std::numeric_limits<float>::max(),std::numeric_limits<float>::infinity()}}}};
+    std::map<float, std::map<int32_t, int32_t>> v = {{std::numeric_limits<float>::min(),{{0,-2147483648}}}};
     ar & v;
     return 339;
   }
   uint16_t input_340() {
-    std::map<bool, std::map<float, int8_t>> v = {{true,{{std::numeric_limits<float>::max(),-1}}}};
+    std::map<float, std::map<int32_t, int8_t>> v = {{std::numeric_limits<float>::min(),{{0,-128}}}};
     ar & v;
     return 340;
   }
   uint16_t input_341() {
-    std::map<bool, std::map<float, bool>> v = {{true,{{std::numeric_limits<float>::max(),false}}}};
+    std::map<float, std::map<int32_t, float>> v = {{std::numeric_limits<float>::min(),{{0,-5.2e26}}}};
     ar & v;
     return 341;
   }
   uint16_t input_342() {
-    std::map<bool, std::map<float, int32_t>> v = {{true,{{std::numeric_limits<float>::max(),-2147483648}}}};
+    std::map<float, std::map<int32_t, std::string>> v = {{std::numeric_limits<float>::min(),{{0,"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 342;
   }
   uint16_t input_343() {
-    std::map<bool, std::map<float, std::string>> v = {{true,{{std::numeric_limits<float>::max(),"!@#$%^&*( !@$$%&*("}}}};
+    std::map<float, std::map<int32_t, bool>> v = {{std::numeric_limits<float>::min(),{{0,false}}}};
     ar & v;
     return 343;
   }
   uint16_t input_344() {
-    std::map<bool, std::map<float, uint64_t>> v = {{true,{{std::numeric_limits<float>::max(),1}}}};
+    std::map<float, std::map<int32_t, uint64_t>> v = {{std::numeric_limits<float>::min(),{{0,1}}}};
     ar & v;
     return 344;
   }
   uint16_t input_345() {
-    std::map<bool, std::map<int8_t, float>> v = {{true,{{-128,-5.2e26}}}};
+    std::map<float, std::map<int8_t, int32_t>> v = {{std::numeric_limits<float>::min(),{{-128,0}}}};
     ar & v;
     return 345;
   }
   uint16_t input_346() {
-    std::map<bool, std::map<int8_t, int8_t>> v = {{true,{{-128,127}}}};
+    std::map<float, std::map<int8_t, int8_t>> v = {{std::numeric_limits<float>::min(),{{-128,127}}}};
     ar & v;
     return 346;
   }
   uint16_t input_347() {
-    std::map<bool, std::map<int8_t, bool>> v = {{true,{{-128,true}}}};
+    std::map<float, std::map<int8_t, float>> v = {{std::numeric_limits<float>::min(),{{-128,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 347;
   }
   uint16_t input_348() {
-    std::map<bool, std::map<int8_t, int32_t>> v = {{true,{{-128,-2147483648}}}};
+    std::map<float, std::map<int8_t, std::string>> v = {{std::numeric_limits<float>::min(),{{-128,""}}}};
     ar & v;
     return 348;
   }
   uint16_t input_349() {
-    std::map<bool, std::map<int8_t, std::string>> v = {{true,{{-128,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<float, std::map<int8_t, bool>> v = {{std::numeric_limits<float>::min(),{{-128,true}}}};
     ar & v;
     return 349;
   }
   uint16_t input_350() {
-    std::map<bool, std::map<int8_t, uint64_t>> v = {{true,{{-128,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<float, std::map<int8_t, uint64_t>> v = {{std::numeric_limits<float>::min(),{{-128,1}}}};
     ar & v;
     return 350;
   }
   uint16_t input_351() {
-    std::map<bool, std::map<bool, float>> v = {{true,{{false,std::numeric_limits<float>::min()}}}};
+    std::map<float, std::map<float, int32_t>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::infinity(),-2147483648}}}};
     ar & v;
     return 351;
   }
   uint16_t input_352() {
-    std::map<bool, std::map<bool, int8_t>> v = {{true,{{false,-128}}}};
+    std::map<float, std::map<float, int8_t>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::infinity(),-128}}}};
     ar & v;
     return 352;
   }
   uint16_t input_353() {
-    std::map<bool, std::map<bool, bool>> v = {{true,{{false,true}}}};
+    std::map<float, std::map<float, float>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::infinity(),std::numeric_limits<float>::min()}}}};
     ar & v;
     return 353;
   }
   uint16_t input_354() {
-    std::map<bool, std::map<bool, int32_t>> v = {{true,{{false,2147483647}}}};
+    std::map<float, std::map<float, std::string>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::infinity(),"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 354;
   }
   uint16_t input_355() {
-    std::map<bool, std::map<bool, std::string>> v = {{true,{{false,""}}}};
+    std::map<float, std::map<float, bool>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::infinity(),false}}}};
     ar & v;
     return 355;
   }
   uint16_t input_356() {
-    std::map<bool, std::map<bool, uint64_t>> v = {{true,{{false,1}}}};
+    std::map<float, std::map<float, uint64_t>> v = {{std::numeric_limits<float>::min(),{{std::numeric_limits<float>::infinity(),std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 356;
   }
   uint16_t input_357() {
-    std::map<bool, std::map<int32_t, float>> v = {{true,{{-2147483648,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<float, std::map<std::string, int32_t>> v = {{std::numeric_limits<float>::min(),{{"\1\2\3\4\5\0\1\2\3\4",-2147483648}}}};
     ar & v;
     return 357;
   }
   uint16_t input_358() {
-    std::map<bool, std::map<int32_t, int8_t>> v = {{true,{{-2147483648,127}}}};
+    std::map<float, std::map<std::string, int8_t>> v = {{std::numeric_limits<float>::min(),{{"\1\2\3\4\5\0\1\2\3\4",-128}}}};
     ar & v;
     return 358;
   }
   uint16_t input_359() {
-    std::map<bool, std::map<int32_t, bool>> v = {{true,{{-2147483648,false}}}};
+    std::map<float, std::map<std::string, float>> v = {{std::numeric_limits<float>::min(),{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 359;
   }
   uint16_t input_360() {
-    std::map<bool, std::map<int32_t, int32_t>> v = {{true,{{-2147483648,2147483647}}}};
+    std::map<float, std::map<std::string, std::string>> v = {{std::numeric_limits<float>::min(),{{"\1\2\3\4\5\0\1\2\3\4","!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 360;
   }
   uint16_t input_361() {
-    std::map<bool, std::map<int32_t, std::string>> v = {{true,{{-2147483648,""}}}};
+    std::map<float, std::map<std::string, bool>> v = {{std::numeric_limits<float>::min(),{{"\1\2\3\4\5\0\1\2\3\4",true}}}};
     ar & v;
     return 361;
   }
   uint16_t input_362() {
-    std::map<bool, std::map<int32_t, uint64_t>> v = {{true,{{-2147483648,1}}}};
+    std::map<float, std::map<std::string, uint64_t>> v = {{std::numeric_limits<float>::min(),{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 362;
   }
   uint16_t input_363() {
-    std::map<bool, std::map<std::string, float>> v = {{true,{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<float, std::map<bool, int32_t>> v = {{std::numeric_limits<float>::min(),{{false,2147483647}}}};
     ar & v;
     return 363;
   }
   uint16_t input_364() {
-    std::map<bool, std::map<std::string, int8_t>> v = {{true,{{"\1\2\3\4\5\0\1\2\3\4",-1}}}};
+    std::map<float, std::map<bool, int8_t>> v = {{std::numeric_limits<float>::min(),{{false,127}}}};
     ar & v;
     return 364;
   }
   uint16_t input_365() {
-    std::map<bool, std::map<std::string, bool>> v = {{true,{{"\1\2\3\4\5\0\1\2\3\4",false}}}};
+    std::map<float, std::map<bool, float>> v = {{std::numeric_limits<float>::min(),{{false,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 365;
   }
   uint16_t input_366() {
-    std::map<bool, std::map<std::string, int32_t>> v = {{true,{{"\1\2\3\4\5\0\1\2\3\4",2147483647}}}};
+    std::map<float, std::map<bool, std::string>> v = {{std::numeric_limits<float>::min(),{{false,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 366;
   }
   uint16_t input_367() {
-    std::map<bool, std::map<std::string, std::string>> v = {{true,{{"\1\2\3\4\5\0\1\2\3\4","\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::map<float, std::map<bool, bool>> v = {{std::numeric_limits<float>::min(),{{false,false}}}};
     ar & v;
     return 367;
   }
   uint16_t input_368() {
-    std::map<bool, std::map<std::string, uint64_t>> v = {{true,{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<uint64_t>::max()}}}};
+    std::map<float, std::map<bool, uint64_t>> v = {{std::numeric_limits<float>::min(),{{false,1}}}};
     ar & v;
     return 368;
   }
   uint16_t input_369() {
-    std::map<bool, std::map<uint64_t, float>> v = {{true,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::max()}}}};
+    std::map<float, std::map<uint64_t, int32_t>> v = {{std::numeric_limits<float>::min(),{{1,-2147483648}}}};
     ar & v;
     return 369;
   }
   uint16_t input_370() {
-    std::map<bool, std::map<uint64_t, int8_t>> v = {{true,{{std::numeric_limits<uint64_t>::max(),127}}}};
+    std::map<float, std::map<uint64_t, int8_t>> v = {{std::numeric_limits<float>::min(),{{1,0}}}};
     ar & v;
     return 370;
   }
   uint16_t input_371() {
-    std::map<bool, std::map<uint64_t, bool>> v = {{true,{{std::numeric_limits<uint64_t>::max(),false}}}};
+    std::map<float, std::map<uint64_t, float>> v = {{std::numeric_limits<float>::min(),{{1,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 371;
   }
   uint16_t input_372() {
-    std::map<bool, std::map<uint64_t, int32_t>> v = {{true,{{std::numeric_limits<uint64_t>::max(),2147483647}}}};
+    std::map<float, std::map<uint64_t, std::string>> v = {{std::numeric_limits<float>::min(),{{1,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 372;
   }
   uint16_t input_373() {
-    std::map<bool, std::map<uint64_t, std::string>> v = {{true,{{std::numeric_limits<uint64_t>::max(),"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::map<float, std::map<uint64_t, bool>> v = {{std::numeric_limits<float>::min(),{{1,true}}}};
     ar & v;
     return 373;
   }
   uint16_t input_374() {
-    std::map<bool, std::map<uint64_t, uint64_t>> v = {{true,{{std::numeric_limits<uint64_t>::max(),1}}}};
+    std::map<float, std::map<uint64_t, uint64_t>> v = {{std::numeric_limits<float>::min(),{{1,1}}}};
     ar & v;
     return 374;
   }
   uint16_t input_375() {
-    std::map<int32_t, std::map<float, float>> v = {{2147483647,{{std::numeric_limits<float>::infinity(),std::numeric_limits<float>::min()}}}};
+    std::map<std::string, std::map<int32_t, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{2147483647,-2147483648}}}};
     ar & v;
     return 375;
   }
   uint16_t input_376() {
-    std::map<int32_t, std::map<float, int8_t>> v = {{2147483647,{{std::numeric_limits<float>::infinity(),-128}}}};
+    std::map<std::string, std::map<int32_t, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{2147483647,127}}}};
     ar & v;
     return 376;
   }
   uint16_t input_377() {
-    std::map<int32_t, std::map<float, bool>> v = {{2147483647,{{std::numeric_limits<float>::infinity(),false}}}};
+    std::map<std::string, std::map<int32_t, float>> v = {{"!@#$%^&*( !@$$%&*(",{{2147483647,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 377;
   }
   uint16_t input_378() {
-    std::map<int32_t, std::map<float, int32_t>> v = {{2147483647,{{std::numeric_limits<float>::infinity(),2147483647}}}};
+    std::map<std::string, std::map<int32_t, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{2147483647,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 378;
   }
   uint16_t input_379() {
-    std::map<int32_t, std::map<float, std::string>> v = {{2147483647,{{std::numeric_limits<float>::infinity(),"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::map<std::string, std::map<int32_t, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{2147483647,false}}}};
     ar & v;
     return 379;
   }
   uint16_t input_380() {
-    std::map<int32_t, std::map<float, uint64_t>> v = {{2147483647,{{std::numeric_limits<float>::infinity(),std::numeric_limits<uint64_t>::max()}}}};
+    std::map<std::string, std::map<int32_t, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{2147483647,1}}}};
     ar & v;
     return 380;
   }
   uint16_t input_381() {
-    std::map<int32_t, std::map<int8_t, float>> v = {{2147483647,{{0,-5.2e26}}}};
+    std::map<std::string, std::map<int8_t, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{-128,2147483647}}}};
     ar & v;
     return 381;
   }
   uint16_t input_382() {
-    std::map<int32_t, std::map<int8_t, int8_t>> v = {{2147483647,{{0,-1}}}};
+    std::map<std::string, std::map<int8_t, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{-128,-128}}}};
     ar & v;
     return 382;
   }
   uint16_t input_383() {
-    std::map<int32_t, std::map<int8_t, bool>> v = {{2147483647,{{0,false}}}};
+    std::map<std::string, std::map<int8_t, float>> v = {{"!@#$%^&*( !@$$%&*(",{{-128,-5.2e26}}}};
     ar & v;
     return 383;
   }
   uint16_t input_384() {
-    std::map<int32_t, std::map<int8_t, int32_t>> v = {{2147483647,{{0,2147483647}}}};
+    std::map<std::string, std::map<int8_t, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{-128,""}}}};
     ar & v;
     return 384;
   }
   uint16_t input_385() {
-    std::map<int32_t, std::map<int8_t, std::string>> v = {{2147483647,{{0,""}}}};
+    std::map<std::string, std::map<int8_t, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{-128,true}}}};
     ar & v;
     return 385;
   }
   uint16_t input_386() {
-    std::map<int32_t, std::map<int8_t, uint64_t>> v = {{2147483647,{{0,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<std::string, std::map<int8_t, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{-128,1}}}};
     ar & v;
     return 386;
   }
   uint16_t input_387() {
-    std::map<int32_t, std::map<bool, float>> v = {{2147483647,{{false,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<std::string, std::map<float, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::max(),-2147483648}}}};
     ar & v;
     return 387;
   }
   uint16_t input_388() {
-    std::map<int32_t, std::map<bool, int8_t>> v = {{2147483647,{{false,-128}}}};
+    std::map<std::string, std::map<float, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::max(),127}}}};
     ar & v;
     return 388;
   }
   uint16_t input_389() {
-    std::map<int32_t, std::map<bool, bool>> v = {{2147483647,{{false,true}}}};
+    std::map<std::string, std::map<float, float>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::max(),std::numeric_limits<float>::max()}}}};
     ar & v;
     return 389;
   }
   uint16_t input_390() {
-    std::map<int32_t, std::map<bool, int32_t>> v = {{2147483647,{{false,2147483647}}}};
+    std::map<std::string, std::map<float, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::max(),""}}}};
     ar & v;
     return 390;
   }
   uint16_t input_391() {
-    std::map<int32_t, std::map<bool, std::string>> v = {{2147483647,{{false,""}}}};
+    std::map<std::string, std::map<float, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::max(),true}}}};
     ar & v;
     return 391;
   }
   uint16_t input_392() {
-    std::map<int32_t, std::map<bool, uint64_t>> v = {{2147483647,{{false,1}}}};
+    std::map<std::string, std::map<float, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::max(),std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 392;
   }
   uint16_t input_393() {
-    std::map<int32_t, std::map<int32_t, float>> v = {{2147483647,{{-2147483648,std::numeric_limits<float>::min()}}}};
+    std::map<std::string, std::map<std::string, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{"!@#$%^&*( !@$$%&*(",2147483647}}}};
     ar & v;
     return 393;
   }
   uint16_t input_394() {
-    std::map<int32_t, std::map<int32_t, int8_t>> v = {{2147483647,{{-2147483648,-128}}}};
+    std::map<std::string, std::map<std::string, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{"!@#$%^&*( !@$$%&*(",127}}}};
     ar & v;
     return 394;
   }
   uint16_t input_395() {
-    std::map<int32_t, std::map<int32_t, bool>> v = {{2147483647,{{-2147483648,false}}}};
+    std::map<std::string, std::map<std::string, float>> v = {{"!@#$%^&*( !@$$%&*(",{{"!@#$%^&*( !@$$%&*(",std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 395;
   }
   uint16_t input_396() {
-    std::map<int32_t, std::map<int32_t, int32_t>> v = {{2147483647,{{-2147483648,-2147483648}}}};
+    std::map<std::string, std::map<std::string, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{"!@#$%^&*( !@$$%&*(","\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 396;
   }
   uint16_t input_397() {
-    std::map<int32_t, std::map<int32_t, std::string>> v = {{2147483647,{{-2147483648,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<std::string, std::map<std::string, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{"!@#$%^&*( !@$$%&*(",true}}}};
     ar & v;
     return 397;
   }
   uint16_t input_398() {
-    std::map<int32_t, std::map<int32_t, uint64_t>> v = {{2147483647,{{-2147483648,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<std::string, std::map<std::string, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{"!@#$%^&*( !@$$%&*(",1}}}};
     ar & v;
     return 398;
   }
   uint16_t input_399() {
-    std::map<int32_t, std::map<std::string, float>> v = {{2147483647,{{"",std::numeric_limits<float>::min()}}}};
+    std::map<std::string, std::map<bool, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{true,2147483647}}}};
     ar & v;
     return 399;
   }
   uint16_t input_400() {
-    std::map<int32_t, std::map<std::string, int8_t>> v = {{2147483647,{{"",127}}}};
+    std::map<std::string, std::map<bool, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{true,127}}}};
     ar & v;
     return 400;
   }
   uint16_t input_401() {
-    std::map<int32_t, std::map<std::string, bool>> v = {{2147483647,{{"",false}}}};
+    std::map<std::string, std::map<bool, float>> v = {{"!@#$%^&*( !@$$%&*(",{{true,std::numeric_limits<float>::min()}}}};
     ar & v;
     return 401;
   }
   uint16_t input_402() {
-    std::map<int32_t, std::map<std::string, int32_t>> v = {{2147483647,{{"",2147483647}}}};
+    std::map<std::string, std::map<bool, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{true,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 402;
   }
   uint16_t input_403() {
-    std::map<int32_t, std::map<std::string, std::string>> v = {{2147483647,{{"","!@#$%^&*( !@$$%&*("}}}};
+    std::map<std::string, std::map<bool, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{true,false}}}};
     ar & v;
     return 403;
   }
   uint16_t input_404() {
-    std::map<int32_t, std::map<std::string, uint64_t>> v = {{2147483647,{{"",1}}}};
+    std::map<std::string, std::map<bool, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{true,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 404;
   }
   uint16_t input_405() {
-    std::map<int32_t, std::map<uint64_t, float>> v = {{2147483647,{{1,std::numeric_limits<float>::infinity()}}}};
+    std::map<std::string, std::map<uint64_t, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),2147483647}}}};
     ar & v;
     return 405;
   }
   uint16_t input_406() {
-    std::map<int32_t, std::map<uint64_t, int8_t>> v = {{2147483647,{{1,-128}}}};
+    std::map<std::string, std::map<uint64_t, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),-1}}}};
     ar & v;
     return 406;
   }
   uint16_t input_407() {
-    std::map<int32_t, std::map<uint64_t, bool>> v = {{2147483647,{{1,false}}}};
+    std::map<std::string, std::map<uint64_t, float>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),-5.2e26}}}};
     ar & v;
     return 407;
   }
   uint16_t input_408() {
-    std::map<int32_t, std::map<uint64_t, int32_t>> v = {{2147483647,{{1,-2147483648}}}};
+    std::map<std::string, std::map<uint64_t, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 408;
   }
   uint16_t input_409() {
-    std::map<int32_t, std::map<uint64_t, std::string>> v = {{2147483647,{{1,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<std::string, std::map<uint64_t, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),true}}}};
     ar & v;
     return 409;
   }
   uint16_t input_410() {
-    std::map<int32_t, std::map<uint64_t, uint64_t>> v = {{2147483647,{{1,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<std::string, std::map<uint64_t, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),1}}}};
     ar & v;
     return 410;
   }
   uint16_t input_411() {
-    std::map<std::string, std::map<float, float>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::quiet_NaN(),std::numeric_limits<float>::infinity()}}}};
+    std::map<bool, std::map<int32_t, int32_t>> v = {{false,{{2147483647,2147483647}}}};
     ar & v;
     return 411;
   }
   uint16_t input_412() {
-    std::map<std::string, std::map<float, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::quiet_NaN(),-1}}}};
+    std::map<bool, std::map<int32_t, int8_t>> v = {{false,{{2147483647,0}}}};
     ar & v;
     return 412;
   }
   uint16_t input_413() {
-    std::map<std::string, std::map<float, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::quiet_NaN(),true}}}};
+    std::map<bool, std::map<int32_t, float>> v = {{false,{{2147483647,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 413;
   }
   uint16_t input_414() {
-    std::map<std::string, std::map<float, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::quiet_NaN(),2147483647}}}};
+    std::map<bool, std::map<int32_t, std::string>> v = {{false,{{2147483647,""}}}};
     ar & v;
     return 414;
   }
   uint16_t input_415() {
-    std::map<std::string, std::map<float, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::quiet_NaN(),""}}}};
+    std::map<bool, std::map<int32_t, bool>> v = {{false,{{2147483647,false}}}};
     ar & v;
     return 415;
   }
   uint16_t input_416() {
-    std::map<std::string, std::map<float, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::quiet_NaN(),1}}}};
+    std::map<bool, std::map<int32_t, uint64_t>> v = {{false,{{2147483647,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 416;
   }
   uint16_t input_417() {
-    std::map<std::string, std::map<int8_t, float>> v = {{"!@#$%^&*( !@$$%&*(",{{0,std::numeric_limits<float>::infinity()}}}};
+    std::map<bool, std::map<int8_t, int32_t>> v = {{false,{{0,0}}}};
     ar & v;
     return 417;
   }
   uint16_t input_418() {
-    std::map<std::string, std::map<int8_t, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{0,0}}}};
+    std::map<bool, std::map<int8_t, int8_t>> v = {{false,{{0,127}}}};
     ar & v;
     return 418;
   }
   uint16_t input_419() {
-    std::map<std::string, std::map<int8_t, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{0,false}}}};
+    std::map<bool, std::map<int8_t, float>> v = {{false,{{0,std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 419;
   }
   uint16_t input_420() {
-    std::map<std::string, std::map<int8_t, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{0,-2147483648}}}};
+    std::map<bool, std::map<int8_t, std::string>> v = {{false,{{0,""}}}};
     ar & v;
     return 420;
   }
   uint16_t input_421() {
-    std::map<std::string, std::map<int8_t, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{0,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<bool, std::map<int8_t, bool>> v = {{false,{{0,true}}}};
     ar & v;
     return 421;
   }
   uint16_t input_422() {
-    std::map<std::string, std::map<int8_t, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{0,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<bool, std::map<int8_t, uint64_t>> v = {{false,{{0,1}}}};
     ar & v;
     return 422;
   }
   uint16_t input_423() {
-    std::map<std::string, std::map<bool, float>> v = {{"!@#$%^&*( !@$$%&*(",{{false,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<bool, std::map<float, int32_t>> v = {{false,{{std::numeric_limits<float>::min(),0}}}};
     ar & v;
     return 423;
   }
   uint16_t input_424() {
-    std::map<std::string, std::map<bool, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{false,127}}}};
+    std::map<bool, std::map<float, int8_t>> v = {{false,{{std::numeric_limits<float>::min(),0}}}};
     ar & v;
     return 424;
   }
   uint16_t input_425() {
-    std::map<std::string, std::map<bool, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{false,false}}}};
+    std::map<bool, std::map<float, float>> v = {{false,{{std::numeric_limits<float>::min(),-5.2e26}}}};
     ar & v;
     return 425;
   }
   uint16_t input_426() {
-    std::map<std::string, std::map<bool, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{false,-2147483648}}}};
+    std::map<bool, std::map<float, std::string>> v = {{false,{{std::numeric_limits<float>::min(),""}}}};
     ar & v;
     return 426;
   }
   uint16_t input_427() {
-    std::map<std::string, std::map<bool, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{false,""}}}};
+    std::map<bool, std::map<float, bool>> v = {{false,{{std::numeric_limits<float>::min(),false}}}};
     ar & v;
     return 427;
   }
   uint16_t input_428() {
-    std::map<std::string, std::map<bool, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{false,1}}}};
+    std::map<bool, std::map<float, uint64_t>> v = {{false,{{std::numeric_limits<float>::min(),std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 428;
   }
   uint16_t input_429() {
-    std::map<std::string, std::map<int32_t, float>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,std::numeric_limits<float>::max()}}}};
+    std::map<bool, std::map<std::string, int32_t>> v = {{false,{{"",0}}}};
     ar & v;
     return 429;
   }
   uint16_t input_430() {
-    std::map<std::string, std::map<int32_t, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,0}}}};
+    std::map<bool, std::map<std::string, int8_t>> v = {{false,{{"",-128}}}};
     ar & v;
     return 430;
   }
   uint16_t input_431() {
-    std::map<std::string, std::map<int32_t, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,true}}}};
+    std::map<bool, std::map<std::string, float>> v = {{false,{{"",std::numeric_limits<float>::min()}}}};
     ar & v;
     return 431;
   }
   uint16_t input_432() {
-    std::map<std::string, std::map<int32_t, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,-2147483648}}}};
+    std::map<bool, std::map<std::string, std::string>> v = {{false,{{"","!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 432;
   }
   uint16_t input_433() {
-    std::map<std::string, std::map<int32_t, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<bool, std::map<std::string, bool>> v = {{false,{{"",false}}}};
     ar & v;
     return 433;
   }
   uint16_t input_434() {
-    std::map<std::string, std::map<int32_t, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<bool, std::map<std::string, uint64_t>> v = {{false,{{"",1}}}};
     ar & v;
     return 434;
   }
   uint16_t input_435() {
-    std::map<std::string, std::map<std::string, float>> v = {{"!@#$%^&*( !@$$%&*(",{{"",std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<bool, std::map<bool, int32_t>> v = {{false,{{false,0}}}};
     ar & v;
     return 435;
   }
   uint16_t input_436() {
-    std::map<std::string, std::map<std::string, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{"",-128}}}};
+    std::map<bool, std::map<bool, int8_t>> v = {{false,{{false,127}}}};
     ar & v;
     return 436;
   }
   uint16_t input_437() {
-    std::map<std::string, std::map<std::string, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{"",true}}}};
+    std::map<bool, std::map<bool, float>> v = {{false,{{false,-5.2e26}}}};
     ar & v;
     return 437;
   }
   uint16_t input_438() {
-    std::map<std::string, std::map<std::string, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{"",0}}}};
+    std::map<bool, std::map<bool, std::string>> v = {{false,{{false,""}}}};
     ar & v;
     return 438;
   }
   uint16_t input_439() {
-    std::map<std::string, std::map<std::string, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{"","!@#$%^&*( !@$$%&*("}}}};
+    std::map<bool, std::map<bool, bool>> v = {{false,{{false,false}}}};
     ar & v;
     return 439;
   }
   uint16_t input_440() {
-    std::map<std::string, std::map<std::string, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{"",1}}}};
+    std::map<bool, std::map<bool, uint64_t>> v = {{false,{{false,1}}}};
     ar & v;
     return 440;
   }
   uint16_t input_441() {
-    std::map<std::string, std::map<uint64_t, float>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<bool, std::map<uint64_t, int32_t>> v = {{false,{{1,-2147483648}}}};
     ar & v;
     return 441;
   }
   uint16_t input_442() {
-    std::map<std::string, std::map<uint64_t, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),127}}}};
+    std::map<bool, std::map<uint64_t, int8_t>> v = {{false,{{1,-1}}}};
     ar & v;
     return 442;
   }
   uint16_t input_443() {
-    std::map<std::string, std::map<uint64_t, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),true}}}};
+    std::map<bool, std::map<uint64_t, float>> v = {{false,{{1,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 443;
   }
   uint16_t input_444() {
-    std::map<std::string, std::map<uint64_t, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),-2147483648}}}};
+    std::map<bool, std::map<uint64_t, std::string>> v = {{false,{{1,""}}}};
     ar & v;
     return 444;
   }
   uint16_t input_445() {
-    std::map<std::string, std::map<uint64_t, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),"!@#$%^&*( !@$$%&*("}}}};
+    std::map<bool, std::map<uint64_t, bool>> v = {{false,{{1,false}}}};
     ar & v;
     return 445;
   }
   uint16_t input_446() {
-    std::map<std::string, std::map<uint64_t, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<uint64_t>::max(),1}}}};
+    std::map<bool, std::map<uint64_t, uint64_t>> v = {{false,{{1,1}}}};
     ar & v;
     return 446;
   }
   uint16_t input_447() {
-    std::map<uint64_t, std::map<float, float>> v = {{1,{{-5.2e26,std::numeric_limits<float>::infinity()}}}};
+    std::map<uint64_t, std::map<int32_t, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{0,-2147483648}}}};
     ar & v;
     return 447;
   }
   uint16_t input_448() {
-    std::map<uint64_t, std::map<float, int8_t>> v = {{1,{{-5.2e26,-1}}}};
+    std::map<uint64_t, std::map<int32_t, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{0,-128}}}};
     ar & v;
     return 448;
   }
   uint16_t input_449() {
-    std::map<uint64_t, std::map<float, bool>> v = {{1,{{-5.2e26,false}}}};
+    std::map<uint64_t, std::map<int32_t, float>> v = {{std::numeric_limits<uint64_t>::max(),{{0,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 449;
   }
   uint16_t input_450() {
-    std::map<uint64_t, std::map<float, int32_t>> v = {{1,{{-5.2e26,-2147483648}}}};
+    std::map<uint64_t, std::map<int32_t, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{0,"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 450;
   }
   uint16_t input_451() {
-    std::map<uint64_t, std::map<float, std::string>> v = {{1,{{-5.2e26,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::map<uint64_t, std::map<int32_t, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{0,false}}}};
     ar & v;
     return 451;
   }
   uint16_t input_452() {
-    std::map<uint64_t, std::map<float, uint64_t>> v = {{1,{{-5.2e26,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<uint64_t, std::map<int32_t, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{0,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 452;
   }
   uint16_t input_453() {
-    std::map<uint64_t, std::map<int8_t, float>> v = {{1,{{-1,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::map<uint64_t, std::map<int8_t, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{-128,2147483647}}}};
     ar & v;
     return 453;
   }
   uint16_t input_454() {
-    std::map<uint64_t, std::map<int8_t, int8_t>> v = {{1,{{-1,127}}}};
+    std::map<uint64_t, std::map<int8_t, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{-128,0}}}};
     ar & v;
     return 454;
   }
   uint16_t input_455() {
-    std::map<uint64_t, std::map<int8_t, bool>> v = {{1,{{-1,true}}}};
+    std::map<uint64_t, std::map<int8_t, float>> v = {{std::numeric_limits<uint64_t>::max(),{{-128,std::numeric_limits<float>::min()}}}};
     ar & v;
     return 455;
   }
   uint16_t input_456() {
-    std::map<uint64_t, std::map<int8_t, int32_t>> v = {{1,{{-1,-2147483648}}}};
+    std::map<uint64_t, std::map<int8_t, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{-128,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 456;
   }
   uint16_t input_457() {
-    std::map<uint64_t, std::map<int8_t, std::string>> v = {{1,{{-1,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::map<uint64_t, std::map<int8_t, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{-128,false}}}};
     ar & v;
     return 457;
   }
   uint16_t input_458() {
-    std::map<uint64_t, std::map<int8_t, uint64_t>> v = {{1,{{-1,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<uint64_t, std::map<int8_t, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{-128,1}}}};
     ar & v;
     return 458;
   }
   uint16_t input_459() {
-    std::map<uint64_t, std::map<bool, float>> v = {{1,{{false,-5.2e26}}}};
+    std::map<uint64_t, std::map<float, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::infinity(),-2147483648}}}};
     ar & v;
     return 459;
   }
   uint16_t input_460() {
-    std::map<uint64_t, std::map<bool, int8_t>> v = {{1,{{false,0}}}};
+    std::map<uint64_t, std::map<float, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::infinity(),-128}}}};
     ar & v;
     return 460;
   }
   uint16_t input_461() {
-    std::map<uint64_t, std::map<bool, bool>> v = {{1,{{false,true}}}};
+    std::map<uint64_t, std::map<float, float>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::infinity(),std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 461;
   }
   uint16_t input_462() {
-    std::map<uint64_t, std::map<bool, int32_t>> v = {{1,{{false,0}}}};
+    std::map<uint64_t, std::map<float, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::infinity(),"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 462;
   }
   uint16_t input_463() {
-    std::map<uint64_t, std::map<bool, std::string>> v = {{1,{{false,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<uint64_t, std::map<float, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::infinity(),false}}}};
     ar & v;
     return 463;
   }
   uint16_t input_464() {
-    std::map<uint64_t, std::map<bool, uint64_t>> v = {{1,{{false,1}}}};
+    std::map<uint64_t, std::map<float, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::infinity(),1}}}};
     ar & v;
     return 464;
   }
   uint16_t input_465() {
-    std::map<uint64_t, std::map<int32_t, float>> v = {{1,{{2147483647,std::numeric_limits<float>::min()}}}};
+    std::map<uint64_t, std::map<std::string, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{"!@#$%^&*( !@$$%&*(",0}}}};
     ar & v;
     return 465;
   }
   uint16_t input_466() {
-    std::map<uint64_t, std::map<int32_t, int8_t>> v = {{1,{{2147483647,-128}}}};
+    std::map<uint64_t, std::map<std::string, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{"!@#$%^&*( !@$$%&*(",-128}}}};
     ar & v;
     return 466;
   }
   uint16_t input_467() {
-    std::map<uint64_t, std::map<int32_t, bool>> v = {{1,{{2147483647,false}}}};
+    std::map<uint64_t, std::map<std::string, float>> v = {{std::numeric_limits<uint64_t>::max(),{{"!@#$%^&*( !@$$%&*(",-5.2e26}}}};
     ar & v;
     return 467;
   }
   uint16_t input_468() {
-    std::map<uint64_t, std::map<int32_t, int32_t>> v = {{1,{{2147483647,0}}}};
+    std::map<uint64_t, std::map<std::string, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{"!@#$%^&*( !@$$%&*(",""}}}};
     ar & v;
     return 468;
   }
   uint16_t input_469() {
-    std::map<uint64_t, std::map<int32_t, std::string>> v = {{1,{{2147483647,"!@#$%^&*( !@$$%&*("}}}};
+    std::map<uint64_t, std::map<std::string, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{"!@#$%^&*( !@$$%&*(",false}}}};
     ar & v;
     return 469;
   }
   uint16_t input_470() {
-    std::map<uint64_t, std::map<int32_t, uint64_t>> v = {{1,{{2147483647,1}}}};
+    std::map<uint64_t, std::map<std::string, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{"!@#$%^&*( !@$$%&*(",std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 470;
   }
   uint16_t input_471() {
-    std::map<uint64_t, std::map<std::string, float>> v = {{1,{{"!@#$%^&*( !@$$%&*(",std::numeric_limits<float>::max()}}}};
+    std::map<uint64_t, std::map<bool, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{true,2147483647}}}};
     ar & v;
     return 471;
   }
   uint16_t input_472() {
-    std::map<uint64_t, std::map<std::string, int8_t>> v = {{1,{{"!@#$%^&*( !@$$%&*(",-128}}}};
+    std::map<uint64_t, std::map<bool, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{true,-1}}}};
     ar & v;
     return 472;
   }
   uint16_t input_473() {
-    std::map<uint64_t, std::map<std::string, bool>> v = {{1,{{"!@#$%^&*( !@$$%&*(",true}}}};
+    std::map<uint64_t, std::map<bool, float>> v = {{std::numeric_limits<uint64_t>::max(),{{true,std::numeric_limits<float>::min()}}}};
     ar & v;
     return 473;
   }
   uint16_t input_474() {
-    std::map<uint64_t, std::map<std::string, int32_t>> v = {{1,{{"!@#$%^&*( !@$$%&*(",-2147483648}}}};
+    std::map<uint64_t, std::map<bool, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{true,""}}}};
     ar & v;
     return 474;
   }
   uint16_t input_475() {
-    std::map<uint64_t, std::map<std::string, std::string>> v = {{1,{{"!@#$%^&*( !@$$%&*(","!@#$%^&*( !@$$%&*("}}}};
+    std::map<uint64_t, std::map<bool, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{true,false}}}};
     ar & v;
     return 475;
   }
   uint16_t input_476() {
-    std::map<uint64_t, std::map<std::string, uint64_t>> v = {{1,{{"!@#$%^&*( !@$$%&*(",std::numeric_limits<uint64_t>::max()}}}};
+    std::map<uint64_t, std::map<bool, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{true,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 476;
   }
   uint16_t input_477() {
-    std::map<uint64_t, std::map<uint64_t, float>> v = {{1,{{1,std::numeric_limits<float>::infinity()}}}};
+    std::map<uint64_t, std::map<uint64_t, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{1,-2147483648}}}};
     ar & v;
     return 477;
   }
   uint16_t input_478() {
-    std::map<uint64_t, std::map<uint64_t, int8_t>> v = {{1,{{1,-1}}}};
+    std::map<uint64_t, std::map<uint64_t, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{1,127}}}};
     ar & v;
     return 478;
   }
   uint16_t input_479() {
-    std::map<uint64_t, std::map<uint64_t, bool>> v = {{1,{{1,true}}}};
+    std::map<uint64_t, std::map<uint64_t, float>> v = {{std::numeric_limits<uint64_t>::max(),{{1,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 479;
   }
   uint16_t input_480() {
-    std::map<uint64_t, std::map<uint64_t, int32_t>> v = {{1,{{1,-2147483648}}}};
+    std::map<uint64_t, std::map<uint64_t, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{1,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 480;
   }
   uint16_t input_481() {
-    std::map<uint64_t, std::map<uint64_t, std::string>> v = {{1,{{1,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::map<uint64_t, std::map<uint64_t, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{1,true}}}};
     ar & v;
     return 481;
   }
   uint16_t input_482() {
-    std::map<uint64_t, std::map<uint64_t, uint64_t>> v = {{1,{{1,std::numeric_limits<uint64_t>::max()}}}};
+    std::map<uint64_t, std::map<uint64_t, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{1,1}}}};
     ar & v;
     return 482;
   }
   uint16_t input_483() {
-    std::deque<std::set<float>> v = {{std::numeric_limits<float>::infinity()}};
+    std::deque<std::set<int32_t>> v = {{0}};
     ar & v;
     return 483;
   }
   uint16_t input_484() {
-    std::deque<std::set<int8_t>> v = {{0}};
+    std::deque<std::set<int8_t>> v = {{-128}};
     ar & v;
     return 484;
   }
   uint16_t input_485() {
-    std::deque<std::set<bool>> v = {{true}};
+    std::deque<std::set<float>> v = {{-5.2e26}};
     ar & v;
     return 485;
   }
   uint16_t input_486() {
-    std::deque<std::set<int32_t>> v = {{-2147483648}};
+    std::deque<std::set<std::string>> v = {{"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 486;
   }
   uint16_t input_487() {
-    std::deque<std::set<std::string>> v = {{"!@#$%^&*( !@$$%&*("}};
+    std::deque<std::set<bool>> v = {{true}};
     ar & v;
     return 487;
   }
   uint16_t input_488() {
-    std::deque<std::set<uint64_t>> v = {{std::numeric_limits<uint64_t>::max()}};
+    std::deque<std::set<uint64_t>> v = {{1}};
     ar & v;
     return 488;
   }
   uint16_t input_489() {
-    std::unordered_map<float, std::unordered_multimap<float, float>> v = {{-5.2e26,{{-5.2e26,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int32_t, int32_t>> v = {{0,{{0,2147483647}}}};
     ar & v;
     return 489;
   }
   uint16_t input_490() {
-    std::unordered_map<float, std::unordered_multimap<float, int8_t>> v = {{-5.2e26,{{-5.2e26,-128}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int32_t, int8_t>> v = {{0,{{0,127}}}};
     ar & v;
     return 490;
   }
   uint16_t input_491() {
-    std::unordered_map<float, std::unordered_multimap<float, bool>> v = {{-5.2e26,{{-5.2e26,true}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int32_t, float>> v = {{0,{{0,-5.2e26}}}};
     ar & v;
     return 491;
   }
   uint16_t input_492() {
-    std::unordered_map<float, std::unordered_multimap<float, int32_t>> v = {{-5.2e26,{{-5.2e26,0}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int32_t, std::string>> v = {{0,{{0,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 492;
   }
   uint16_t input_493() {
-    std::unordered_map<float, std::unordered_multimap<float, std::string>> v = {{-5.2e26,{{-5.2e26,""}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int32_t, bool>> v = {{0,{{0,false}}}};
     ar & v;
     return 493;
   }
   uint16_t input_494() {
-    std::unordered_map<float, std::unordered_multimap<float, uint64_t>> v = {{-5.2e26,{{-5.2e26,1}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int32_t, uint64_t>> v = {{0,{{0,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 494;
   }
   uint16_t input_495() {
-    std::unordered_map<float, std::unordered_multimap<int8_t, float>> v = {{-5.2e26,{{127,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int8_t, int32_t>> v = {{0,{{-128,0}}}};
     ar & v;
     return 495;
   }
   uint16_t input_496() {
-    std::unordered_map<float, std::unordered_multimap<int8_t, int8_t>> v = {{-5.2e26,{{127,127}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int8_t, int8_t>> v = {{0,{{-128,-128}}}};
     ar & v;
     return 496;
   }
   uint16_t input_497() {
-    std::unordered_map<float, std::unordered_multimap<int8_t, bool>> v = {{-5.2e26,{{127,true}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int8_t, float>> v = {{0,{{-128,-5.2e26}}}};
     ar & v;
     return 497;
   }
   uint16_t input_498() {
-    std::unordered_map<float, std::unordered_multimap<int8_t, int32_t>> v = {{-5.2e26,{{127,0}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int8_t, std::string>> v = {{0,{{-128,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 498;
   }
   uint16_t input_499() {
-    std::unordered_map<float, std::unordered_multimap<int8_t, std::string>> v = {{-5.2e26,{{127,"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int8_t, bool>> v = {{0,{{-128,true}}}};
     ar & v;
     return 499;
   }
   uint16_t input_500() {
-    std::unordered_map<float, std::unordered_multimap<int8_t, uint64_t>> v = {{-5.2e26,{{127,std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<int8_t, uint64_t>> v = {{0,{{-128,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 500;
   }
   uint16_t input_501() {
-    std::unordered_map<float, std::unordered_multimap<bool, float>> v = {{-5.2e26,{{true,std::numeric_limits<float>::max()}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<float, int32_t>> v = {{0,{{std::numeric_limits<float>::max(),-2147483648}}}};
     ar & v;
     return 501;
   }
   uint16_t input_502() {
-    std::unordered_map<float, std::unordered_multimap<bool, int8_t>> v = {{-5.2e26,{{true,-128}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<float, int8_t>> v = {{0,{{std::numeric_limits<float>::max(),-128}}}};
     ar & v;
     return 502;
   }
   uint16_t input_503() {
-    std::unordered_map<float, std::unordered_multimap<bool, bool>> v = {{-5.2e26,{{true,true}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<float, float>> v = {{0,{{std::numeric_limits<float>::max(),std::numeric_limits<float>::min()}}}};
     ar & v;
     return 503;
   }
   uint16_t input_504() {
-    std::unordered_map<float, std::unordered_multimap<bool, int32_t>> v = {{-5.2e26,{{true,0}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<float, std::string>> v = {{0,{{std::numeric_limits<float>::max(),"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 504;
   }
   uint16_t input_505() {
-    std::unordered_map<float, std::unordered_multimap<bool, std::string>> v = {{-5.2e26,{{true,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<float, bool>> v = {{0,{{std::numeric_limits<float>::max(),true}}}};
     ar & v;
     return 505;
   }
   uint16_t input_506() {
-    std::unordered_map<float, std::unordered_multimap<bool, uint64_t>> v = {{-5.2e26,{{true,1}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<float, uint64_t>> v = {{0,{{std::numeric_limits<float>::max(),1}}}};
     ar & v;
     return 506;
   }
   uint16_t input_507() {
-    std::unordered_map<float, std::unordered_multimap<int32_t, float>> v = {{-5.2e26,{{0,std::numeric_limits<float>::max()}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<std::string, int32_t>> v = {{0,{{"",-2147483648}}}};
     ar & v;
     return 507;
   }
   uint16_t input_508() {
-    std::unordered_map<float, std::unordered_multimap<int32_t, int8_t>> v = {{-5.2e26,{{0,-1}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<std::string, int8_t>> v = {{0,{{"",-1}}}};
     ar & v;
     return 508;
   }
   uint16_t input_509() {
-    std::unordered_map<float, std::unordered_multimap<int32_t, bool>> v = {{-5.2e26,{{0,true}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<std::string, float>> v = {{0,{{"",-5.2e26}}}};
     ar & v;
     return 509;
   }
   uint16_t input_510() {
-    std::unordered_map<float, std::unordered_multimap<int32_t, int32_t>> v = {{-5.2e26,{{0,-2147483648}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<std::string, std::string>> v = {{0,{{"","\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 510;
   }
   uint16_t input_511() {
-    std::unordered_map<float, std::unordered_multimap<int32_t, std::string>> v = {{-5.2e26,{{0,"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<std::string, bool>> v = {{0,{{"",true}}}};
     ar & v;
     return 511;
   }
   uint16_t input_512() {
-    std::unordered_map<float, std::unordered_multimap<int32_t, uint64_t>> v = {{-5.2e26,{{0,1}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<std::string, uint64_t>> v = {{0,{{"",std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 512;
   }
   uint16_t input_513() {
-    std::unordered_map<float, std::unordered_multimap<std::string, float>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::min()}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<bool, int32_t>> v = {{0,{{false,2147483647}}}};
     ar & v;
     return 513;
   }
   uint16_t input_514() {
-    std::unordered_map<float, std::unordered_multimap<std::string, int8_t>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",-1}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<bool, int8_t>> v = {{0,{{false,-128}}}};
     ar & v;
     return 514;
   }
   uint16_t input_515() {
-    std::unordered_map<float, std::unordered_multimap<std::string, bool>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",true}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<bool, float>> v = {{0,{{false,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 515;
   }
   uint16_t input_516() {
-    std::unordered_map<float, std::unordered_multimap<std::string, int32_t>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",-2147483648}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<bool, std::string>> v = {{0,{{false,""}}}};
     ar & v;
     return 516;
   }
   uint16_t input_517() {
-    std::unordered_map<float, std::unordered_multimap<std::string, std::string>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4","\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<bool, bool>> v = {{0,{{false,true}}}};
     ar & v;
     return 517;
   }
   uint16_t input_518() {
-    std::unordered_map<float, std::unordered_multimap<std::string, uint64_t>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",1}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<bool, uint64_t>> v = {{0,{{false,1}}}};
     ar & v;
     return 518;
   }
   uint16_t input_519() {
-    std::unordered_map<float, std::unordered_multimap<uint64_t, float>> v = {{-5.2e26,{{1,std::numeric_limits<float>::max()}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, int32_t>> v = {{0,{{std::numeric_limits<uint64_t>::max(),-2147483648}}}};
     ar & v;
     return 519;
   }
   uint16_t input_520() {
-    std::unordered_map<float, std::unordered_multimap<uint64_t, int8_t>> v = {{-5.2e26,{{1,0}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, int8_t>> v = {{0,{{std::numeric_limits<uint64_t>::max(),127}}}};
     ar & v;
     return 520;
   }
   uint16_t input_521() {
-    std::unordered_map<float, std::unordered_multimap<uint64_t, bool>> v = {{-5.2e26,{{1,true}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, float>> v = {{0,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::max()}}}};
     ar & v;
     return 521;
   }
   uint16_t input_522() {
-    std::unordered_map<float, std::unordered_multimap<uint64_t, int32_t>> v = {{-5.2e26,{{1,2147483647}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, std::string>> v = {{0,{{std::numeric_limits<uint64_t>::max(),"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 522;
   }
   uint16_t input_523() {
-    std::unordered_map<float, std::unordered_multimap<uint64_t, std::string>> v = {{-5.2e26,{{1,""}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, bool>> v = {{0,{{std::numeric_limits<uint64_t>::max(),false}}}};
     ar & v;
     return 523;
   }
   uint16_t input_524() {
-    std::unordered_map<float, std::unordered_multimap<uint64_t, uint64_t>> v = {{-5.2e26,{{1,1}}}};
+    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, uint64_t>> v = {{0,{{std::numeric_limits<uint64_t>::max(),1}}}};
     ar & v;
     return 524;
   }
   uint16_t input_525() {
-    std::unordered_map<int8_t, std::unordered_multimap<float, float>> v = {{-1,{{std::numeric_limits<float>::quiet_NaN(),-5.2e26}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int32_t, int32_t>> v = {{-128,{{-2147483648,0}}}};
     ar & v;
     return 525;
   }
   uint16_t input_526() {
-    std::unordered_map<int8_t, std::unordered_multimap<float, int8_t>> v = {{-1,{{std::numeric_limits<float>::quiet_NaN(),127}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int32_t, int8_t>> v = {{-128,{{-2147483648,0}}}};
     ar & v;
     return 526;
   }
   uint16_t input_527() {
-    std::unordered_map<int8_t, std::unordered_multimap<float, bool>> v = {{-1,{{std::numeric_limits<float>::quiet_NaN(),false}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int32_t, float>> v = {{-128,{{-2147483648,std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 527;
   }
   uint16_t input_528() {
-    std::unordered_map<int8_t, std::unordered_multimap<float, int32_t>> v = {{-1,{{std::numeric_limits<float>::quiet_NaN(),2147483647}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int32_t, std::string>> v = {{-128,{{-2147483648,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 528;
   }
   uint16_t input_529() {
-    std::unordered_map<int8_t, std::unordered_multimap<float, std::string>> v = {{-1,{{std::numeric_limits<float>::quiet_NaN(),"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int32_t, bool>> v = {{-128,{{-2147483648,false}}}};
     ar & v;
     return 529;
   }
   uint16_t input_530() {
-    std::unordered_map<int8_t, std::unordered_multimap<float, uint64_t>> v = {{-1,{{std::numeric_limits<float>::quiet_NaN(),1}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int32_t, uint64_t>> v = {{-128,{{-2147483648,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 530;
   }
   uint16_t input_531() {
-    std::unordered_map<int8_t, std::unordered_multimap<int8_t, float>> v = {{-1,{{-128,std::numeric_limits<float>::min()}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int8_t, int32_t>> v = {{-128,{{-1,2147483647}}}};
     ar & v;
     return 531;
   }
   uint16_t input_532() {
-    std::unordered_map<int8_t, std::unordered_multimap<int8_t, int8_t>> v = {{-1,{{-128,0}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int8_t, int8_t>> v = {{-128,{{-1,-128}}}};
     ar & v;
     return 532;
   }
   uint16_t input_533() {
-    std::unordered_map<int8_t, std::unordered_multimap<int8_t, bool>> v = {{-1,{{-128,false}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int8_t, float>> v = {{-128,{{-1,-5.2e26}}}};
     ar & v;
     return 533;
   }
   uint16_t input_534() {
-    std::unordered_map<int8_t, std::unordered_multimap<int8_t, int32_t>> v = {{-1,{{-128,0}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int8_t, std::string>> v = {{-128,{{-1,"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 534;
   }
   uint16_t input_535() {
-    std::unordered_map<int8_t, std::unordered_multimap<int8_t, std::string>> v = {{-1,{{-128,"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int8_t, bool>> v = {{-128,{{-1,false}}}};
     ar & v;
     return 535;
   }
   uint16_t input_536() {
-    std::unordered_map<int8_t, std::unordered_multimap<int8_t, uint64_t>> v = {{-1,{{-128,std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<int8_t, uint64_t>> v = {{-128,{{-1,1}}}};
     ar & v;
     return 536;
   }
   uint16_t input_537() {
-    std::unordered_map<int8_t, std::unordered_multimap<bool, float>> v = {{-1,{{false,std::numeric_limits<float>::min()}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<float, int32_t>> v = {{-128,{{std::numeric_limits<float>::quiet_NaN(),-2147483648}}}};
     ar & v;
     return 537;
   }
   uint16_t input_538() {
-    std::unordered_map<int8_t, std::unordered_multimap<bool, int8_t>> v = {{-1,{{false,-128}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<float, int8_t>> v = {{-128,{{std::numeric_limits<float>::quiet_NaN(),-1}}}};
     ar & v;
     return 538;
   }
   uint16_t input_539() {
-    std::unordered_map<int8_t, std::unordered_multimap<bool, bool>> v = {{-1,{{false,true}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<float, float>> v = {{-128,{{std::numeric_limits<float>::quiet_NaN(),std::numeric_limits<float>::min()}}}};
     ar & v;
     return 539;
   }
   uint16_t input_540() {
-    std::unordered_map<int8_t, std::unordered_multimap<bool, int32_t>> v = {{-1,{{false,2147483647}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<float, std::string>> v = {{-128,{{std::numeric_limits<float>::quiet_NaN(),"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 540;
   }
   uint16_t input_541() {
-    std::unordered_map<int8_t, std::unordered_multimap<bool, std::string>> v = {{-1,{{false,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<float, bool>> v = {{-128,{{std::numeric_limits<float>::quiet_NaN(),true}}}};
     ar & v;
     return 541;
   }
   uint16_t input_542() {
-    std::unordered_map<int8_t, std::unordered_multimap<bool, uint64_t>> v = {{-1,{{false,std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<float, uint64_t>> v = {{-128,{{std::numeric_limits<float>::quiet_NaN(),1}}}};
     ar & v;
     return 542;
   }
   uint16_t input_543() {
-    std::unordered_map<int8_t, std::unordered_multimap<int32_t, float>> v = {{-1,{{-2147483648,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<std::string, int32_t>> v = {{-128,{{"",0}}}};
     ar & v;
     return 543;
   }
   uint16_t input_544() {
-    std::unordered_map<int8_t, std::unordered_multimap<int32_t, int8_t>> v = {{-1,{{-2147483648,-1}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<std::string, int8_t>> v = {{-128,{{"",0}}}};
     ar & v;
     return 544;
   }
   uint16_t input_545() {
-    std::unordered_map<int8_t, std::unordered_multimap<int32_t, bool>> v = {{-1,{{-2147483648,true}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<std::string, float>> v = {{-128,{{"",std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 545;
   }
   uint16_t input_546() {
-    std::unordered_map<int8_t, std::unordered_multimap<int32_t, int32_t>> v = {{-1,{{-2147483648,-2147483648}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<std::string, std::string>> v = {{-128,{{"","\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 546;
   }
   uint16_t input_547() {
-    std::unordered_map<int8_t, std::unordered_multimap<int32_t, std::string>> v = {{-1,{{-2147483648,"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<std::string, bool>> v = {{-128,{{"",true}}}};
     ar & v;
     return 547;
   }
   uint16_t input_548() {
-    std::unordered_map<int8_t, std::unordered_multimap<int32_t, uint64_t>> v = {{-1,{{-2147483648,1}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<std::string, uint64_t>> v = {{-128,{{"",1}}}};
     ar & v;
     return 548;
   }
   uint16_t input_549() {
-    std::unordered_map<int8_t, std::unordered_multimap<std::string, float>> v = {{-1,{{"",std::numeric_limits<float>::min()}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<bool, int32_t>> v = {{-128,{{true,0}}}};
     ar & v;
     return 549;
   }
   uint16_t input_550() {
-    std::unordered_map<int8_t, std::unordered_multimap<std::string, int8_t>> v = {{-1,{{"",0}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<bool, int8_t>> v = {{-128,{{true,-128}}}};
     ar & v;
     return 550;
   }
   uint16_t input_551() {
-    std::unordered_map<int8_t, std::unordered_multimap<std::string, bool>> v = {{-1,{{"",false}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<bool, float>> v = {{-128,{{true,-5.2e26}}}};
     ar & v;
     return 551;
   }
   uint16_t input_552() {
-    std::unordered_map<int8_t, std::unordered_multimap<std::string, int32_t>> v = {{-1,{{"",0}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<bool, std::string>> v = {{-128,{{true,""}}}};
     ar & v;
     return 552;
   }
   uint16_t input_553() {
-    std::unordered_map<int8_t, std::unordered_multimap<std::string, std::string>> v = {{-1,{{"","\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<bool, bool>> v = {{-128,{{true,false}}}};
     ar & v;
     return 553;
   }
   uint16_t input_554() {
-    std::unordered_map<int8_t, std::unordered_multimap<std::string, uint64_t>> v = {{-1,{{"",1}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<bool, uint64_t>> v = {{-128,{{true,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 554;
   }
   uint16_t input_555() {
-    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, float>> v = {{-1,{{1,std::numeric_limits<float>::infinity()}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, int32_t>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),2147483647}}}};
     ar & v;
     return 555;
   }
   uint16_t input_556() {
-    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, int8_t>> v = {{-1,{{1,-128}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, int8_t>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),-1}}}};
     ar & v;
     return 556;
   }
   uint16_t input_557() {
-    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, bool>> v = {{-1,{{1,false}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, float>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 557;
   }
   uint16_t input_558() {
-    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, int32_t>> v = {{-1,{{1,-2147483648}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, std::string>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 558;
   }
   uint16_t input_559() {
-    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, std::string>> v = {{-1,{{1,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, bool>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),false}}}};
     ar & v;
     return 559;
   }
   uint16_t input_560() {
-    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, uint64_t>> v = {{-1,{{1,1}}}};
+    std::unordered_map<int8_t, std::unordered_multimap<uint64_t, uint64_t>> v = {{-128,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 560;
   }
   uint16_t input_561() {
-    std::unordered_map<bool, std::unordered_multimap<float, float>> v = {{true,{{std::numeric_limits<float>::quiet_NaN(),std::numeric_limits<float>::max()}}}};
+    std::unordered_map<float, std::unordered_multimap<int32_t, int32_t>> v = {{-5.2e26,{{-2147483648,0}}}};
     ar & v;
     return 561;
   }
   uint16_t input_562() {
-    std::unordered_map<bool, std::unordered_multimap<float, int8_t>> v = {{true,{{std::numeric_limits<float>::quiet_NaN(),127}}}};
+    std::unordered_map<float, std::unordered_multimap<int32_t, int8_t>> v = {{-5.2e26,{{-2147483648,0}}}};
     ar & v;
     return 562;
   }
   uint16_t input_563() {
-    std::unordered_map<bool, std::unordered_multimap<float, bool>> v = {{true,{{std::numeric_limits<float>::quiet_NaN(),true}}}};
+    std::unordered_map<float, std::unordered_multimap<int32_t, float>> v = {{-5.2e26,{{-2147483648,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 563;
   }
   uint16_t input_564() {
-    std::unordered_map<bool, std::unordered_multimap<float, int32_t>> v = {{true,{{std::numeric_limits<float>::quiet_NaN(),2147483647}}}};
+    std::unordered_map<float, std::unordered_multimap<int32_t, std::string>> v = {{-5.2e26,{{-2147483648,""}}}};
     ar & v;
     return 564;
   }
   uint16_t input_565() {
-    std::unordered_map<bool, std::unordered_multimap<float, std::string>> v = {{true,{{std::numeric_limits<float>::quiet_NaN(),"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<float, std::unordered_multimap<int32_t, bool>> v = {{-5.2e26,{{-2147483648,false}}}};
     ar & v;
     return 565;
   }
   uint16_t input_566() {
-    std::unordered_map<bool, std::unordered_multimap<float, uint64_t>> v = {{true,{{std::numeric_limits<float>::quiet_NaN(),std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<float, std::unordered_multimap<int32_t, uint64_t>> v = {{-5.2e26,{{-2147483648,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 566;
   }
   uint16_t input_567() {
-    std::unordered_map<bool, std::unordered_multimap<int8_t, float>> v = {{true,{{0,-5.2e26}}}};
+    std::unordered_map<float, std::unordered_multimap<int8_t, int32_t>> v = {{-5.2e26,{{-128,0}}}};
     ar & v;
     return 567;
   }
   uint16_t input_568() {
-    std::unordered_map<bool, std::unordered_multimap<int8_t, int8_t>> v = {{true,{{0,-1}}}};
+    std::unordered_map<float, std::unordered_multimap<int8_t, int8_t>> v = {{-5.2e26,{{-128,0}}}};
     ar & v;
     return 568;
   }
   uint16_t input_569() {
-    std::unordered_map<bool, std::unordered_multimap<int8_t, bool>> v = {{true,{{0,false}}}};
+    std::unordered_map<float, std::unordered_multimap<int8_t, float>> v = {{-5.2e26,{{-128,std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 569;
   }
   uint16_t input_570() {
-    std::unordered_map<bool, std::unordered_multimap<int8_t, int32_t>> v = {{true,{{0,2147483647}}}};
+    std::unordered_map<float, std::unordered_multimap<int8_t, std::string>> v = {{-5.2e26,{{-128,""}}}};
     ar & v;
     return 570;
   }
   uint16_t input_571() {
-    std::unordered_map<bool, std::unordered_multimap<int8_t, std::string>> v = {{true,{{0,"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<float, std::unordered_multimap<int8_t, bool>> v = {{-5.2e26,{{-128,false}}}};
     ar & v;
     return 571;
   }
   uint16_t input_572() {
-    std::unordered_map<bool, std::unordered_multimap<int8_t, uint64_t>> v = {{true,{{0,1}}}};
+    std::unordered_map<float, std::unordered_multimap<int8_t, uint64_t>> v = {{-5.2e26,{{-128,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 572;
   }
   uint16_t input_573() {
-    std::unordered_map<bool, std::unordered_multimap<bool, float>> v = {{true,{{false,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<float, std::unordered_multimap<float, int32_t>> v = {{-5.2e26,{{std::numeric_limits<float>::quiet_NaN(),-2147483648}}}};
     ar & v;
     return 573;
   }
   uint16_t input_574() {
-    std::unordered_map<bool, std::unordered_multimap<bool, int8_t>> v = {{true,{{false,-128}}}};
+    std::unordered_map<float, std::unordered_multimap<float, int8_t>> v = {{-5.2e26,{{std::numeric_limits<float>::quiet_NaN(),-1}}}};
     ar & v;
     return 574;
   }
   uint16_t input_575() {
-    std::unordered_map<bool, std::unordered_multimap<bool, bool>> v = {{true,{{false,false}}}};
+    std::unordered_map<float, std::unordered_multimap<float, float>> v = {{-5.2e26,{{std::numeric_limits<float>::quiet_NaN(),-5.2e26}}}};
     ar & v;
     return 575;
   }
   uint16_t input_576() {
-    std::unordered_map<bool, std::unordered_multimap<bool, int32_t>> v = {{true,{{false,2147483647}}}};
+    std::unordered_map<float, std::unordered_multimap<float, std::string>> v = {{-5.2e26,{{std::numeric_limits<float>::quiet_NaN(),"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 576;
   }
   uint16_t input_577() {
-    std::unordered_map<bool, std::unordered_multimap<bool, std::string>> v = {{true,{{false,"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<float, std::unordered_multimap<float, bool>> v = {{-5.2e26,{{std::numeric_limits<float>::quiet_NaN(),true}}}};
     ar & v;
     return 577;
   }
   uint16_t input_578() {
-    std::unordered_map<bool, std::unordered_multimap<bool, uint64_t>> v = {{true,{{false,std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<float, std::unordered_multimap<float, uint64_t>> v = {{-5.2e26,{{std::numeric_limits<float>::quiet_NaN(),1}}}};
     ar & v;
     return 578;
   }
   uint16_t input_579() {
-    std::unordered_map<bool, std::unordered_multimap<int32_t, float>> v = {{true,{{-2147483648,std::numeric_limits<float>::max()}}}};
+    std::unordered_map<float, std::unordered_multimap<std::string, int32_t>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",0}}}};
     ar & v;
     return 579;
   }
   uint16_t input_580() {
-    std::unordered_map<bool, std::unordered_multimap<int32_t, int8_t>> v = {{true,{{-2147483648,0}}}};
+    std::unordered_map<float, std::unordered_multimap<std::string, int8_t>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",127}}}};
     ar & v;
     return 580;
   }
   uint16_t input_581() {
-    std::unordered_map<bool, std::unordered_multimap<int32_t, bool>> v = {{true,{{-2147483648,false}}}};
+    std::unordered_map<float, std::unordered_multimap<std::string, float>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::min()}}}};
     ar & v;
     return 581;
   }
   uint16_t input_582() {
-    std::unordered_map<bool, std::unordered_multimap<int32_t, int32_t>> v = {{true,{{-2147483648,-2147483648}}}};
+    std::unordered_map<float, std::unordered_multimap<std::string, std::string>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4","!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 582;
   }
   uint16_t input_583() {
-    std::unordered_map<bool, std::unordered_multimap<int32_t, std::string>> v = {{true,{{-2147483648,""}}}};
+    std::unordered_map<float, std::unordered_multimap<std::string, bool>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",false}}}};
     ar & v;
     return 583;
   }
   uint16_t input_584() {
-    std::unordered_map<bool, std::unordered_multimap<int32_t, uint64_t>> v = {{true,{{-2147483648,1}}}};
+    std::unordered_map<float, std::unordered_multimap<std::string, uint64_t>> v = {{-5.2e26,{{"\1\2\3\4\5\0\1\2\3\4",1}}}};
     ar & v;
     return 584;
   }
   uint16_t input_585() {
-    std::unordered_map<bool, std::unordered_multimap<std::string, float>> v = {{true,{{"!@#$%^&*( !@$$%&*(",-5.2e26}}}};
+    std::unordered_map<float, std::unordered_multimap<bool, int32_t>> v = {{-5.2e26,{{true,0}}}};
     ar & v;
     return 585;
   }
   uint16_t input_586() {
-    std::unordered_map<bool, std::unordered_multimap<std::string, int8_t>> v = {{true,{{"!@#$%^&*( !@$$%&*(",-1}}}};
+    std::unordered_map<float, std::unordered_multimap<bool, int8_t>> v = {{-5.2e26,{{true,0}}}};
     ar & v;
     return 586;
   }
   uint16_t input_587() {
-    std::unordered_map<bool, std::unordered_multimap<std::string, bool>> v = {{true,{{"!@#$%^&*( !@$$%&*(",false}}}};
+    std::unordered_map<float, std::unordered_multimap<bool, float>> v = {{-5.2e26,{{true,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 587;
   }
   uint16_t input_588() {
-    std::unordered_map<bool, std::unordered_multimap<std::string, int32_t>> v = {{true,{{"!@#$%^&*( !@$$%&*(",0}}}};
+    std::unordered_map<float, std::unordered_multimap<bool, std::string>> v = {{-5.2e26,{{true,""}}}};
     ar & v;
     return 588;
   }
   uint16_t input_589() {
-    std::unordered_map<bool, std::unordered_multimap<std::string, std::string>> v = {{true,{{"!@#$%^&*( !@$$%&*(",""}}}};
+    std::unordered_map<float, std::unordered_multimap<bool, bool>> v = {{-5.2e26,{{true,false}}}};
     ar & v;
     return 589;
   }
   uint16_t input_590() {
-    std::unordered_map<bool, std::unordered_multimap<std::string, uint64_t>> v = {{true,{{"!@#$%^&*( !@$$%&*(",std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<float, std::unordered_multimap<bool, uint64_t>> v = {{-5.2e26,{{true,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 590;
   }
   uint16_t input_591() {
-    std::unordered_map<bool, std::unordered_multimap<uint64_t, float>> v = {{true,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::min()}}}};
+    std::unordered_map<float, std::unordered_multimap<uint64_t, int32_t>> v = {{-5.2e26,{{1,0}}}};
     ar & v;
     return 591;
   }
   uint16_t input_592() {
-    std::unordered_map<bool, std::unordered_multimap<uint64_t, int8_t>> v = {{true,{{std::numeric_limits<uint64_t>::max(),-1}}}};
+    std::unordered_map<float, std::unordered_multimap<uint64_t, int8_t>> v = {{-5.2e26,{{1,-1}}}};
     ar & v;
     return 592;
   }
   uint16_t input_593() {
-    std::unordered_map<bool, std::unordered_multimap<uint64_t, bool>> v = {{true,{{std::numeric_limits<uint64_t>::max(),false}}}};
+    std::unordered_map<float, std::unordered_multimap<uint64_t, float>> v = {{-5.2e26,{{1,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 593;
   }
   uint16_t input_594() {
-    std::unordered_map<bool, std::unordered_multimap<uint64_t, int32_t>> v = {{true,{{std::numeric_limits<uint64_t>::max(),0}}}};
+    std::unordered_map<float, std::unordered_multimap<uint64_t, std::string>> v = {{-5.2e26,{{1,""}}}};
     ar & v;
     return 594;
   }
   uint16_t input_595() {
-    std::unordered_map<bool, std::unordered_multimap<uint64_t, std::string>> v = {{true,{{std::numeric_limits<uint64_t>::max(),"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<float, std::unordered_multimap<uint64_t, bool>> v = {{-5.2e26,{{1,false}}}};
     ar & v;
     return 595;
   }
   uint16_t input_596() {
-    std::unordered_map<bool, std::unordered_multimap<uint64_t, uint64_t>> v = {{true,{{std::numeric_limits<uint64_t>::max(),1}}}};
+    std::unordered_map<float, std::unordered_multimap<uint64_t, uint64_t>> v = {{-5.2e26,{{1,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 596;
   }
   uint16_t input_597() {
-    std::unordered_map<int32_t, std::unordered_multimap<float, float>> v = {{0,{{std::numeric_limits<float>::quiet_NaN(),-5.2e26}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int32_t, int32_t>> v = {{"",{{-2147483648,0}}}};
     ar & v;
     return 597;
   }
   uint16_t input_598() {
-    std::unordered_map<int32_t, std::unordered_multimap<float, int8_t>> v = {{0,{{std::numeric_limits<float>::quiet_NaN(),127}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int32_t, int8_t>> v = {{"",{{-2147483648,-128}}}};
     ar & v;
     return 598;
   }
   uint16_t input_599() {
-    std::unordered_map<int32_t, std::unordered_multimap<float, bool>> v = {{0,{{std::numeric_limits<float>::quiet_NaN(),true}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int32_t, float>> v = {{"",{{-2147483648,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 599;
   }
   uint16_t input_600() {
-    std::unordered_map<int32_t, std::unordered_multimap<float, int32_t>> v = {{0,{{std::numeric_limits<float>::quiet_NaN(),0}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int32_t, std::string>> v = {{"",{{-2147483648,"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 600;
   }
   uint16_t input_601() {
-    std::unordered_map<int32_t, std::unordered_multimap<float, std::string>> v = {{0,{{std::numeric_limits<float>::quiet_NaN(),""}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int32_t, bool>> v = {{"",{{-2147483648,true}}}};
     ar & v;
     return 601;
   }
   uint16_t input_602() {
-    std::unordered_map<int32_t, std::unordered_multimap<float, uint64_t>> v = {{0,{{std::numeric_limits<float>::quiet_NaN(),std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int32_t, uint64_t>> v = {{"",{{-2147483648,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 602;
   }
   uint16_t input_603() {
-    std::unordered_map<int32_t, std::unordered_multimap<int8_t, float>> v = {{0,{{127,-5.2e26}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int8_t, int32_t>> v = {{"",{{127,-2147483648}}}};
     ar & v;
     return 603;
   }
   uint16_t input_604() {
-    std::unordered_map<int32_t, std::unordered_multimap<int8_t, int8_t>> v = {{0,{{127,-1}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int8_t, int8_t>> v = {{"",{{127,127}}}};
     ar & v;
     return 604;
   }
   uint16_t input_605() {
-    std::unordered_map<int32_t, std::unordered_multimap<int8_t, bool>> v = {{0,{{127,false}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int8_t, float>> v = {{"",{{127,std::numeric_limits<float>::min()}}}};
     ar & v;
     return 605;
   }
   uint16_t input_606() {
-    std::unordered_map<int32_t, std::unordered_multimap<int8_t, int32_t>> v = {{0,{{127,-2147483648}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int8_t, std::string>> v = {{"",{{127,"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 606;
   }
   uint16_t input_607() {
-    std::unordered_map<int32_t, std::unordered_multimap<int8_t, std::string>> v = {{0,{{127,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int8_t, bool>> v = {{"",{{127,false}}}};
     ar & v;
     return 607;
   }
   uint16_t input_608() {
-    std::unordered_map<int32_t, std::unordered_multimap<int8_t, uint64_t>> v = {{0,{{127,std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<std::string, std::unordered_multimap<int8_t, uint64_t>> v = {{"",{{127,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 608;
   }
   uint16_t input_609() {
-    std::unordered_map<int32_t, std::unordered_multimap<bool, float>> v = {{0,{{true,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<std::string, std::unordered_multimap<float, int32_t>> v = {{"",{{-5.2e26,-2147483648}}}};
     ar & v;
     return 609;
   }
   uint16_t input_610() {
-    std::unordered_map<int32_t, std::unordered_multimap<bool, int8_t>> v = {{0,{{true,127}}}};
+    std::unordered_map<std::string, std::unordered_multimap<float, int8_t>> v = {{"",{{-5.2e26,0}}}};
     ar & v;
     return 610;
   }
   uint16_t input_611() {
-    std::unordered_map<int32_t, std::unordered_multimap<bool, bool>> v = {{0,{{true,true}}}};
+    std::unordered_map<std::string, std::unordered_multimap<float, float>> v = {{"",{{-5.2e26,-5.2e26}}}};
     ar & v;
     return 611;
   }
   uint16_t input_612() {
-    std::unordered_map<int32_t, std::unordered_multimap<bool, int32_t>> v = {{0,{{true,2147483647}}}};
+    std::unordered_map<std::string, std::unordered_multimap<float, std::string>> v = {{"",{{-5.2e26,""}}}};
     ar & v;
     return 612;
   }
   uint16_t input_613() {
-    std::unordered_map<int32_t, std::unordered_multimap<bool, std::string>> v = {{0,{{true,"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<std::string, std::unordered_multimap<float, bool>> v = {{"",{{-5.2e26,false}}}};
     ar & v;
     return 613;
   }
   uint16_t input_614() {
-    std::unordered_map<int32_t, std::unordered_multimap<bool, uint64_t>> v = {{0,{{true,1}}}};
+    std::unordered_map<std::string, std::unordered_multimap<float, uint64_t>> v = {{"",{{-5.2e26,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 614;
   }
   uint16_t input_615() {
-    std::unordered_map<int32_t, std::unordered_multimap<int32_t, float>> v = {{0,{{2147483647,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<std::string, std::unordered_multimap<std::string, int32_t>> v = {{"",{{"\1\2\3\4\5\0\1\2\3\4",2147483647}}}};
     ar & v;
     return 615;
   }
   uint16_t input_616() {
-    std::unordered_map<int32_t, std::unordered_multimap<int32_t, int8_t>> v = {{0,{{2147483647,0}}}};
+    std::unordered_map<std::string, std::unordered_multimap<std::string, int8_t>> v = {{"",{{"\1\2\3\4\5\0\1\2\3\4",127}}}};
     ar & v;
     return 616;
   }
   uint16_t input_617() {
-    std::unordered_map<int32_t, std::unordered_multimap<int32_t, bool>> v = {{0,{{2147483647,true}}}};
+    std::unordered_map<std::string, std::unordered_multimap<std::string, float>> v = {{"",{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 617;
   }
   uint16_t input_618() {
-    std::unordered_map<int32_t, std::unordered_multimap<int32_t, int32_t>> v = {{0,{{2147483647,-2147483648}}}};
+    std::unordered_map<std::string, std::unordered_multimap<std::string, std::string>> v = {{"",{{"\1\2\3\4\5\0\1\2\3\4",""}}}};
     ar & v;
     return 618;
   }
   uint16_t input_619() {
-    std::unordered_map<int32_t, std::unordered_multimap<int32_t, std::string>> v = {{0,{{2147483647,"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<std::string, std::unordered_multimap<std::string, bool>> v = {{"",{{"\1\2\3\4\5\0\1\2\3\4",false}}}};
     ar & v;
     return 619;
   }
   uint16_t input_620() {
-    std::unordered_map<int32_t, std::unordered_multimap<int32_t, uint64_t>> v = {{0,{{2147483647,1}}}};
+    std::unordered_map<std::string, std::unordered_multimap<std::string, uint64_t>> v = {{"",{{"\1\2\3\4\5\0\1\2\3\4",std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 620;
   }
   uint16_t input_621() {
-    std::unordered_map<int32_t, std::unordered_multimap<std::string, float>> v = {{0,{{"",std::numeric_limits<float>::max()}}}};
+    std::unordered_map<std::string, std::unordered_multimap<bool, int32_t>> v = {{"",{{false,2147483647}}}};
     ar & v;
     return 621;
   }
   uint16_t input_622() {
-    std::unordered_map<int32_t, std::unordered_multimap<std::string, int8_t>> v = {{0,{{"",127}}}};
+    std::unordered_map<std::string, std::unordered_multimap<bool, int8_t>> v = {{"",{{false,-1}}}};
     ar & v;
     return 622;
   }
   uint16_t input_623() {
-    std::unordered_map<int32_t, std::unordered_multimap<std::string, bool>> v = {{0,{{"",false}}}};
+    std::unordered_map<std::string, std::unordered_multimap<bool, float>> v = {{"",{{false,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 623;
   }
   uint16_t input_624() {
-    std::unordered_map<int32_t, std::unordered_multimap<std::string, int32_t>> v = {{0,{{"",0}}}};
+    std::unordered_map<std::string, std::unordered_multimap<bool, std::string>> v = {{"",{{false,""}}}};
     ar & v;
     return 624;
   }
   uint16_t input_625() {
-    std::unordered_map<int32_t, std::unordered_multimap<std::string, std::string>> v = {{0,{{"",""}}}};
+    std::unordered_map<std::string, std::unordered_multimap<bool, bool>> v = {{"",{{false,true}}}};
     ar & v;
     return 625;
   }
   uint16_t input_626() {
-    std::unordered_map<int32_t, std::unordered_multimap<std::string, uint64_t>> v = {{0,{{"",std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<std::string, std::unordered_multimap<bool, uint64_t>> v = {{"",{{false,1}}}};
     ar & v;
     return 626;
   }
   uint16_t input_627() {
-    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, float>> v = {{0,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::max()}}}};
+    std::unordered_map<std::string, std::unordered_multimap<uint64_t, int32_t>> v = {{"",{{std::numeric_limits<uint64_t>::max(),0}}}};
     ar & v;
     return 627;
   }
   uint16_t input_628() {
-    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, int8_t>> v = {{0,{{std::numeric_limits<uint64_t>::max(),-1}}}};
+    std::unordered_map<std::string, std::unordered_multimap<uint64_t, int8_t>> v = {{"",{{std::numeric_limits<uint64_t>::max(),0}}}};
     ar & v;
     return 628;
   }
   uint16_t input_629() {
-    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, bool>> v = {{0,{{std::numeric_limits<uint64_t>::max(),true}}}};
+    std::unordered_map<std::string, std::unordered_multimap<uint64_t, float>> v = {{"",{{std::numeric_limits<uint64_t>::max(),-5.2e26}}}};
     ar & v;
     return 629;
   }
   uint16_t input_630() {
-    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, int32_t>> v = {{0,{{std::numeric_limits<uint64_t>::max(),-2147483648}}}};
+    std::unordered_map<std::string, std::unordered_multimap<uint64_t, std::string>> v = {{"",{{std::numeric_limits<uint64_t>::max(),"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 630;
   }
   uint16_t input_631() {
-    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, std::string>> v = {{0,{{std::numeric_limits<uint64_t>::max(),""}}}};
+    std::unordered_map<std::string, std::unordered_multimap<uint64_t, bool>> v = {{"",{{std::numeric_limits<uint64_t>::max(),true}}}};
     ar & v;
     return 631;
   }
   uint16_t input_632() {
-    std::unordered_map<int32_t, std::unordered_multimap<uint64_t, uint64_t>> v = {{0,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<std::string, std::unordered_multimap<uint64_t, uint64_t>> v = {{"",{{std::numeric_limits<uint64_t>::max(),1}}}};
     ar & v;
     return 632;
   }
   uint16_t input_633() {
-    std::unordered_map<std::string, std::unordered_multimap<float, float>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::infinity(),std::numeric_limits<float>::max()}}}};
+    std::unordered_map<bool, std::unordered_multimap<int32_t, int32_t>> v = {{true,{{0,0}}}};
     ar & v;
     return 633;
   }
   uint16_t input_634() {
-    std::unordered_map<std::string, std::unordered_multimap<float, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::infinity(),-128}}}};
+    std::unordered_map<bool, std::unordered_multimap<int32_t, int8_t>> v = {{true,{{0,0}}}};
     ar & v;
     return 634;
   }
   uint16_t input_635() {
-    std::unordered_map<std::string, std::unordered_multimap<float, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::infinity(),true}}}};
+    std::unordered_map<bool, std::unordered_multimap<int32_t, float>> v = {{true,{{0,std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 635;
   }
   uint16_t input_636() {
-    std::unordered_map<std::string, std::unordered_multimap<float, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::infinity(),-2147483648}}}};
+    std::unordered_map<bool, std::unordered_multimap<int32_t, std::string>> v = {{true,{{0,""}}}};
     ar & v;
     return 636;
   }
   uint16_t input_637() {
-    std::unordered_map<std::string, std::unordered_multimap<float, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::infinity(),""}}}};
+    std::unordered_map<bool, std::unordered_multimap<int32_t, bool>> v = {{true,{{0,true}}}};
     ar & v;
     return 637;
   }
   uint16_t input_638() {
-    std::unordered_map<std::string, std::unordered_multimap<float, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{std::numeric_limits<float>::infinity(),std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<bool, std::unordered_multimap<int32_t, uint64_t>> v = {{true,{{0,1}}}};
     ar & v;
     return 638;
   }
   uint16_t input_639() {
-    std::unordered_map<std::string, std::unordered_multimap<int8_t, float>> v = {{"!@#$%^&*( !@$$%&*(",{{0,std::numeric_limits<float>::max()}}}};
+    std::unordered_map<bool, std::unordered_multimap<int8_t, int32_t>> v = {{true,{{127,2147483647}}}};
     ar & v;
     return 639;
   }
   uint16_t input_640() {
-    std::unordered_map<std::string, std::unordered_multimap<int8_t, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{0,-1}}}};
+    std::unordered_map<bool, std::unordered_multimap<int8_t, int8_t>> v = {{true,{{127,127}}}};
     ar & v;
     return 640;
   }
   uint16_t input_641() {
-    std::unordered_map<std::string, std::unordered_multimap<int8_t, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{0,true}}}};
+    std::unordered_map<bool, std::unordered_multimap<int8_t, float>> v = {{true,{{127,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 641;
   }
   uint16_t input_642() {
-    std::unordered_map<std::string, std::unordered_multimap<int8_t, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{0,2147483647}}}};
+    std::unordered_map<bool, std::unordered_multimap<int8_t, std::string>> v = {{true,{{127,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 642;
   }
   uint16_t input_643() {
-    std::unordered_map<std::string, std::unordered_multimap<int8_t, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{0,""}}}};
+    std::unordered_map<bool, std::unordered_multimap<int8_t, bool>> v = {{true,{{127,false}}}};
     ar & v;
     return 643;
   }
   uint16_t input_644() {
-    std::unordered_map<std::string, std::unordered_multimap<int8_t, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{0,std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<bool, std::unordered_multimap<int8_t, uint64_t>> v = {{true,{{127,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 644;
   }
   uint16_t input_645() {
-    std::unordered_map<std::string, std::unordered_multimap<bool, float>> v = {{"!@#$%^&*( !@$$%&*(",{{false,std::numeric_limits<float>::max()}}}};
+    std::unordered_map<bool, std::unordered_multimap<float, int32_t>> v = {{true,{{std::numeric_limits<float>::infinity(),2147483647}}}};
     ar & v;
     return 645;
   }
   uint16_t input_646() {
-    std::unordered_map<std::string, std::unordered_multimap<bool, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{false,0}}}};
+    std::unordered_map<bool, std::unordered_multimap<float, int8_t>> v = {{true,{{std::numeric_limits<float>::infinity(),-1}}}};
     ar & v;
     return 646;
   }
   uint16_t input_647() {
-    std::unordered_map<std::string, std::unordered_multimap<bool, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{false,false}}}};
+    std::unordered_map<bool, std::unordered_multimap<float, float>> v = {{true,{{std::numeric_limits<float>::infinity(),std::numeric_limits<float>::min()}}}};
     ar & v;
     return 647;
   }
   uint16_t input_648() {
-    std::unordered_map<std::string, std::unordered_multimap<bool, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{false,0}}}};
+    std::unordered_map<bool, std::unordered_multimap<float, std::string>> v = {{true,{{std::numeric_limits<float>::infinity(),""}}}};
     ar & v;
     return 648;
   }
   uint16_t input_649() {
-    std::unordered_map<std::string, std::unordered_multimap<bool, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{false,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<bool, std::unordered_multimap<float, bool>> v = {{true,{{std::numeric_limits<float>::infinity(),true}}}};
     ar & v;
     return 649;
   }
   uint16_t input_650() {
-    std::unordered_map<std::string, std::unordered_multimap<bool, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{false,1}}}};
+    std::unordered_map<bool, std::unordered_multimap<float, uint64_t>> v = {{true,{{std::numeric_limits<float>::infinity(),std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 650;
   }
   uint16_t input_651() {
-    std::unordered_map<std::string, std::unordered_multimap<int32_t, float>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,-5.2e26}}}};
+    std::unordered_map<bool, std::unordered_multimap<std::string, int32_t>> v = {{true,{{"!@#$%^&*( !@$$%&*(",2147483647}}}};
     ar & v;
     return 651;
   }
   uint16_t input_652() {
-    std::unordered_map<std::string, std::unordered_multimap<int32_t, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,-128}}}};
+    std::unordered_map<bool, std::unordered_multimap<std::string, int8_t>> v = {{true,{{"!@#$%^&*( !@$$%&*(",127}}}};
     ar & v;
     return 652;
   }
   uint16_t input_653() {
-    std::unordered_map<std::string, std::unordered_multimap<int32_t, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,false}}}};
+    std::unordered_map<bool, std::unordered_multimap<std::string, float>> v = {{true,{{"!@#$%^&*( !@$$%&*(",std::numeric_limits<float>::min()}}}};
     ar & v;
     return 653;
   }
   uint16_t input_654() {
-    std::unordered_map<std::string, std::unordered_multimap<int32_t, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,0}}}};
+    std::unordered_map<bool, std::unordered_multimap<std::string, std::string>> v = {{true,{{"!@#$%^&*( !@$$%&*(","\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 654;
   }
   uint16_t input_655() {
-    std::unordered_map<std::string, std::unordered_multimap<int32_t, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<bool, std::unordered_multimap<std::string, bool>> v = {{true,{{"!@#$%^&*( !@$$%&*(",false}}}};
     ar & v;
     return 655;
   }
   uint16_t input_656() {
-    std::unordered_map<std::string, std::unordered_multimap<int32_t, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{-2147483648,std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<bool, std::unordered_multimap<std::string, uint64_t>> v = {{true,{{"!@#$%^&*( !@$$%&*(",std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 656;
   }
   uint16_t input_657() {
-    std::unordered_map<std::string, std::unordered_multimap<std::string, float>> v = {{"!@#$%^&*( !@$$%&*(",{{"",std::numeric_limits<float>::infinity()}}}};
+    std::unordered_map<bool, std::unordered_multimap<bool, int32_t>> v = {{true,{{false,2147483647}}}};
     ar & v;
     return 657;
   }
   uint16_t input_658() {
-    std::unordered_map<std::string, std::unordered_multimap<std::string, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{"",0}}}};
+    std::unordered_map<bool, std::unordered_multimap<bool, int8_t>> v = {{true,{{false,127}}}};
     ar & v;
     return 658;
   }
   uint16_t input_659() {
-    std::unordered_map<std::string, std::unordered_multimap<std::string, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{"",false}}}};
+    std::unordered_map<bool, std::unordered_multimap<bool, float>> v = {{true,{{false,std::numeric_limits<float>::min()}}}};
     ar & v;
     return 659;
   }
   uint16_t input_660() {
-    std::unordered_map<std::string, std::unordered_multimap<std::string, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{"",2147483647}}}};
+    std::unordered_map<bool, std::unordered_multimap<bool, std::string>> v = {{true,{{false,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 660;
   }
   uint16_t input_661() {
-    std::unordered_map<std::string, std::unordered_multimap<std::string, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{"","!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<bool, std::unordered_multimap<bool, bool>> v = {{true,{{false,false}}}};
     ar & v;
     return 661;
   }
   uint16_t input_662() {
-    std::unordered_map<std::string, std::unordered_multimap<std::string, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{"",std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<bool, std::unordered_multimap<bool, uint64_t>> v = {{true,{{false,std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 662;
   }
   uint16_t input_663() {
-    std::unordered_map<std::string, std::unordered_multimap<uint64_t, float>> v = {{"!@#$%^&*( !@$$%&*(",{{1,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<bool, std::unordered_multimap<uint64_t, int32_t>> v = {{true,{{std::numeric_limits<uint64_t>::max(),2147483647}}}};
     ar & v;
     return 663;
   }
   uint16_t input_664() {
-    std::unordered_map<std::string, std::unordered_multimap<uint64_t, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",{{1,127}}}};
+    std::unordered_map<bool, std::unordered_multimap<uint64_t, int8_t>> v = {{true,{{std::numeric_limits<uint64_t>::max(),-128}}}};
     ar & v;
     return 664;
   }
   uint16_t input_665() {
-    std::unordered_map<std::string, std::unordered_multimap<uint64_t, bool>> v = {{"!@#$%^&*( !@$$%&*(",{{1,false}}}};
+    std::unordered_map<bool, std::unordered_multimap<uint64_t, float>> v = {{true,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 665;
   }
   uint16_t input_666() {
-    std::unordered_map<std::string, std::unordered_multimap<uint64_t, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",{{1,0}}}};
+    std::unordered_map<bool, std::unordered_multimap<uint64_t, std::string>> v = {{true,{{std::numeric_limits<uint64_t>::max(),"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 666;
   }
   uint16_t input_667() {
-    std::unordered_map<std::string, std::unordered_multimap<uint64_t, std::string>> v = {{"!@#$%^&*( !@$$%&*(",{{1,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<bool, std::unordered_multimap<uint64_t, bool>> v = {{true,{{std::numeric_limits<uint64_t>::max(),true}}}};
     ar & v;
     return 667;
   }
   uint16_t input_668() {
-    std::unordered_map<std::string, std::unordered_multimap<uint64_t, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",{{1,1}}}};
+    std::unordered_map<bool, std::unordered_multimap<uint64_t, uint64_t>> v = {{true,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 668;
   }
   uint16_t input_669() {
-    std::unordered_map<uint64_t, std::unordered_multimap<float, float>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::max(),std::numeric_limits<float>::min()}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, int32_t>> v = {{1,{{2147483647,-2147483648}}}};
     ar & v;
     return 669;
   }
   uint16_t input_670() {
-    std::unordered_map<uint64_t, std::unordered_multimap<float, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::max(),127}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, int8_t>> v = {{1,{{2147483647,-128}}}};
     ar & v;
     return 670;
   }
   uint16_t input_671() {
-    std::unordered_map<uint64_t, std::unordered_multimap<float, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::max(),true}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, float>> v = {{1,{{2147483647,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 671;
   }
   uint16_t input_672() {
-    std::unordered_map<uint64_t, std::unordered_multimap<float, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::max(),2147483647}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, std::string>> v = {{1,{{2147483647,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 672;
   }
   uint16_t input_673() {
-    std::unordered_map<uint64_t, std::unordered_multimap<float, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::max(),""}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, bool>> v = {{1,{{2147483647,false}}}};
     ar & v;
     return 673;
   }
   uint16_t input_674() {
-    std::unordered_map<uint64_t, std::unordered_multimap<float, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<float>::max(),1}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, uint64_t>> v = {{1,{{2147483647,1}}}};
     ar & v;
     return 674;
   }
   uint16_t input_675() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, float>> v = {{std::numeric_limits<uint64_t>::max(),{{0,std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, int32_t>> v = {{1,{{-128,2147483647}}}};
     ar & v;
     return 675;
   }
   uint16_t input_676() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{0,127}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, int8_t>> v = {{1,{{-128,-128}}}};
     ar & v;
     return 676;
   }
   uint16_t input_677() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{0,true}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, float>> v = {{1,{{-128,std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 677;
   }
   uint16_t input_678() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{0,2147483647}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, std::string>> v = {{1,{{-128,""}}}};
     ar & v;
     return 678;
   }
   uint16_t input_679() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{0,""}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, bool>> v = {{1,{{-128,false}}}};
     ar & v;
     return 679;
   }
   uint16_t input_680() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{0,1}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<int8_t, uint64_t>> v = {{1,{{-128,1}}}};
     ar & v;
     return 680;
   }
   uint16_t input_681() {
-    std::unordered_map<uint64_t, std::unordered_multimap<bool, float>> v = {{std::numeric_limits<uint64_t>::max(),{{false,-5.2e26}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<float, int32_t>> v = {{1,{{-5.2e26,2147483647}}}};
     ar & v;
     return 681;
   }
   uint16_t input_682() {
-    std::unordered_map<uint64_t, std::unordered_multimap<bool, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{false,0}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<float, int8_t>> v = {{1,{{-5.2e26,-128}}}};
     ar & v;
     return 682;
   }
   uint16_t input_683() {
-    std::unordered_map<uint64_t, std::unordered_multimap<bool, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{false,true}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<float, float>> v = {{1,{{-5.2e26,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 683;
   }
   uint16_t input_684() {
-    std::unordered_map<uint64_t, std::unordered_multimap<bool, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{false,-2147483648}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<float, std::string>> v = {{1,{{-5.2e26,"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 684;
   }
   uint16_t input_685() {
-    std::unordered_map<uint64_t, std::unordered_multimap<bool, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{false,"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<float, bool>> v = {{1,{{-5.2e26,false}}}};
     ar & v;
     return 685;
   }
   uint16_t input_686() {
-    std::unordered_map<uint64_t, std::unordered_multimap<bool, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{false,1}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<float, uint64_t>> v = {{1,{{-5.2e26,1}}}};
     ar & v;
     return 686;
   }
   uint16_t input_687() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, float>> v = {{std::numeric_limits<uint64_t>::max(),{{0,std::numeric_limits<float>::max()}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<std::string, int32_t>> v = {{1,{{"",2147483647}}}};
     ar & v;
     return 687;
   }
   uint16_t input_688() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{0,-1}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<std::string, int8_t>> v = {{1,{{"",0}}}};
     ar & v;
     return 688;
   }
   uint16_t input_689() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{0,true}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<std::string, float>> v = {{1,{{"",std::numeric_limits<float>::min()}}}};
     ar & v;
     return 689;
   }
   uint16_t input_690() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{0,2147483647}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<std::string, std::string>> v = {{1,{{"",""}}}};
     ar & v;
     return 690;
   }
   uint16_t input_691() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{0,"!@#$%^&*( !@$$%&*("}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<std::string, bool>> v = {{1,{{"",false}}}};
     ar & v;
     return 691;
   }
   uint16_t input_692() {
-    std::unordered_map<uint64_t, std::unordered_multimap<int32_t, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{0,1}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<std::string, uint64_t>> v = {{1,{{"",std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 692;
   }
   uint16_t input_693() {
-    std::unordered_map<uint64_t, std::unordered_multimap<std::string, float>> v = {{std::numeric_limits<uint64_t>::max(),{{"",std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<bool, int32_t>> v = {{1,{{false,0}}}};
     ar & v;
     return 693;
   }
   uint16_t input_694() {
-    std::unordered_map<uint64_t, std::unordered_multimap<std::string, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{"",127}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<bool, int8_t>> v = {{1,{{false,-1}}}};
     ar & v;
     return 694;
   }
   uint16_t input_695() {
-    std::unordered_map<uint64_t, std::unordered_multimap<std::string, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{"",false}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<bool, float>> v = {{1,{{false,std::numeric_limits<float>::max()}}}};
     ar & v;
     return 695;
   }
   uint16_t input_696() {
-    std::unordered_map<uint64_t, std::unordered_multimap<std::string, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{"",0}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<bool, std::string>> v = {{1,{{false,"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 696;
   }
   uint16_t input_697() {
-    std::unordered_map<uint64_t, std::unordered_multimap<std::string, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{"",""}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<bool, bool>> v = {{1,{{false,false}}}};
     ar & v;
     return 697;
   }
   uint16_t input_698() {
-    std::unordered_map<uint64_t, std::unordered_multimap<std::string, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{"",std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<bool, uint64_t>> v = {{1,{{false,1}}}};
     ar & v;
     return 698;
   }
   uint16_t input_699() {
-    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, float>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::quiet_NaN()}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, int32_t>> v = {{1,{{std::numeric_limits<uint64_t>::max(),2147483647}}}};
     ar & v;
     return 699;
   }
   uint16_t input_700() {
-    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<uint64_t>::max(),-1}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, int8_t>> v = {{1,{{std::numeric_limits<uint64_t>::max(),-1}}}};
     ar & v;
     return 700;
   }
   uint16_t input_701() {
-    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, bool>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<uint64_t>::max(),false}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, float>> v = {{1,{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 701;
   }
   uint16_t input_702() {
-    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<uint64_t>::max(),2147483647}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, std::string>> v = {{1,{{std::numeric_limits<uint64_t>::max(),"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 702;
   }
   uint16_t input_703() {
-    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, std::string>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<uint64_t>::max(),""}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, bool>> v = {{1,{{std::numeric_limits<uint64_t>::max(),true}}}};
     ar & v;
     return 703;
   }
   uint16_t input_704() {
-    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),{{std::numeric_limits<uint64_t>::max(),std::numeric_limits<uint64_t>::max()}}}};
+    std::unordered_map<uint64_t, std::unordered_multimap<uint64_t, uint64_t>> v = {{1,{{std::numeric_limits<uint64_t>::max(),1}}}};
     ar & v;
     return 704;
   }
   uint16_t input_705() {
-    std::vector<std::unordered_set<float>> v = {{std::numeric_limits<float>::min()}};
+    std::vector<std::unordered_set<int32_t>> v = {{-2147483648}};
     ar & v;
     return 705;
   }
   uint16_t input_706() {
-    std::vector<std::unordered_set<int8_t>> v = {{-1}};
+    std::vector<std::unordered_set<int8_t>> v = {{127}};
     ar & v;
     return 706;
   }
   uint16_t input_707() {
-    std::vector<std::unordered_set<bool>> v = {{true}};
+    std::vector<std::unordered_set<float>> v = {{std::numeric_limits<float>::max()}};
     ar & v;
     return 707;
   }
   uint16_t input_708() {
-    std::vector<std::unordered_set<int32_t>> v = {{0}};
+    std::vector<std::unordered_set<std::string>> v = {{"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 708;
   }
   uint16_t input_709() {
-    std::vector<std::unordered_set<std::string>> v = {{"!@#$%^&*( !@$$%&*("}};
+    std::vector<std::unordered_set<bool>> v = {{false}};
     ar & v;
     return 709;
   }
@@ -4400,27 +4400,27 @@ struct InputsGenerator {
     return 710;
   }
   uint16_t input_711() {
-    std::list<std::vector<float>> v = {{std::numeric_limits<float>::quiet_NaN()}};
+    std::list<std::vector<int32_t>> v = {{0}};
     ar & v;
     return 711;
   }
   uint16_t input_712() {
-    std::list<std::vector<int8_t>> v = {{127}};
+    std::list<std::vector<int8_t>> v = {{-1}};
     ar & v;
     return 712;
   }
   uint16_t input_713() {
-    std::list<std::vector<bool>> v = {{false}};
+    std::list<std::vector<float>> v = {{std::numeric_limits<float>::min()}};
     ar & v;
     return 713;
   }
   uint16_t input_714() {
-    std::list<std::vector<int32_t>> v = {{2147483647}};
+    std::list<std::vector<std::string>> v = {{"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 714;
   }
   uint16_t input_715() {
-    std::list<std::vector<std::string>> v = {{""}};
+    std::list<std::vector<bool>> v = {{true}};
     ar & v;
     return 715;
   }
@@ -4430,27 +4430,27 @@ struct InputsGenerator {
     return 716;
   }
   uint16_t input_717() {
-    std::list<std::forward_list<std::set<float>>> v = {{{std::numeric_limits<float>::quiet_NaN()}}};
+    std::list<std::forward_list<std::set<int32_t>>> v = {{{0}}};
     ar & v;
     return 717;
   }
   uint16_t input_718() {
-    std::list<std::forward_list<std::set<int8_t>>> v = {{{-1}}};
+    std::list<std::forward_list<std::set<int8_t>>> v = {{{-128}}};
     ar & v;
     return 718;
   }
   uint16_t input_719() {
-    std::list<std::forward_list<std::set<bool>>> v = {{{true}}};
+    std::list<std::forward_list<std::set<float>>> v = {{{std::numeric_limits<float>::min()}}};
     ar & v;
     return 719;
   }
   uint16_t input_720() {
-    std::list<std::forward_list<std::set<int32_t>>> v = {{{0}}};
+    std::list<std::forward_list<std::set<std::string>>> v = {{{"\1\2\3\4\5\0\1\2\3\4"}}};
     ar & v;
     return 720;
   }
   uint16_t input_721() {
-    std::list<std::forward_list<std::set<std::string>>> v = {{{""}}};
+    std::list<std::forward_list<std::set<bool>>> v = {{{true}}};
     ar & v;
     return 721;
   }
@@ -4460,197 +4460,197 @@ struct InputsGenerator {
     return 722;
   }
   uint16_t input_723() {
-    std::forward_list<std::map<float, std::list<float>>> v = {{{-5.2e26,{std::numeric_limits<float>::min()}}}};
+    std::forward_list<std::map<int32_t, std::list<int32_t>>> v = {{{0,{-2147483648}}}};
     ar & v;
     return 723;
   }
   uint16_t input_724() {
-    std::forward_list<std::map<float, std::list<int8_t>>> v = {{{-5.2e26,{0}}}};
+    std::forward_list<std::map<int32_t, std::list<int8_t>>> v = {{{0,{-1}}}};
     ar & v;
     return 724;
   }
   uint16_t input_725() {
-    std::forward_list<std::map<float, std::list<bool>>> v = {{{-5.2e26,{true}}}};
+    std::forward_list<std::map<int32_t, std::list<float>>> v = {{{0,{std::numeric_limits<float>::min()}}}};
     ar & v;
     return 725;
   }
   uint16_t input_726() {
-    std::forward_list<std::map<float, std::list<int32_t>>> v = {{{-5.2e26,{2147483647}}}};
+    std::forward_list<std::map<int32_t, std::list<std::string>>> v = {{{0,{"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 726;
   }
   uint16_t input_727() {
-    std::forward_list<std::map<float, std::list<std::string>>> v = {{{-5.2e26,{"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::forward_list<std::map<int32_t, std::list<bool>>> v = {{{0,{false}}}};
     ar & v;
     return 727;
   }
   uint16_t input_728() {
-    std::forward_list<std::map<float, std::list<uint64_t>>> v = {{{-5.2e26,{1}}}};
+    std::forward_list<std::map<int32_t, std::list<uint64_t>>> v = {{{0,{1}}}};
     ar & v;
     return 728;
   }
   uint16_t input_729() {
-    std::forward_list<std::map<int8_t, std::list<float>>> v = {{{-1,{std::numeric_limits<float>::infinity()}}}};
+    std::forward_list<std::map<int8_t, std::list<int32_t>>> v = {{{0,{0}}}};
     ar & v;
     return 729;
   }
   uint16_t input_730() {
-    std::forward_list<std::map<int8_t, std::list<int8_t>>> v = {{{-1,{0}}}};
+    std::forward_list<std::map<int8_t, std::list<int8_t>>> v = {{{0,{127}}}};
     ar & v;
     return 730;
   }
   uint16_t input_731() {
-    std::forward_list<std::map<int8_t, std::list<bool>>> v = {{{-1,{true}}}};
+    std::forward_list<std::map<int8_t, std::list<float>>> v = {{{0,{std::numeric_limits<float>::quiet_NaN()}}}};
     ar & v;
     return 731;
   }
   uint16_t input_732() {
-    std::forward_list<std::map<int8_t, std::list<int32_t>>> v = {{{-1,{2147483647}}}};
+    std::forward_list<std::map<int8_t, std::list<std::string>>> v = {{{0,{""}}}};
     ar & v;
     return 732;
   }
   uint16_t input_733() {
-    std::forward_list<std::map<int8_t, std::list<std::string>>> v = {{{-1,{"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::forward_list<std::map<int8_t, std::list<bool>>> v = {{{0,{false}}}};
     ar & v;
     return 733;
   }
   uint16_t input_734() {
-    std::forward_list<std::map<int8_t, std::list<uint64_t>>> v = {{{-1,{std::numeric_limits<uint64_t>::max()}}}};
+    std::forward_list<std::map<int8_t, std::list<uint64_t>>> v = {{{0,{std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 734;
   }
   uint16_t input_735() {
-    std::forward_list<std::map<bool, std::list<float>>> v = {{{false,{std::numeric_limits<float>::quiet_NaN()}}}};
+    std::forward_list<std::map<float, std::list<int32_t>>> v = {{{std::numeric_limits<float>::quiet_NaN(),{0}}}};
     ar & v;
     return 735;
   }
   uint16_t input_736() {
-    std::forward_list<std::map<bool, std::list<int8_t>>> v = {{{false,{127}}}};
+    std::forward_list<std::map<float, std::list<int8_t>>> v = {{{std::numeric_limits<float>::quiet_NaN(),{127}}}};
     ar & v;
     return 736;
   }
   uint16_t input_737() {
-    std::forward_list<std::map<bool, std::list<bool>>> v = {{{false,{true}}}};
+    std::forward_list<std::map<float, std::list<float>>> v = {{{std::numeric_limits<float>::quiet_NaN(),{std::numeric_limits<float>::min()}}}};
     ar & v;
     return 737;
   }
   uint16_t input_738() {
-    std::forward_list<std::map<bool, std::list<int32_t>>> v = {{{false,{2147483647}}}};
+    std::forward_list<std::map<float, std::list<std::string>>> v = {{{std::numeric_limits<float>::quiet_NaN(),{"!@#$%^&*( !@$$%&*("}}}};
     ar & v;
     return 738;
   }
   uint16_t input_739() {
-    std::forward_list<std::map<bool, std::list<std::string>>> v = {{{false,{"\1\2\3\4\5\0\1\2\3\4"}}}};
+    std::forward_list<std::map<float, std::list<bool>>> v = {{{std::numeric_limits<float>::quiet_NaN(),{false}}}};
     ar & v;
     return 739;
   }
   uint16_t input_740() {
-    std::forward_list<std::map<bool, std::list<uint64_t>>> v = {{{false,{std::numeric_limits<uint64_t>::max()}}}};
+    std::forward_list<std::map<float, std::list<uint64_t>>> v = {{{std::numeric_limits<float>::quiet_NaN(),{1}}}};
     ar & v;
     return 740;
   }
   uint16_t input_741() {
-    std::forward_list<std::map<int32_t, std::list<float>>> v = {{{2147483647,{std::numeric_limits<float>::quiet_NaN()}}}};
+    std::forward_list<std::map<std::string, std::list<int32_t>>> v = {{{"",{-2147483648}}}};
     ar & v;
     return 741;
   }
   uint16_t input_742() {
-    std::forward_list<std::map<int32_t, std::list<int8_t>>> v = {{{2147483647,{127}}}};
+    std::forward_list<std::map<std::string, std::list<int8_t>>> v = {{{"",{-1}}}};
     ar & v;
     return 742;
   }
   uint16_t input_743() {
-    std::forward_list<std::map<int32_t, std::list<bool>>> v = {{{2147483647,{false}}}};
+    std::forward_list<std::map<std::string, std::list<float>>> v = {{{"",{std::numeric_limits<float>::max()}}}};
     ar & v;
     return 743;
   }
   uint16_t input_744() {
-    std::forward_list<std::map<int32_t, std::list<int32_t>>> v = {{{2147483647,{2147483647}}}};
+    std::forward_list<std::map<std::string, std::list<std::string>>> v = {{{"",{""}}}};
     ar & v;
     return 744;
   }
   uint16_t input_745() {
-    std::forward_list<std::map<int32_t, std::list<std::string>>> v = {{{2147483647,{"!@#$%^&*( !@$$%&*("}}}};
+    std::forward_list<std::map<std::string, std::list<bool>>> v = {{{"",{false}}}};
     ar & v;
     return 745;
   }
   uint16_t input_746() {
-    std::forward_list<std::map<int32_t, std::list<uint64_t>>> v = {{{2147483647,{1}}}};
+    std::forward_list<std::map<std::string, std::list<uint64_t>>> v = {{{"",{1}}}};
     ar & v;
     return 746;
   }
   uint16_t input_747() {
-    std::forward_list<std::map<std::string, std::list<float>>> v = {{{"!@#$%^&*( !@$$%&*(",{std::numeric_limits<float>::max()}}}};
+    std::forward_list<std::map<bool, std::list<int32_t>>> v = {{{true,{-2147483648}}}};
     ar & v;
     return 747;
   }
   uint16_t input_748() {
-    std::forward_list<std::map<std::string, std::list<int8_t>>> v = {{{"!@#$%^&*( !@$$%&*(",{-128}}}};
+    std::forward_list<std::map<bool, std::list<int8_t>>> v = {{{true,{127}}}};
     ar & v;
     return 748;
   }
   uint16_t input_749() {
-    std::forward_list<std::map<std::string, std::list<bool>>> v = {{{"!@#$%^&*( !@$$%&*(",{true}}}};
+    std::forward_list<std::map<bool, std::list<float>>> v = {{{true,{std::numeric_limits<float>::min()}}}};
     ar & v;
     return 749;
   }
   uint16_t input_750() {
-    std::forward_list<std::map<std::string, std::list<int32_t>>> v = {{{"!@#$%^&*( !@$$%&*(",{-2147483648}}}};
+    std::forward_list<std::map<bool, std::list<std::string>>> v = {{{true,{"\1\2\3\4\5\0\1\2\3\4"}}}};
     ar & v;
     return 750;
   }
   uint16_t input_751() {
-    std::forward_list<std::map<std::string, std::list<std::string>>> v = {{{"!@#$%^&*( !@$$%&*(",{""}}}};
+    std::forward_list<std::map<bool, std::list<bool>>> v = {{{true,{false}}}};
     ar & v;
     return 751;
   }
   uint16_t input_752() {
-    std::forward_list<std::map<std::string, std::list<uint64_t>>> v = {{{"!@#$%^&*( !@$$%&*(",{std::numeric_limits<uint64_t>::max()}}}};
+    std::forward_list<std::map<bool, std::list<uint64_t>>> v = {{{true,{1}}}};
     ar & v;
     return 752;
   }
   uint16_t input_753() {
-    std::forward_list<std::map<uint64_t, std::list<float>>> v = {{{1,{std::numeric_limits<float>::max()}}}};
+    std::forward_list<std::map<uint64_t, std::list<int32_t>>> v = {{{std::numeric_limits<uint64_t>::max(),{-2147483648}}}};
     ar & v;
     return 753;
   }
   uint16_t input_754() {
-    std::forward_list<std::map<uint64_t, std::list<int8_t>>> v = {{{1,{-128}}}};
+    std::forward_list<std::map<uint64_t, std::list<int8_t>>> v = {{{std::numeric_limits<uint64_t>::max(),{0}}}};
     ar & v;
     return 754;
   }
   uint16_t input_755() {
-    std::forward_list<std::map<uint64_t, std::list<bool>>> v = {{{1,{true}}}};
+    std::forward_list<std::map<uint64_t, std::list<float>>> v = {{{std::numeric_limits<uint64_t>::max(),{std::numeric_limits<float>::infinity()}}}};
     ar & v;
     return 755;
   }
   uint16_t input_756() {
-    std::forward_list<std::map<uint64_t, std::list<int32_t>>> v = {{{1,{-2147483648}}}};
+    std::forward_list<std::map<uint64_t, std::list<std::string>>> v = {{{std::numeric_limits<uint64_t>::max(),{""}}}};
     ar & v;
     return 756;
   }
   uint16_t input_757() {
-    std::forward_list<std::map<uint64_t, std::list<std::string>>> v = {{{1,{"!@#$%^&*( !@$$%&*("}}}};
+    std::forward_list<std::map<uint64_t, std::list<bool>>> v = {{{std::numeric_limits<uint64_t>::max(),{true}}}};
     ar & v;
     return 757;
   }
   uint16_t input_758() {
-    std::forward_list<std::map<uint64_t, std::list<uint64_t>>> v = {{{1,{1}}}};
+    std::forward_list<std::map<uint64_t, std::list<uint64_t>>> v = {{{std::numeric_limits<uint64_t>::max(),{std::numeric_limits<uint64_t>::max()}}}};
     ar & v;
     return 758;
   }
   uint16_t input_759() {
-    std::vector<std::array<float, 1>> v = {{std::numeric_limits<float>::infinity()}};
+    std::vector<std::array<int32_t, 1>> v = {{0}};
     ar & v;
     return 759;
   }
   uint16_t input_760() {
-    std::vector<std::array<float, 32>> v = {{std::numeric_limits<float>::infinity()}};
+    std::vector<std::array<int32_t, 32>> v = {{0}};
     ar & v;
     return 760;
   }
   uint16_t input_761() {
-    std::vector<std::array<float, 1023>> v = {{std::numeric_limits<float>::infinity()}};
+    std::vector<std::array<int32_t, 1023>> v = {{0}};
     ar & v;
     return 761;
   }
@@ -4670,242 +4670,242 @@ struct InputsGenerator {
     return 764;
   }
   uint16_t input_765() {
-    std::vector<std::array<bool, 1>> v = {{true}};
+    std::vector<std::array<float, 1>> v = {{std::numeric_limits<float>::max()}};
     ar & v;
     return 765;
   }
   uint16_t input_766() {
-    std::vector<std::array<bool, 32>> v = {{true}};
+    std::vector<std::array<float, 32>> v = {{std::numeric_limits<float>::max()}};
     ar & v;
     return 766;
   }
   uint16_t input_767() {
-    std::vector<std::array<bool, 1023>> v = {{true}};
+    std::vector<std::array<float, 1023>> v = {{std::numeric_limits<float>::max()}};
     ar & v;
     return 767;
   }
   uint16_t input_768() {
-    std::vector<std::array<int32_t, 1>> v = {{0}};
+    std::vector<std::array<std::string, 1>> v = {{"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 768;
   }
   uint16_t input_769() {
-    std::vector<std::array<int32_t, 32>> v = {{0}};
+    std::vector<std::array<std::string, 32>> v = {{"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 769;
   }
   uint16_t input_770() {
-    std::vector<std::array<int32_t, 1023>> v = {{0}};
+    std::vector<std::array<std::string, 1023>> v = {{"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 770;
   }
   uint16_t input_771() {
-    std::vector<std::array<std::string, 1>> v = {{""}};
+    std::vector<std::array<bool, 1>> v = {{true}};
     ar & v;
     return 771;
   }
   uint16_t input_772() {
-    std::vector<std::array<std::string, 32>> v = {{""}};
+    std::vector<std::array<bool, 32>> v = {{true}};
     ar & v;
     return 772;
   }
   uint16_t input_773() {
-    std::vector<std::array<std::string, 1023>> v = {{""}};
+    std::vector<std::array<bool, 1023>> v = {{true}};
     ar & v;
     return 773;
   }
   uint16_t input_774() {
-    std::vector<std::array<uint64_t, 1>> v = {{std::numeric_limits<uint64_t>::max()}};
+    std::vector<std::array<uint64_t, 1>> v = {{1}};
     ar & v;
     return 774;
   }
   uint16_t input_775() {
-    std::vector<std::array<uint64_t, 32>> v = {{std::numeric_limits<uint64_t>::max()}};
+    std::vector<std::array<uint64_t, 32>> v = {{1}};
     ar & v;
     return 775;
   }
   uint16_t input_776() {
-    std::vector<std::array<uint64_t, 1023>> v = {{std::numeric_limits<uint64_t>::max()}};
+    std::vector<std::array<uint64_t, 1023>> v = {{1}};
     ar & v;
     return 776;
   }
   uint16_t input_777() {
-    std::set<std::pair<float, float>> v = {{std::numeric_limits<float>::infinity(),-5.2e26}};
+    std::set<std::pair<int32_t, int32_t>> v = {{-2147483648,0}};
     ar & v;
     return 777;
   }
   uint16_t input_778() {
-    std::set<std::pair<float, int8_t>> v = {{std::numeric_limits<float>::infinity(),-128}};
+    std::set<std::pair<int32_t, int8_t>> v = {{-2147483648,-128}};
     ar & v;
     return 778;
   }
   uint16_t input_779() {
-    std::set<std::pair<float, bool>> v = {{std::numeric_limits<float>::infinity(),false}};
+    std::set<std::pair<int32_t, float>> v = {{-2147483648,std::numeric_limits<float>::min()}};
     ar & v;
     return 779;
   }
   uint16_t input_780() {
-    std::set<std::pair<float, int32_t>> v = {{std::numeric_limits<float>::infinity(),0}};
+    std::set<std::pair<int32_t, std::string>> v = {{-2147483648,"\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 780;
   }
   uint16_t input_781() {
-    std::set<std::pair<float, std::string>> v = {{std::numeric_limits<float>::infinity(),"\1\2\3\4\5\0\1\2\3\4"}};
+    std::set<std::pair<int32_t, bool>> v = {{-2147483648,false}};
     ar & v;
     return 781;
   }
   uint16_t input_782() {
-    std::set<std::pair<float, uint64_t>> v = {{std::numeric_limits<float>::infinity(),std::numeric_limits<uint64_t>::max()}};
+    std::set<std::pair<int32_t, uint64_t>> v = {{-2147483648,1}};
     ar & v;
     return 782;
   }
   uint16_t input_783() {
-    std::set<std::pair<int8_t, float>> v = {{0,std::numeric_limits<float>::max()}};
+    std::set<std::pair<int8_t, int32_t>> v = {{-1,0}};
     ar & v;
     return 783;
   }
   uint16_t input_784() {
-    std::set<std::pair<int8_t, int8_t>> v = {{0,-128}};
+    std::set<std::pair<int8_t, int8_t>> v = {{-1,0}};
     ar & v;
     return 784;
   }
   uint16_t input_785() {
-    std::set<std::pair<int8_t, bool>> v = {{0,true}};
+    std::set<std::pair<int8_t, float>> v = {{-1,std::numeric_limits<float>::max()}};
     ar & v;
     return 785;
   }
   uint16_t input_786() {
-    std::set<std::pair<int8_t, int32_t>> v = {{0,-2147483648}};
+    std::set<std::pair<int8_t, std::string>> v = {{-1,"\1\2\3\4\5\0\1\2\3\4"}};
     ar & v;
     return 786;
   }
   uint16_t input_787() {
-    std::set<std::pair<int8_t, std::string>> v = {{0,"!@#$%^&*( !@$$%&*("}};
+    std::set<std::pair<int8_t, bool>> v = {{-1,false}};
     ar & v;
     return 787;
   }
   uint16_t input_788() {
-    std::set<std::pair<int8_t, uint64_t>> v = {{0,1}};
+    std::set<std::pair<int8_t, uint64_t>> v = {{-1,std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 788;
   }
   uint16_t input_789() {
-    std::set<std::pair<bool, float>> v = {{true,std::numeric_limits<float>::infinity()}};
+    std::set<std::pair<float, int32_t>> v = {{std::numeric_limits<float>::quiet_NaN(),0}};
     ar & v;
     return 789;
   }
   uint16_t input_790() {
-    std::set<std::pair<bool, int8_t>> v = {{true,0}};
+    std::set<std::pair<float, int8_t>> v = {{std::numeric_limits<float>::quiet_NaN(),-1}};
     ar & v;
     return 790;
   }
   uint16_t input_791() {
-    std::set<std::pair<bool, bool>> v = {{true,true}};
+    std::set<std::pair<float, float>> v = {{std::numeric_limits<float>::quiet_NaN(),-5.2e26}};
     ar & v;
     return 791;
   }
   uint16_t input_792() {
-    std::set<std::pair<bool, int32_t>> v = {{true,-2147483648}};
+    std::set<std::pair<float, std::string>> v = {{std::numeric_limits<float>::quiet_NaN(),"!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 792;
   }
   uint16_t input_793() {
-    std::set<std::pair<bool, std::string>> v = {{true,"!@#$%^&*( !@$$%&*("}};
+    std::set<std::pair<float, bool>> v = {{std::numeric_limits<float>::quiet_NaN(),true}};
     ar & v;
     return 793;
   }
   uint16_t input_794() {
-    std::set<std::pair<bool, uint64_t>> v = {{true,std::numeric_limits<uint64_t>::max()}};
+    std::set<std::pair<float, uint64_t>> v = {{std::numeric_limits<float>::quiet_NaN(),1}};
     ar & v;
     return 794;
   }
   uint16_t input_795() {
-    std::set<std::pair<int32_t, float>> v = {{0,std::numeric_limits<float>::infinity()}};
+    std::set<std::pair<std::string, int32_t>> v = {{"!@#$%^&*( !@$$%&*(",0}};
     ar & v;
     return 795;
   }
   uint16_t input_796() {
-    std::set<std::pair<int32_t, int8_t>> v = {{0,127}};
+    std::set<std::pair<std::string, int8_t>> v = {{"!@#$%^&*( !@$$%&*(",127}};
     ar & v;
     return 796;
   }
   uint16_t input_797() {
-    std::set<std::pair<int32_t, bool>> v = {{0,false}};
+    std::set<std::pair<std::string, float>> v = {{"!@#$%^&*( !@$$%&*(",-5.2e26}};
     ar & v;
     return 797;
   }
   uint16_t input_798() {
-    std::set<std::pair<int32_t, int32_t>> v = {{0,0}};
+    std::set<std::pair<std::string, std::string>> v = {{"!@#$%^&*( !@$$%&*(","!@#$%^&*( !@$$%&*("}};
     ar & v;
     return 798;
   }
   uint16_t input_799() {
-    std::set<std::pair<int32_t, std::string>> v = {{0,"!@#$%^&*( !@$$%&*("}};
+    std::set<std::pair<std::string, bool>> v = {{"!@#$%^&*( !@$$%&*(",false}};
     ar & v;
     return 799;
   }
   uint16_t input_800() {
-    std::set<std::pair<int32_t, uint64_t>> v = {{0,1}};
+    std::set<std::pair<std::string, uint64_t>> v = {{"!@#$%^&*( !@$$%&*(",std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 800;
   }
   uint16_t input_801() {
-    std::set<std::pair<std::string, float>> v = {{"",std::numeric_limits<float>::max()}};
+    std::set<std::pair<bool, int32_t>> v = {{false,-2147483648}};
     ar & v;
     return 801;
   }
   uint16_t input_802() {
-    std::set<std::pair<std::string, int8_t>> v = {{"",-128}};
+    std::set<std::pair<bool, int8_t>> v = {{false,-128}};
     ar & v;
     return 802;
   }
   uint16_t input_803() {
-    std::set<std::pair<std::string, bool>> v = {{"",true}};
+    std::set<std::pair<bool, float>> v = {{false,-5.2e26}};
     ar & v;
     return 803;
   }
   uint16_t input_804() {
-    std::set<std::pair<std::string, int32_t>> v = {{"",0}};
+    std::set<std::pair<bool, std::string>> v = {{false,""}};
     ar & v;
     return 804;
   }
   uint16_t input_805() {
-    std::set<std::pair<std::string, std::string>> v = {{"","!@#$%^&*( !@$$%&*("}};
+    std::set<std::pair<bool, bool>> v = {{false,true}};
     ar & v;
     return 805;
   }
   uint16_t input_806() {
-    std::set<std::pair<std::string, uint64_t>> v = {{"",std::numeric_limits<uint64_t>::max()}};
+    std::set<std::pair<bool, uint64_t>> v = {{false,1}};
     ar & v;
     return 806;
   }
   uint16_t input_807() {
-    std::set<std::pair<uint64_t, float>> v = {{1,std::numeric_limits<float>::quiet_NaN()}};
+    std::set<std::pair<uint64_t, int32_t>> v = {{std::numeric_limits<uint64_t>::max(),-2147483648}};
     ar & v;
     return 807;
   }
   uint16_t input_808() {
-    std::set<std::pair<uint64_t, int8_t>> v = {{1,127}};
+    std::set<std::pair<uint64_t, int8_t>> v = {{std::numeric_limits<uint64_t>::max(),127}};
     ar & v;
     return 808;
   }
   uint16_t input_809() {
-    std::set<std::pair<uint64_t, bool>> v = {{1,false}};
+    std::set<std::pair<uint64_t, float>> v = {{std::numeric_limits<uint64_t>::max(),std::numeric_limits<float>::infinity()}};
     ar & v;
     return 809;
   }
   uint16_t input_810() {
-    std::set<std::pair<uint64_t, int32_t>> v = {{1,0}};
+    std::set<std::pair<uint64_t, std::string>> v = {{std::numeric_limits<uint64_t>::max(),""}};
     ar & v;
     return 810;
   }
   uint16_t input_811() {
-    std::set<std::pair<uint64_t, std::string>> v = {{1,""}};
+    std::set<std::pair<uint64_t, bool>> v = {{std::numeric_limits<uint64_t>::max(),false}};
     ar & v;
     return 811;
   }
   uint16_t input_812() {
-    std::set<std::pair<uint64_t, uint64_t>> v = {{1,1}};
+    std::set<std::pair<uint64_t, uint64_t>> v = {{std::numeric_limits<uint64_t>::max(),std::numeric_limits<uint64_t>::max()}};
     ar & v;
     return 812;
   }

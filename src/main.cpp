@@ -6,11 +6,6 @@
 #include <stdio.h>
 #include <unistd.h>
 
-//#if defined(__AFL_COMPILER) && defined(INPUTS_GENERATOR)
-//__AFL_COVERAGE();
-//__AFL_COVERAGE_START_OFF();
-//#endif
-
 #ifndef SERIALIZER
 #error "SERIALIZER is not defined"
 #endif
