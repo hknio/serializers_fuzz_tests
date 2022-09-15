@@ -4,6 +4,7 @@ Repository implementing fuzz tests for three popular c++ serialization libraries
 - [boost serialization](https://github.com/boostorg/serialization)
 - [cereal](https://github.com/USCiLab/cereal)
 - [YAS](https://github.com/niXman/yas)
+- [msgpack](https://github.com/msgpack/msgpack-c/tree/cpp_master)
 
 ## Requirements
 
@@ -22,6 +23,7 @@ You can change `-DSERIALIZER=yas` to one of available serializers:
 - yas
 - cereal
 - boost_serialization
+- msgpack
 
 ## Usage
 

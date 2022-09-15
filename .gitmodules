@@ -10,3 +10,7 @@
 	path = libs/yas
 	url = https://github.com/niXman/yas
 	branch = master
+[submodule "libs/msgpack"]
+	path = libs/msgpack
+	url = https://github.com/msgpack/msgpack-c
+	branch = cpp_master
