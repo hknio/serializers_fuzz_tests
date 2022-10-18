@@ -48,16 +48,16 @@ TEMPLATED_STD_TYPES = [
 ]
 
 NASTED_TEMPLATED_STD_TYPES = [
-    "std::vector<std::vector<T>>",
-    "std::map<K, std::map<K, V>>",
-    "std::deque<std::set<T>>",
-    "std::unordered_map<K, std::unordered_multimap<K, V>>",
-    "std::vector<std::unordered_set<T>>",
-    "std::list<std::vector<T>>",
-    "std::list<std::forward_list<std::set<T>>>",
-    "std::forward_list<std::map<K, std::list<T>>>",
-    "std::vector<std::array<T, S>>",
-    "std::set<std::pair<V, V>>"
+#    "std::vector<std::vector<T>>",
+#    "std::map<K, std::map<K, V>>",
+#    "std::deque<std::set<T>>",
+#    "std::unordered_map<K, std::unordered_multimap<K, V>>",
+#    "std::vector<std::unordered_set<T>>",
+#    "std::list<std::vector<T>>",
+#    "std::list<std::forward_list<std::set<T>>>",
+#    "std::forward_list<std::map<K, std::list<T>>>",
+#    "std::vector<std::array<T, S>>",
+#    "std::set<std::pair<V, V>>"
 ]
 
 TEMPLATE_SIZES = [

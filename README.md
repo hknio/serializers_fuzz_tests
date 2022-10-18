@@ -6,27 +6,80 @@ Repository implementing fuzz tests for popular c++ serialization libraries:
 - [YAS](https://github.com/niXman/yas)
 - [msgpack](https://github.com/msgpack/msgpack-c/tree/cpp_master)
 
-## Requirements
+### Requirements
 
 ```bash
-apt-get install -y cmake clang afl++ afl++-clang
+apt-get install -y cmake clang libboost-all-dev
 ```
 
-## Compilation
+## Fuzzing
 
+Project was designed to work with the following fuzzing engines:
+- [libFuzzer](https://llvm.org/docs/LibFuzzer.html)
+- [AFL++](https://github.com/AFLplusplus/AFLplusplus)
+- [honggfuzz](https://github.com/google/honggfuzz)
+
+For each fuzzing engine there are four available fuzzers:
+- boost_serialization_fuzzer
+- cereal_fuzzer
+- yas_fuzzer
+- msgpack_fuzzer
+
+### libFuzzer
+
+Build with: 
 ```bash
-cmake -B build -DSERIALIZER=yas -DCMAKE_CXX_COMPILER=afl-clang-fast++ -DCMAKE_C_COMPILER=afl-clang-fast
+cmake -B build -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang
 cmake --build build --parallel
 ```
 
-You can change `-DSERIALIZER=yas` to one of available serializers:
-- yas
-- cereal
-- boost_serialization
-- msgpack
+Run with:
+```bash
+build/cereal_fuzzer
+```
 
-## Usage
+### AFL++
 
-1. create `in` directory with `mkdin in`
-2. generate test inputs with `./build/serialization_fuzz_generator`
-3. run fuzzer with `afl-fuzz -i in -o out ./build/serialization_fuzz`
+Build with:
+```bash
+cmake -B build -DCMAKE_CXX_COMPILER=afl-clang-fast++ -DCMAKE_C_COMPILER=afl-clang-fast
+cmake --build build --parallel
+```
+
+Run with:
+```bash
+mkdir in
+echo > in/empty_input
+afl-fuzz -i in -o out ./build/yas_fuzzer
+```
+
+### honggfuzz
+
+Build with:
+```bash
+cmake -B build -DCMAKE_CXX_COMPILER=hfuzz-clang++ -DCMAKE_C_COMPILER=hfuzz-clang
+cmake --build build --parallel
+```
+
+Run with:
+```bash
+mkdir in
+echo > in/empty_input
+honggfuzz -i in -o out -- build/msgpack_fuzzer
+```
+
+### Generating inputs
+
+Instead of creating empty initial input you can use a generator to create them automatically.
+
+Build generator with: 
+```bash
+cmake -B generator -DBUILD_CORPUS_GENERATOR=YES
+cmake --build generator --parallel
+```
+
+And then generate inputs with:
+```bash
+mkdir in
+generator/yas_fuzzer_corpus_generator in
+```

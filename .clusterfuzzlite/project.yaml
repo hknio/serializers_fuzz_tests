@@ -1,1 +1,6 @@
+name: serializers_fuzz_tests
 language: c++
+fuzzing_engines:
+  - libfuzzer
+sanitizers:
+  - address
